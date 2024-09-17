@@ -1,0 +1,6 @@
+[submodule "SAP-U.wiki"]
+	path = SAP-U.wiki
+	url = https://github.com/uddivert/SAP-U.wiki.git
+[submodule "Wiki"]
+	path = Wiki
+	url = git@github.com:uddivert/SAP-U.wiki.git
