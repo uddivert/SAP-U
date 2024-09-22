@@ -617,7 +617,11 @@
     ],
     [
       "de256fc7-e535-482a-9ac7-7c096b97e8b9",
-      "555TimerModel"
+      "555TimerModel_Astable"
+    ],
+    [
+      "1215a834-8751-4afe-a39a-5cb85338559e",
+      "555TimerModel_Debouncer"
     ]
   ],
   "text_variables": {}
