@@ -5,6 +5,431 @@
 	(uuid "069ae53f-4a1a-4766-906d-4b39920fb7ed")
 	(paper "A4")
 	(lib_symbols
+		(symbol "74xx:74LS04"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LS04"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Hex Inverter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TTL not inv"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74LS04_1_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_2_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_3_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_4_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_5_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_6_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_7_0"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS04_7_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
 		(symbol "Comparator:LMV393"
 			(pin_names
 				(offset 0.127)
@@ -1551,6 +1976,12 @@
 		(uuid "160f4f08-015c-4d3a-90d6-166935e637bd")
 	)
 	(junction
+		(at 132.08 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e928ab9-17cc-4438-b37d-db3b23d9c6c7")
+	)
+	(junction
 		(at 53.34 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1666,6 +2097,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 78.74) (xy 132.08 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f1e888f-2d8a-44d8-8691-ef8bf2731e20")
+	)
+	(wire
+		(pts
 			(xy 104.14 118.11) (xy 53.34 118.11)
 		)
 		(stroke
@@ -1736,6 +2177,26 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 78.74) (xy 132.08 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5de52752-b062-45dc-989e-05fc1781160a")
+	)
+	(wire
+		(pts
+			(xy 132.08 96.52) (xy 137.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c79802-81c9-41a6-9aea-799fd1fdedd4")
+	)
+	(wire
+		(pts
 			(xy 74.93 73.66) (xy 74.93 77.47)
 		)
 		(stroke
@@ -1783,6 +2244,16 @@
 			(type default)
 		)
 		(uuid "976d8bdf-6475-4d22-ab4f-199ea8e125eb")
+	)
+	(wire
+		(pts
+			(xy 161.29 78.74) (xy 189.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d37bb8-dd90-49d5-adeb-7991af340387")
 	)
 	(wire
 		(pts
@@ -1856,7 +2327,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 96.52) (xy 137.16 96.52)
+			(xy 120.65 96.52) (xy 132.08 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1958,7 +2429,7 @@
 		)
 		(uuid "1e3e850f-77bc-4be2-96dd-819f8ae8ca64")
 	)
-	(text "Output\n"
+	(text "Pin 3"
 		(exclude_from_sim no)
 		(at 192.786 83.566 0)
 		(effects
@@ -1979,6 +2450,17 @@
 			)
 		)
 		(uuid "ad4140d9-b58b-42d6-a4ba-4bcd1ba3caf6")
+	)
+	(text "Pin 4\n"
+		(exclude_from_sim no)
+		(at 185.166 74.422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 0 0 1)
+			)
+		)
+		(uuid "f1a8eaab-abeb-48fc-9363-c666e0a1992a")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3291,6 +3773,111 @@
 			(project "SAP-U_Project"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f1b9d87-3d1d-4a5d-8055-cfab36c6883b/de256fc7-e535-482a-9ac7-7c096b97e8b9"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS04")
+		(at 153.67 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd1aad77-4ffa-4a82-8505-3bf598ff59e6")
+		(property "Reference" "U11"
+			(at 153.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Inverter"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex Inverter"
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "14"
+			(uuid "88e11592-ff25-4ca4-8a87-75e74a700061")
+		)
+		(pin "5"
+			(uuid "f8800185-4829-4ea4-a5c6-25ebebe11091")
+		)
+		(pin "13"
+			(uuid "5ce277e0-5ba6-4c9d-9845-a69e80c0fb62")
+		)
+		(pin "6"
+			(uuid "c9cfb53c-6d08-49b8-a418-6489018f6400")
+		)
+		(pin "7"
+			(uuid "697e2512-caa6-411d-8a9e-02c859f2d09d")
+		)
+		(pin "12"
+			(uuid "e2964f6e-35b9-4644-90bd-9fe1e0a9f102")
+		)
+		(pin "3"
+			(uuid "e8440e5a-8da1-4b75-992c-24302892eabe")
+		)
+		(pin "11"
+			(uuid "bdc60cac-40c6-4bb6-813f-bce82bf078c9")
+		)
+		(pin "8"
+			(uuid "40324791-6e7a-4ac4-9485-918e38eb4fa5")
+		)
+		(pin "4"
+			(uuid "f584c799-2715-406f-ac22-b9904d23762f")
+		)
+		(pin "10"
+			(uuid "71b7ae13-81ad-498c-bce2-3238d3e7ad1e")
+		)
+		(pin "9"
+			(uuid "32cba7bb-7d6a-4566-bd39-271072a50440")
+		)
+		(pin "1"
+			(uuid "81f92e7a-365e-43de-b995-37b6e84532d4")
+		)
+		(pin "2"
+			(uuid "388714fa-f548-454c-a8d1-b28e80e71fc9")
+		)
+		(instances
+			(project "SAP-U_Project"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f1b9d87-3d1d-4a5d-8055-cfab36c6883b/de256fc7-e535-482a-9ac7-7c096b97e8b9"
+					(reference "U11")
 					(unit 1)
 				)
 			)
