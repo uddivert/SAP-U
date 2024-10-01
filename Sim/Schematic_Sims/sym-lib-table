@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Symbols_Only")(type "KiCad")(uri "/home/swami/Documents/SAP-U/SAP-U_Project/Symbols_Only.kicad_sym")(options "")(descr ""))
+)

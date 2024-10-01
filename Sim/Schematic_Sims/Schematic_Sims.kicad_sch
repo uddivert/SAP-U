@@ -1,0 +1,174 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7a964d01-3b76-4e78-a3f9-cc24c6bb45d0")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 39.37 33.02)
+		(size 38.735 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2465d78a-d64b-476e-9be8-a5e6c68c270b")
+		(property "Sheetname" "555TimerModel"
+			(at 39.37 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "555TimerModel.kicad_sch"
+			(at 39.37 46.3046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 39.37 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Schematic_Sims"
+				(path "/7a964d01-3b76-4e78-a3f9-cc24c6bb45d0"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 90.17)
+		(size 40.64 13.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7e100112-2f71-41ff-af93-547a45789157")
+		(property "Sheetname" "555TimerModel_Bistable"
+			(at 38.1 89.4584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "555TimerModel_Bistable.kicad_sch"
+			(at 38.1 104.0896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Schematic_Sims"
+				(path "/7a964d01-3b76-4e78-a3f9-cc24c6bb45d0"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.735 118.745)
+		(size 40.64 13.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "833a54d4-db89-4e67-859e-360de26d04d4")
+		(property "Sheetname" "555TimerModel_Debounce"
+			(at 38.735 118.0334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "555TimerModel_Debounce.kicad_sch"
+			(at 38.735 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Schematic_Sims"
+				(path "/7a964d01-3b76-4e78-a3f9-cc24c6bb45d0"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 60.96)
+		(size 40.64 13.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "be00ff00-febe-46a1-ab78-716242483a7e")
+		(property "Sheetname" "555TimerModel_Astable"
+			(at 38.1 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "555TimerModel_Astable.kicad_sch"
+			(at 38.1 74.8796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Schematic_Sims"
+				(path "/7a964d01-3b76-4e78-a3f9-cc24c6bb45d0"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
