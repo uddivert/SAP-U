@@ -591,7 +591,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 0,
+      "model_mode": 4,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
@@ -614,6 +614,10 @@
     [
       "7f1b9d87-3d1d-4a5d-8055-cfab36c6883b",
       "Clock_Module"
+    ],
+    [
+      "b00d8b81-9619-4105-b121-c6902d8eff94",
+      "No_Connects"
     ]
   ],
   "text_variables": {}
