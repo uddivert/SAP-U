@@ -3433,7 +3433,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS08N"
 			(at 29.21 30.48 0)
 			(effects
 				(font
@@ -3537,7 +3537,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS04N"
 			(at 80.01 45.72 0)
 			(effects
 				(font
@@ -3642,7 +3642,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS32N"
 			(at 52.07 30.48 0)
 			(effects
 				(font
@@ -3746,7 +3746,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS04N"
 			(at 78.74 30.48 0)
 			(effects
 				(font
@@ -3850,7 +3850,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS04N"
 			(at 80.01 62.23 0)
 			(effects
 				(font
@@ -3954,7 +3954,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS32N"
 			(at 52.07 45.72 0)
 			(effects
 				(font
@@ -4058,7 +4058,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootPrints:SN74LS32N"
 			(at 52.07 62.23 0)
 			(effects
 				(font
