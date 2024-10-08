@@ -5266,7 +5266,7 @@
 		(lib_id "Device:C")
 		(at 55.88 69.85 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5679,7 +5679,7 @@
 		(lib_id "Device:R_Potentiometer")
 		(at 33.02 52.07 90)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5719,6 +5719,33 @@
 			)
 		)
 		(property "Description" "Potentiometer"
+			(at 33.02 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 33.02 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 33.02 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "r=100"
 			(at 33.02 52.07 0)
 			(effects
 				(font
@@ -5881,7 +5908,7 @@
 		(lib_id "power:VCC")
 		(at 55.88 26.67 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6321,7 +6348,7 @@
 		(lib_id "Device:R")
 		(at 26.67 48.26 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6677,7 +6704,7 @@
 		(lib_id "Device:R")
 		(at 26.67 36.83 180)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6744,7 +6771,7 @@
 		(lib_id "power:GND")
 		(at 52.07 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -7743,7 +7770,7 @@
 		(lib_id "Timer:LM555xN")
 		(at 55.88 53.34 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -7786,6 +7813,42 @@
 			)
 		)
 		(property "Description" "Timer, 555 compatible, PDIP-8"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/swami/Documents/SAP-U/Sim/555bip.lib"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "555bip"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=GND 2=Trig 3=Out 4=Reset 5=Vctrl 6=Threas 7=Dis 8=Vcc"
 			(at 55.88 53.34 0)
 			(effects
 				(font
@@ -7935,7 +7998,7 @@
 		(lib_id "power:GND")
 		(at 38.1 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -8156,7 +8219,7 @@
 		(lib_id "power:GND")
 		(at 59.69 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -8820,7 +8883,7 @@
 		(lib_id "Device:C_Polarized")
 		(at 38.1 66.04 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
