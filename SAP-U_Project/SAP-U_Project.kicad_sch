@@ -43,44 +43,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 30.48 82.55)
-		(size 38.1 18.415)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b00d8b81-9619-4105-b121-c6902d8eff94")
-		(property "Sheetname" "No_Connects"
-			(at 30.48 81.8384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "No_Connects.kicad_sch"
-			(at 30.48 101.5496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "SAP-U_Project"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "0")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
