@@ -435,7 +435,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "error",
@@ -610,10 +610,6 @@
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       "Root"
-    ],
-    [
-      "7f1b9d87-3d1d-4a5d-8055-cfab36c6883b",
-      "Clock_Module"
     ]
   ],
   "text_variables": {}
