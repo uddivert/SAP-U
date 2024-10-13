@@ -32,3 +32,4 @@ fp-info-cache
 
 # Gtkwave simulation files
 *.vcd
+*.out
