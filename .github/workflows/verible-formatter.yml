@@ -16,10 +16,7 @@ jobs:
       - name: Run Verible formatter action
         uses: chipsalliance/verible-formatter-action@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          files: |
-            ./Sim/hdl/common/*.{v,sv}
-            ./test/*.{v,sv}
+          github_token: ${{ secrets.GITHUB_TOKEN }
           parameters: |
             --inplace
             --indentation_spaces=4
