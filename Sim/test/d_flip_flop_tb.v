@@ -2,7 +2,7 @@
 module d_flip_flop_tb;
 
   // Declare input signals as registers and output signals as wires
-  reg clk, data;
+  reg clk, data, reset;
   wire q, not_q;
 
   // Instantiate the DUT (Device Under Test)
@@ -28,6 +28,7 @@ module d_flip_flop_tb;
 
     // case 1: No data
     data = 0;
+    reset = 0;
     #10;
 
     // case 2: Data high
@@ -45,6 +46,13 @@ module d_flip_flop_tb;
     // case 5: Data remains low
     data = 0;
     #10;
+
+    // case 7: Reset high
+    data = 1;
+    #5;
+    reset = 1;
+    #5;
+
 
     $finish;  // End simulation
   end
