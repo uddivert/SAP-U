@@ -18,7 +18,7 @@ jobs:
         with:
           files: 
             ./Sim/hdl/common/*.{v,sv}
-            ./test/*.{v,sv}
+            ./Sim/test/*.{v,sv}
           github_token: ${{ secrets.GITHUB_TOKEN }
           parameters: |
             --inplace
