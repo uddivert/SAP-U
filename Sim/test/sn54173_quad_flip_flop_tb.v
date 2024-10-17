@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 1ns / 1ps
 
 module sn54173_quad_flip_flop_tb;
 
@@ -24,19 +24,19 @@ module sn54173_quad_flip_flop_tb;
     always begin
         clk = 0;
         #5 clk = 1;
-        #5 clk = 0; // 10ns clock period (100 MHz)
+        #5 clk = 0;  // 10ns clock period (100 MHz)
     end
 
     // Testbench stimulus
     initial begin
-        $dumpfile("./simulation/testbench_master.vcd"); // VCD file for waveform generation
+        $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
         $dumpvars(0, sn54173_quad_flip_flop_tb);
 
         // Initialize all inputs
         load = 0;
         data = 0;
         reset = 1; // Start with reset active
-        #15;       // Wait a bit to see the reset effect
+        #15;  // Wait a bit to see the reset effect
 
         // Case 1: Reset deasserted, load is high, data is 1
         reset = 0;
@@ -57,18 +57,18 @@ module sn54173_quad_flip_flop_tb;
         load = 0;
         #10;  // Wait for a clock edge
 
-    // Case 5: Activate reset, observe q goes to 0
-    reset = 1;
-    #10;  // Wait for a clock edge
+        // Case 5: Activate reset, observe q goes to 0
+        reset = 1;
+        #10;  // Wait for a clock edge
 
-    // Case 6: Deassert reset, load a new value (data = 1)
-    reset = 0;
-    load  = 1;
-    data  = 1;
-    #10;  // Wait for a clock edge
+        // Case 6: Deassert reset, load a new value (data = 1)
+        reset = 0;
+        load  = 1;
+        data  = 1;
+        #10;  // Wait for a clock edge
 
-    // End simulation
-    $finish;
-  end
+        // End simulation
+        $finish;
+    end
 endmodule
 
