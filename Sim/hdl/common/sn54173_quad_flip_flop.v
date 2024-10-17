@@ -1,6 +1,5 @@
 `default_nettype none
 module sn54173_quad_flip_flop (
-    // m and n both need to be low for output to be enabled
     input  wire m,
     input  wire n,
     input  wire g1,
@@ -24,33 +23,16 @@ module sn54173_quad_flip_flop (
         assign q = internal_q[i] & ~m & ~n;
     end 
 
-    d_flip_flop d_flip_flop1 (
-        .clk(clk),
-        .data(flop_data[0]),
-        .reset(clear),
-        .q(internal_q)[0],
-        .q_not(not_q[0])
-    );
-
-    d_flip_flop d_flip_flop2 (
-        .clk(clk),
-        .data(flop_data[1]),
-        .reset(clear),
-        .q(internal_q)[1],
-        .q_not(not_q[1])
-    );
-    d_flip_flop d_flip_flop3 (
-        .clk(clk),
-        .data(flop_data[2]),
-        .reset(clear),
-        .q(internal_q)[2],
-        .q_not(not_q[2])
-    );
-    d_flip_flop d_flip_flop4 (
-        .clk(clk),
-        .data(flop_data[3]),
-        .reset(clear),
-        .q(internal_q)[3],
-        .q_not(not_q[3])
-    );
+    genvar i;
+    generate
+      for (i=1; i<=4; i=i+1) begin : generated_d_flip_flops
+        d_flip_flop (
+            .clk(clk),
+            .data(flop_data[i]),
+            .reset(clear),
+            .q(internal_q)[i],
+            .q_not(not_q[i])
+        );
+       end 
+    endgenerate
 endmodule

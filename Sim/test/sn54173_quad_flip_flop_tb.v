@@ -3,20 +3,26 @@
 module sn54173_quad_flip_flop_tb;
 
     // Inputs
-    reg load;
-    reg data;
-    reg reset;
+    reg m;
+    reg n;
+    reg g1;
+    reg g2;
+    reg clr;
     reg clk;
+    reg [3:0] data;
 
     // Outputs
-    wire q;
+    wire [3:0] q;
 
     // Instantiate the Unit Under Test (UUT)
     sn54173_quad_flip_flop uut (
-        .load(load),
-        .data(data),
-        .reset(reset),
+        .m(m),
+        .n(n),
+        .g1(g1),
+        .g2(g2),
+        .clr(clr),
         .clk(clk),
+        .data(data),
         .q(q)
     );
 
@@ -33,38 +39,33 @@ module sn54173_quad_flip_flop_tb;
         $dumpvars(0, sn54173_quad_flip_flop_tb);
 
         // Initialize all inputs
-        load = 0;
-        data = 0;
-        reset = 1; // Start with reset active
-        #15;  // Wait a bit to see the reset effect
+        {g1, g1} = 0; // enable load
+        {m, n} = 0; // enable output
+        data = 4'b0000;
+        clear = 1; // Start with clear active
+        #15;  // Wait a bit to see the clear effect
 
-        // Case 1: Reset deasserted, load is high, data is 1
-        reset = 0;
-        load = 1;
-        data = 1;
+        // Case 1: clear deasserted, load is high, data is 1
+        clear = 0;
+        data = 4'b1010;
         #10;  // Wait for a clock edge
 
         // Case 2: Load is low, holding the previous data
-        load = 0;
+        {g1, g1} = 1; // disable load
+        data = 4'b1100; // should not show up
         #10;  // Wait for a clock edge
 
-        // Case 3: Change data to 0, load is high (load the new data)
-        load = 1;
-        data = 0;
+        // Case 3: Load the new data
+        {g1, g1} = 0; // enable load
+        data = 4'b1111;
         #10;  // Wait for a clock edge
 
-        // Case 4: Hold the previous state (load is low)
-        load = 0;
+        // Case 4: Disable output
+        {m, n} = 1; // disable output
         #10;  // Wait for a clock edge
 
-        // Case 5: Activate reset, observe q goes to 0
-        reset = 1;
-        #10;  // Wait for a clock edge
-
-        // Case 6: Deassert reset, load a new value (data = 1)
-        reset = 0;
-        load  = 1;
-        data  = 1;
+        // Case 5: Activate clear, observe q goes to 0
+        clear = 1;
         #10;  // Wait for a clock edge
 
         // End simulation
