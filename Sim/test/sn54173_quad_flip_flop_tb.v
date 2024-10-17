@@ -57,9 +57,9 @@ module sn54173_quad_flip_flop_tb;
         load = 0;
         #10;  // Wait for a clock edge
 
-        // Case 5: Activate reset, observe q goes to 0
-        reset = 1;
-        #10;  // Wait for a clock edge
+    // Case 5: Activate reset, observe q goes to 0
+    reset = 1;
+    #10;  // Wait for a clock edge
 
         // Case 6: Deassert reset, load a new value (data = 1)
         reset = 0;
