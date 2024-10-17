@@ -61,11 +61,11 @@ module sn54173_quad_flip_flop_tb;
     reset = 1;
     #10;  // Wait for a clock edge
 
-        // Case 6: Deassert reset, load a new value (data = 1)
-        reset = 0;
-        load = 1;
-        data = 1;
-        #10;  // Wait for a clock edge
+    // Case 6: Deassert reset, load a new value (data = 1)
+    reset = 0;
+    load  = 1;
+    data  = 1;
+    #10;  // Wait for a clock edge
 
         // End simulation
         $finish;
