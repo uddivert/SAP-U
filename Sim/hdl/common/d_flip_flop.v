@@ -8,13 +8,12 @@ module d_flip_flop (
 );
 
   // On the rising edge of the clock, the flip-flop captures the input data
-  always @(posedge clk) begin
-    q <= data;
-  end
-
-  // When reset signal is high, set output q to 0
-  always @(reset) begin
-    q <= 0;
+  always @(posedge clk or posedge reset) begin
+      if ( reset) begin
+          q <= 0;
+    end else begin
+        q <= data;
+      end
   end
 
   // Not Q is simply the inverse of Q

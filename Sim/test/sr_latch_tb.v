@@ -1,4 +1,4 @@
-`default_nettype none
+`timescale 1ns/1ps
 module sr_latch_tb;
 
   // Declare input signals as registers and output signals as wires
@@ -16,7 +16,7 @@ module sr_latch_tb;
 
   initial begin
 
-    $dumpfile("./simulation/sr_latch_tb.vcd");
+    $dumpfile("./simulation/testbench_master.vcd"); // VCD file for waveform generation
     $dumpvars(0, sr_latch_tb);
 
     // case 1 (latch w/o state)

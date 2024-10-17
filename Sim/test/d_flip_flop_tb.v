@@ -1,4 +1,4 @@
-`default_nettype none
+`timescale 1ns/1ps
 module d_flip_flop_tb;
 
   // Declare input signals as registers and output signals as wires
@@ -9,6 +9,7 @@ module d_flip_flop_tb;
   d_flip_flop uut (
       .clk    (clk),   // Clock signal
       .data (data),  // Data input
+      .reset (reset),     // Reset
       .q    (q),     // Output Q
       .q_not(not_q)  // Output Not Q
   );
@@ -23,16 +24,17 @@ module d_flip_flop_tb;
 
   // Testbench logic
   initial begin
-    $dumpfile("./simulation/d_flip_flop_tb.vcd");
+    $dumpfile("./simulation/testbench_master.vcd"); // VCD file for waveform generation
     $dumpvars(0, d_flip_flop_tb);  // Correct instance name
 
     // case 1: No data
     data = 0;
-    reset = 0;
+    reset = 1;
     #10;
 
     // case 2: Data high
     data = 1;
+    reset = 0;
     #10;
 
     // case 3: Data remains high
