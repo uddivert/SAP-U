@@ -1,9 +1,9 @@
 `default_nettype none
-module sn54173_quad_flip_flop(
-    input wire load,
-    input wire data,
-    input wire reset,
-    input wire clk,
+module sn54173_quad_flip_flop (
+    input  wire load,
+    input  wire data,
+    input  wire reset,
+    input  wire clk,
     output wire q
 );
 
