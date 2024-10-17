@@ -1,4 +1,4 @@
-name: Verible formatter
+name: Verible formatter example
 on:
   pull_request_target:
 
