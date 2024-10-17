@@ -12,8 +12,8 @@ module d_flip_flop (
     if (reset) begin
       q <= 0;
     end else begin
-        q <= data;
-      end
+      q <= data;
+    end
   end
 
   // Not Q is simply the inverse of Q
