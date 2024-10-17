@@ -7,7 +7,7 @@ module sn54173_quad_flip_flop (
     output wire q
 );
 
-wire internal_q, not_q, flop_data;
+  wire internal_q, not_q, flop_data;
 
 // Adjust logic of data input and load control
 assign flop_data = (~load  & internal_q) | (load & data);
