@@ -67,8 +67,8 @@ module sn54173_quad_flip_flop_tb;
     data  = 1;
     #10;  // Wait for a clock edge
 
-        // End simulation
-        $finish;
-    end
+    // End simulation
+    $finish;
+  end
 endmodule
 
