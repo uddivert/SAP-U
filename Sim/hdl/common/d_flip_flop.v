@@ -9,8 +9,8 @@ module d_flip_flop (
 
   // On the rising edge of the clock, the flip-flop captures the input data
   always @(posedge clk or posedge reset) begin
-      if ( reset) begin
-          q <= 0;
+    if (reset) begin
+      q <= 0;
     end else begin
         q <= data;
       end
