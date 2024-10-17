@@ -16,10 +16,10 @@ jobs:
       - name: Run Verible formatter action
         uses: chipsalliance/verible-formatter-action@main
         with:
-          files: 
-            ./Sim/hdl/common/*.{v,sv}
-            ./Sim/test/*.{v,sv}
-          github_token: ${{ secrets.GITHUB_TOKEN }
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            ./Sim/hdl/common/**/*.{v,sv}
+            ./Sim/test/**/*.{v,sv}
           parameters: |
             --inplace
             --indentation_spaces=4
@@ -27,4 +27,3 @@ jobs:
             --case_items_alignment=preserve
             --assignment_statement_alignment=preserve
             --compact_indexing_and_selections=true
-
