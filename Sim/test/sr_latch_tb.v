@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 1ns / 1ps
 module sr_latch_tb;
 
   // Declare input signals as registers and output signals as wires
