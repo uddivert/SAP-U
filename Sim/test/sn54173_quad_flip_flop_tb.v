@@ -38,15 +38,18 @@ module sn54173_quad_flip_flop_tb;
         $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
         $dumpvars(0, sn54173_quad_flip_flop_tb);
 
+        $monitor("At time %t: clr=%b, g1=%b, g2=%b, m=%b, n=%b, data=%b, q=%b", 
+         $time, clr, g1, g2, m, n, data, q);
+
         // Initialize all inputs
-        {g1, g1} = 0; // enable load
+        {g1, g2} = 0; // enable load
         {m, n} = 0; // enable output
         data = 4'b0000;
-        clear = 1; // Start with clear active
-        #15;  // Wait a bit to see the clear effect
+        clr = 1; // Start with clear active
+        #15;  // Wait a bit to see the clr effect
 
-        // Case 1: clear deasserted, load is high, data is 1
-        clear = 0;
+        // Case 1: clr deasserted, load is high, data is 1
+        clr = 0;
         data = 4'b1010;
         #10;  // Wait for a clock edge
 
@@ -64,8 +67,8 @@ module sn54173_quad_flip_flop_tb;
         {m, n} = 1; // disable output
         #10;  // Wait for a clock edge
 
-        // Case 5: Activate clear, observe q goes to 0
-        clear = 1;
+        // Case 5: Activate clr, observe q goes to 0
+        clr = 1;
         #10;  // Wait for a clock edge
 
         // End simulation
