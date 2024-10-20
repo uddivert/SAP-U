@@ -1,30 +1,26 @@
 `timescale 1ns / 1ps
 
-module sn54173_quad_flip_flop_tb;
+module register_tb;
 
     // Inputs
-    reg m;
-    reg n;
-    reg g1;
-    reg g2;
+    reg load;
+    reg enable;
     reg clr;
     reg clk;
-    reg [3:0] data;
+    reg [7:0] data;
 
-    // Outputs
-    wire [3:0] q;
+    // Output
+    wire [7:0] q; 
 
     // Instantiate the Unit Under Test (UUT)
-    sn54173_quad_flip_flop uut (
-        .m(m),
-        .n(n),
-        .g1(g1),
-        .g2(g2),
+    register uut (
+        .load(load),
+        .enable(enable),
         .clr(clr),
         .clk(clk),
         .data(data),
         .q(q)
-    );
+        );
 
     // Clock generation: 50% duty cycle with a period of 10 time units
     always begin
@@ -36,32 +32,32 @@ module sn54173_quad_flip_flop_tb;
     // Testbench stimulus
     initial begin
         $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
-        $dumpvars(0, sn54173_quad_flip_flop_tb);
+        $dumpvars(0, register_tb);
 
         // Initialize all inputs
-        {g1, g2} = 0; // enable load
-        {m, n} = 0; // enable output
-        data = 4'b0000;
+        load = 0; // enable load
+        enable = 0; // enable output
+        data = 8'b00000000;
         clr = 1; // Start with clear active
-        #15;  // Wait a bit to see the clr effect
+        #12;  // Wait a bit to see the clr effect
 
-        // Case 1: clr deasserted, load is high, data is set
+        // Case 1: clr deasserted, load is high, data is 1
         clr = 0;
-        data = 4'b1010;
+        data = 8'b11110000;
         #10;  // Wait for a clock edge
 
         // Case 2: Load is low, holding the previous data
-        {g1, g1} = 1; // disable load
-        data = 4'b1100; // should not show up
+        load = 1; // disable load
+        data = 8'b01010101; // should not show up
         #10;  // Wait for a clock edge
 
         // Case 3: Load the new data
-        {g1, g1} = 0; // enable load
-        data = 4'b1111;
+        load = 0; // enable load
+        data = 8'b00001111;
         #10;  // Wait for a clock edge
 
         // Case 4: Disable output
-        {m, n} = 1; // disable output
+        enable = 1; // disable output
         #10;  // Wait for a clock edge
 
         // Case 5: Activate clr, observe q goes to 0

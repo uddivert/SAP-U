@@ -19,7 +19,7 @@ module sn54173_quad_flip_flop (
     generate
       for (i=0; i<=3; i=i+1) begin : g_d_flip_flops
 
-        // If  g1 and g2 BOTH low and load is enabled, data is loaded into d flipflop.
+        // If  g1 and g2 BOTH low, data is loaded into d flipflop.
         // else value stays with current value of Q
         // M & N must both be low for output to be set
         assign flop_data[i] = ( ( ~( ~g1 & ~g2 ) & internal_q[i] ) | ( ( ~g1 & ~g2 ) & data[i] ) ); 
