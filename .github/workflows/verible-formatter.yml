@@ -18,8 +18,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            ./Sim/hdl/common/*.{v,sv}
-            ./Sim/test/*.{v,sv}
+            ./Sim/hdl/common/d_flip_flop.v
+            ./Sim/hdl/common/d_latch.v
+            ./Sim/hdl/common/instruction_register.v
+            ./Sim/hdl/common/register.v
+            ./Sim/hdl/common/sn54173_quad_flip_flop.v
+            ./Sim/hdl/common/sr_latch.v
+            ./Sim/test/d_flip_flop_tb.v
+            ./Sim/test/d_latch_tb.v
+            ./Sim/test/instruction_register_tb.v
+            ./Sim/test/register_tb.v
+            ./Sim/test/sn54173_quad_flip_flop_tb.v
+            ./Sim/test/sr_latch_tb.v
           parameters: |
             --inplace
             --indentation_spaces=4
