@@ -1,4 +1,6 @@
 `default_nettype none
+// Top Level module. Used to hook up all the modules 
+// Subject to lots of change.
 module SAP_U (
     input  wire clk,        // System clock
     input  wire reset,      // System reset
@@ -8,7 +10,7 @@ module SAP_U (
     output wire [7:0] q     // 8-bit output from register
 );
 
-    // Internal signal for connecting multiple modules if needed
+    // Internal signal for connecting reg_inst to output q
     wire [7:0] register_q;
 
     // Instantiate the register module
