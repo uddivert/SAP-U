@@ -1,4 +1,4 @@
-// Difference from circuit board'set implementaton
+// Difference from circuit board's implementaton
 // Using the sn54172's tristate buffer for output control
 //
 // This is because we don't need the 74LS24 octal bus transciever
