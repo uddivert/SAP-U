@@ -4,7 +4,50 @@
 	(generator_version "8.0")
 	(uuid "71235e3f-9de8-4596-887a-1aa4526e80d1")
 	(paper "A4")
+	(title_block
+		(title "Arithmethic Logic Unit")
+		(date "2024-11-11")
+		(company "Arsenal Gear")
+	)
 	(lib_symbols)
+	(sheet
+		(at 39.37 50.8)
+		(size 35.56 11.43)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "85d92a60-2efc-466a-8ee4-cbdbcf29b3a9")
+		(property "Sheetname" "Instructional Register"
+			(at 39.37 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Instructional_Register.kicad_sch"
+			(at 39.37 62.8146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Arithmetic_Logic_Unit"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet
 		(at 39.37 25.4)
 		(size 35.56 11.43)
