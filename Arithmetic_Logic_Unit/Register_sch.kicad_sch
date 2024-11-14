@@ -922,16 +922,6 @@
 	)
 	(bus
 		(pts
-			(xy 74.93 68.58) (xy 74.93 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2591fae5-dd9e-47d8-976f-a8c29cd79a16")
-	)
-	(bus
-		(pts
 			(xy 34.29 71.12) (xy 34.29 101.6)
 		)
 		(stroke
@@ -1039,16 +1029,6 @@
 			(type default)
 		)
 		(uuid "7bb09f3a-dc7f-4859-8860-cf88fa6b07fe")
-	)
-	(bus
-		(pts
-			(xy 74.93 63.5) (xy 74.93 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8252b35d-4915-4651-b9b9-f010335a6e34")
 	)
 	(wire
 		(pts
@@ -1170,6 +1150,16 @@
 		)
 		(uuid "bfc77838-14a6-462f-870f-bad6ee8f352f")
 	)
+	(bus
+		(pts
+			(xy 74.93 68.58) (xy 74.93 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2022126-1379-4c99-8b7f-d19783585ca9")
+	)
 	(wire
 		(pts
 			(xy 36.83 104.14) (xy 41.91 104.14)
@@ -1179,6 +1169,16 @@
 			(type default)
 		)
 		(uuid "c5027fc4-5fa0-4618-bb44-359a3e3eab30")
+	)
+	(bus
+		(pts
+			(xy 74.93 63.5) (xy 74.93 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca5438b4-403b-4c10-8c9f-f631ff8344af")
 	)
 	(bus
 		(pts
@@ -1323,17 +1323,6 @@
 		)
 		(uuid "1f7efde9-77df-4ffc-9491-db278309b00b")
 	)
-	(label "q[0..7]"
-		(at 34.29 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "251894e8-63d3-4992-918c-1296539a9f5b")
-	)
 	(label "d2"
 		(at 69.85 66.04 0)
 		(fields_autoplaced yes)
@@ -1455,17 +1444,6 @@
 		)
 		(uuid "bb4cd3af-b5af-45f3-9cc7-a19b79c20615")
 	)
-	(label "d[0..7]"
-		(at 74.93 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bb5a58ca-5efb-459e-b136-c9b21918bd8e")
-	)
 	(label "clock"
 		(at 41.91 109.22 180)
 		(fields_autoplaced yes)
@@ -1575,6 +1553,30 @@
 			(justify left bottom)
 		)
 		(uuid "edc65aed-e3ad-46a5-8db4-6d1167011015")
+	)
+	(hierarchical_label "q[0..7]"
+		(shape input)
+		(at 34.29 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1d9384f-4542-4cae-9618-e8207e2c78e0")
+	)
+	(hierarchical_label "d[0..7]"
+		(shape output)
+		(at 74.93 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c7177081-91ff-47b8-8977-a37dd6ef3ed6")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1734,7 +1736,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CDIP762W66P254L2134H508Q16"
+		(property "Footprint" "footprints:SN54173J"
 			(at 63.5 188.9 0)
 			(effects
 				(font
@@ -1896,7 +1898,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CDIP762W66P254L2134H508Q16"
+		(property "Footprint" "footprints:SN54173J"
 			(at 63.5 150.8 0)
 			(effects
 				(font

@@ -1245,17 +1245,6 @@
 		)
 		(uuid "348b63b8-b88c-4f1d-b245-4b02c9640b59")
 	)
-	(label "q[0..3]"
-		(at 40.64 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "42a6bb57-5acf-4267-a7a2-ad5190802198")
-	)
 	(label "clock"
 		(at 48.26 52.07 180)
 		(fields_autoplaced yes)
@@ -1288,17 +1277,6 @@
 			(justify right bottom)
 		)
 		(uuid "4d76af6d-dc99-4282-bf48-01f624d79792")
-	)
-	(label "d[0..7]"
-		(at 81.28 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "54e03065-3071-4aba-8827-ea2248da1e89")
 	)
 	(label "d6"
 		(at 74.93 85.09 0)
@@ -1432,6 +1410,30 @@
 		)
 		(uuid "f7026200-539d-41dd-892a-fdd098aea212")
 	)
+	(hierarchical_label "d[0..7]"
+		(shape output)
+		(at 81.28 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03ef8c78-59aa-4086-8687-a9cc7958068e")
+	)
+	(hierarchical_label "q[0..3]"
+		(shape input)
+		(at 40.64 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0973f379-2956-4a8c-88dc-4ab71272581c")
+	)
 	(symbol
 		(lib_id "SN54173J:SN54173J")
 		(at 48.26 74.93 0)
@@ -1458,7 +1460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CDIP762W66P254L2134H508Q16"
+		(property "Footprint" "footprints:SN54173J"
 			(at 69.85 169.85 0)
 			(effects
 				(font
@@ -2082,7 +2084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CDIP762W66P254L2134H508Q16"
+		(property "Footprint" "footprints:SN54173J"
 			(at 69.85 131.75 0)
 			(effects
 				(font
