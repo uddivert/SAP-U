@@ -4,14 +4,14 @@ module dm74ls283_quad_adder_tb();
 reg [4:1] a; // input b
 reg [4:1] b; // input a
 reg cin; // carry in
-wire [4:1] s1; // sum
+wire [4:1] sum; // sum
 wire cout; // carry out
 
 dm74ls283_quad_adder uut(
     .a(a),
     .b(b),
     .cin(cin),
-    .s1(s1),
+    .sum(sum),
     .cout(cout)
 );
 

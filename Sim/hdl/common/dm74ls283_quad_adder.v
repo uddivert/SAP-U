@@ -2,7 +2,7 @@ module dm74ls283_quad_adder(
     input wire [4:1] a, // input b
     input wire [4:1] b, // input a
     input wire cin, // carry in
-    output wire [4:1] s1, // sum
+    output wire [4:1] sum, // sum
     output wire cout // carry out
 );
 
@@ -31,7 +31,7 @@ generate
             .a(a[i]),
             .b(b[i]),
             .cin(carry[i-1]),
-            .s(s1[i]),
+            .s(sum[i]),
             .cout() // carry-out is handled separately by `c` array
         );
     end
