@@ -2,28 +2,55 @@
 // Top Level module. Used to hook up all the modules 
 // Subject to lots of change.
 module SAP_U (
+    // System inputs
     input  wire clk,        // System clock
     input  wire reset,      // System reset
-    input  wire load,       // Load signal
-    input  wire enable,     // Enable signal
-    input  wire [7:0] data, // 8-bit data input
-    output wire [7:0] q     // 8-bit output from register
+
+    // Register A
+    input  wire reg_a_load,       // Load signal
+    input  wire reg_a_enable,     // Enable signal
+    input  wire [7:0] reg_a_idata, // 8-bit data input
+
+    // Register B
+    input  wire reg_b_load,       // Load signal
+    input  wire reg_b_enable,     // Enable signal
+    input  wire [7:0] reg_b_idata, // 8-bit data input
+
+    // ALU
+    input wire enable, 
+    input wire subtract,
+
+    // Outputs
+    output wire [7:0] bus     // 8-bit bus
 );
 
-    // Internal signal for connecting reg_inst to output q
-    wire [7:0] register_q;
+    // stored data in registers
+    wire reg_a_data;
+    wire reg_b_data;
 
-    // Instantiate the register module
-    register reg_inst (
+    register register_a(
         .clk(clk),
         .clr(reset),
-        .load(load),
-        .enable(enable),
-        .data(data),
-        .q(register_q)
+        .load(reg_a_load),
+        .enable(reg_a_enable),
+        .data(reg_a_idata),
+        .q(reg_a_data)
+    );
+    register register_b(
+        .clk(clk),
+        .clr(reset),
+        .load(reg_b_load),
+        .enable(reg_b_enable),
+        .data(reg_b_idata),
+        .q(reg_b_data)
     );
 
-    // Output assignment
-    assign q = register_q;
+    alu m_alu(
+        .a(reg_a_data),
+        .b(reg_b_data),
+        .enable(enable),
+        .subtract(subtract),
+        .result(bus)
+    );
 
 endmodule
