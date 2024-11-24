@@ -16,7 +16,8 @@ wire internal_carryout;
 wire [7:0] internal_result;
 wire [7:0] internal_b;
 
-assign internal_b = b ^ subtract;
+// hardware will use nor gates as conditional not gate instead
+assign internal_b = subtract ? ~b : b;
 dm74ls283_quad_adder adder1(
     .a(a[3:0]), // input a
     .b(internal_b[3:0]), // input b

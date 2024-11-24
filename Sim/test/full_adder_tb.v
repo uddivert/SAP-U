@@ -25,8 +25,6 @@ module full_adder_tb();
         $dumpvars(0, full_adder_tb);
 
         // Test all combinations of inputs
-        $display("Time | a b cin | s cout");
-        $monitor("%4t | %b %b  %b  | %b   %b", $time, a, b, cin, s, cout);
 
         a = 0; b = 0; cin = 0; #15;
         a = 0; b = 0; cin = 1; #15;
