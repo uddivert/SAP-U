@@ -1948,6 +1948,62 @@
 			)
 		)
 	)
+	(junction
+		(at 34.29 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "830e814a-98a6-46fb-a783-1a14a5a167e7")
+	)
+	(wire
+		(pts
+			(xy 34.29 60.96) (xy 39.37 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4317a7ca-b7c3-4595-9c92-2918c636f6d1")
+	)
+	(wire
+		(pts
+			(xy 39.37 35.56) (xy 34.29 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a4f89a5-e694-4745-b83d-ac8be6dc1d20")
+	)
+	(wire
+		(pts
+			(xy 34.29 60.96) (xy 34.29 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac518b8d-c00d-4f1c-8b66-d0ff9dc62024")
+	)
+	(wire
+		(pts
+			(xy 34.29 83.82) (xy 40.64 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df3b482a-4bba-419d-84a2-fda3b48ab2ca")
+	)
+	(wire
+		(pts
+			(xy 34.29 35.56) (xy 34.29 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ba1dee-4ee6-4142-9769-01f9b1f6b3b6")
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x32_Counter_Clockwise")
 		(at 255.27 66.04 0)
@@ -2232,7 +2288,37 @@
 				(justify left top)
 			)
 		)
-		(pin "q[0..3]" input
+		(pin "clock" input
+			(at 39.37 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "dd97af0c-df3d-4513-a06e-7c30a996c1cb")
+		)
+		(pin "~{OE}" input
+			(at 74.93 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "74718017-e34a-4c74-8276-0e104b8c1e05")
+		)
+		(pin "bus[0..7]" bidirectional
+			(at 74.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9461857d-ec54-4ae1-a7d2-3c1947c0622d")
+		)
+		(pin "q[0..3]" output
 			(at 74.93 60.96 0)
 			(effects
 				(font
@@ -2240,17 +2326,7 @@
 				)
 				(justify right)
 			)
-			(uuid "a45e6109-3b1c-4604-8ad2-3f285fc497f1")
-		)
-		(pin "d[0..7]" output
-			(at 39.37 52.07 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "dfdc192f-710e-4317-a369-00095e0c79c5")
+			(uuid "a73dfdfc-c0b9-4a7b-8589-012341794cff")
 		)
 		(instances
 			(project "Arithmetic_Logic_Unit"
@@ -2272,7 +2348,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "d092c638-e21b-46a7-9940-44c773483806")
-		(property "Sheetname" "Register"
+		(property "Sheetname" "Register A"
 			(at 39.37 24.6884 0)
 			(effects
 				(font
@@ -2290,7 +2366,27 @@
 				(justify left top)
 			)
 		)
-		(pin "q[0..7]" input
+		(pin "clock" input
+			(at 39.37 35.56 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e513b033-2c8d-4b3f-8ecc-8a2d0f377a2d")
+		)
+		(pin "~{OE}" input
+			(at 74.93 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "110c14bc-6283-493e-889b-7ed97501d16b")
+		)
+		(pin "q[0..7]" output
 			(at 74.93 35.56 0)
 			(effects
 				(font
@@ -2298,22 +2394,100 @@
 				)
 				(justify right)
 			)
-			(uuid "c60f7d56-ff81-436f-a852-00c95eebe246")
+			(uuid "051c13fb-30da-403a-9a03-ef312d44071a")
 		)
-		(pin "d[0..7]" output
-			(at 39.37 26.67 180)
+		(pin "bus[0..7]" bidirectional
+			(at 74.93 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2304f276-bddd-444a-8631-9dce4e0fada3")
+		)
+		(instances
+			(project "Arithmetic_Logic_Unit"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 73.66)
+		(size 35.56 11.43)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "de5f44bd-abf4-4aee-b586-adbdf96a5462")
+		(property "Sheetname" "Register B"
+			(at 40.64 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Register_sch.kicad_sch"
+			(at 40.64 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "clock" input
+			(at 40.64 83.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "131e1537-30d1-409f-8871-7ccc0ee5017b")
+			(uuid "374a4435-cbdd-40a6-92fc-af86979ff36e")
+		)
+		(pin "~{OE}" input
+			(at 76.2 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e2c76686-d683-4a17-9d4c-45e35a104e75")
+		)
+		(pin "q[0..7]" output
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "77197870-5c8e-463e-a040-4469954f2561")
+		)
+		(pin "bus[0..7]" bidirectional
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "eb5fe842-faae-47bf-8e41-14047793c69c")
 		)
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(page "2")
+					(page "4")
 				)
 			)
 		)
