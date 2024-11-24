@@ -1,3 +1,4 @@
+ `default_nettype none
 module alu(
     input wire [7:0] a, // input b
     input wire [7:0] b, // input a
@@ -35,6 +36,6 @@ dm74ls283_quad_adder adder2(
 );
 
 // assign result dependent on enable
-assign result = enable ? internal_result: 8'b0;
+assign result = enable ? 8'b0 :internal_result;
 
 endmodule

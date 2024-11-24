@@ -1,3 +1,4 @@
+ `default_nettype none
 module full_adder(
     input wire a, // input a
     input wire b, // input b

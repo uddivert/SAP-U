@@ -17,8 +17,8 @@ module SAP_U (
     input  wire [7:0] reg_b_idata, // 8-bit data input
 
     // ALU
-    input wire enable, 
-    input wire subtract,
+    input wire alu_enable, 
+    input wire alu_subtract,
 
     // Outputs
     output wire [7:0] bus     // 8-bit bus
@@ -48,8 +48,8 @@ module SAP_U (
     alu m_alu(
         .a(reg_a_data),
         .b(reg_b_data),
-        .enable(enable),
-        .subtract(subtract),
+        .enable(alu_enable),
+        .subtract(alu_subtract),
         .result(bus)
     );
 

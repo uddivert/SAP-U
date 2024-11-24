@@ -1,3 +1,4 @@
+ `default_nettype none
 module dm74ls283_quad_adder(
     input wire [4:1] a, // input b
     input wire [4:1] b, // input a
