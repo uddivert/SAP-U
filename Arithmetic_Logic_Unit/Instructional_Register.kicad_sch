@@ -2798,7 +2798,7 @@
 		)
 		(uuid "f61744e1-a7e4-4d31-a6bc-2d026f095573")
 	)
-	(label "d2"
+	(label "bus2"
 		(at 44.45 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2831,7 +2831,7 @@
 		)
 		(uuid "17030c71-5fb1-4174-aab3-aa622c112aa0")
 	)
-	(label "d4"
+	(label "bus4"
 		(at 49.53 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2853,7 +2853,7 @@
 		)
 		(uuid "2df7b92e-1e68-4585-a5cb-e4039ebf97b3")
 	)
-	(label "d1"
+	(label "bus1"
 		(at 41.91 38.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2875,7 +2875,7 @@
 		)
 		(uuid "3c344984-1cbf-495f-a0f7-051c91653569")
 	)
-	(label "d8"
+	(label "bus7"
 		(at 59.69 46.99 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2919,7 +2919,7 @@
 		)
 		(uuid "5f09da7e-91a4-4038-afd4-d3d2cbe697d5")
 	)
-	(label "d3"
+	(label "bus3"
 		(at 46.99 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2952,7 +2952,7 @@
 		)
 		(uuid "7f6b757c-3b42-4d5f-b20e-0bf2bf4053ba")
 	)
-	(label "d7"
+	(label "bus7"
 		(at 57.15 44.45 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2996,7 +2996,7 @@
 		)
 		(uuid "c9be54be-70a8-4540-87b3-e34c431a941b")
 	)
-	(label "d5"
+	(label "bus5"
 		(at 52.07 39.37 0)
 		(fields_autoplaced yes)
 		(effects

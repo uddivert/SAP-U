@@ -1844,6 +1844,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 255 1)
 		)
 		(uuid "1a47d6ce-9599-424c-9a0c-b9a4de4af4a0")
 	)
@@ -2024,6 +2025,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 72 72 72 1)
 		)
 		(uuid "3aacb9ac-44a8-4fa3-904e-1cdb4725e7ae")
 	)
@@ -2464,6 +2466,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 72 72 72 1)
 		)
 		(uuid "a444d483-9042-4421-9ccb-f58aca27eb24")
 	)
@@ -2534,6 +2537,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 72 72 72 1)
 		)
 		(uuid "b2cfcf38-83c8-4f49-a045-9324efac71cd")
 	)
@@ -3009,7 +3013,7 @@
 		)
 		(uuid "1a77d73d-b102-4e2e-b267-328394217902")
 	)
-	(label "d8"
+	(label "bus7"
 		(at 59.69 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3031,7 +3035,7 @@
 		)
 		(uuid "1f7efde9-77df-4ffc-9491-db278309b00b")
 	)
-	(label "d6"
+	(label "bus5"
 		(at 54.61 36.83 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3042,7 +3046,7 @@
 		)
 		(uuid "2973ad53-7364-49f1-80a4-ae185bbc889e")
 	)
-	(label "d1"
+	(label "bus0"
 		(at 41.91 33.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3075,7 +3079,7 @@
 		)
 		(uuid "444f83cf-b15f-44bc-a923-8cbc10ec6a06")
 	)
-	(label "d5"
+	(label "bus4"
 		(at 52.07 34.29 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3086,7 +3090,7 @@
 		)
 		(uuid "465d5cc4-c6b4-4a75-8b9f-4a31c59e7db0")
 	)
-	(label "d7"
+	(label "bus6"
 		(at 57.15 39.37 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3097,7 +3101,7 @@
 		)
 		(uuid "a8098793-cb8c-414b-9d74-7006f1d49587")
 	)
-	(label "d4"
+	(label "bus3"
 		(at 49.53 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3108,7 +3112,7 @@
 		)
 		(uuid "aa15aa30-679b-4d9e-93c5-c7730d6c06e5")
 	)
-	(label "d2"
+	(label "bus1"
 		(at 44.45 35.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3174,7 +3178,7 @@
 		)
 		(uuid "d8d4509b-1e1d-4ee6-93f5-d6b8b5430173")
 	)
-	(label "d3"
+	(label "bus2"
 		(at 46.99 38.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5071,7 +5075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c6d21d9-5b7c-4d0d-9393-a73340416769")
-		(property "Reference" "IC5"
+		(property "Reference" "IC1"
 			(at 89.916 64.262 90)
 			(effects
 				(font
