@@ -459,7 +459,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "/Register A/q0"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -584,11 +589,7 @@
       "Register A"
     ],
     [
-      "85d92a60-2efc-466a-8ee4-cbdbcf29b3a9",
-      "Instructional Register"
-    ],
-    [
-      "de5f44bd-abf4-4aee-b586-adbdf96a5462",
+      "bebf9e82-3905-42c1-bdc4-875dcdbe3892",
       "Register B"
     ]
   ],
