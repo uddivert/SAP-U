@@ -585,12 +585,20 @@
       "Root"
     ],
     [
-      "d092c638-e21b-46a7-9940-44c773483806",
+      "380bcfdd-a920-4b5b-9609-de7b647a2481",
       "Register A"
     ],
     [
-      "bebf9e82-3905-42c1-bdc4-875dcdbe3892",
+      "153d2c94-69bc-4df5-b30d-cfbe4ac08e51",
       "Register B"
+    ],
+    [
+      "50241097-74f7-4639-b588-846dbecb9e73",
+      "ALU"
+    ],
+    [
+      "3ce677bd-df36-4d44-96af-981e5f64c209",
+      "Instruction Register"
     ]
   ],
   "text_variables": {}
