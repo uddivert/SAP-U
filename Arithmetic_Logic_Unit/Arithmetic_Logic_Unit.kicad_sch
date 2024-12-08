@@ -2267,16 +2267,8 @@
 		(uuid "ce6d237c-33aa-4e60-a08c-15a77ef52071")
 	)
 	(no_connect
-		(at 250.19 91.44)
-		(uuid "048f1a7e-1226-47b3-a703-193c06bc93be")
-	)
-	(no_connect
 		(at 262.89 48.26)
 		(uuid "06ef3da0-9d71-493e-a055-937a591d1e4a")
-	)
-	(no_connect
-		(at 250.19 88.9)
-		(uuid "078e1561-04da-4577-977a-813210873266")
 	)
 	(no_connect
 		(at 250.19 53.34)
@@ -2305,10 +2297,6 @@
 	(no_connect
 		(at 262.89 96.52)
 		(uuid "3bd7d2c6-6272-4c0a-a22e-eb8db7bb5da2")
-	)
-	(no_connect
-		(at 250.19 63.5)
-		(uuid "3f5f1fe6-e427-421e-946e-3df88c1ee90c")
 	)
 	(no_connect
 		(at 262.89 68.58)
@@ -2373,10 +2361,6 @@
 	(no_connect
 		(at 262.89 58.42)
 		(uuid "b20a8e3b-5003-4cbb-9d59-4ca53c3ba591")
-	)
-	(no_connect
-		(at 250.19 66.04)
-		(uuid "b61a8bf2-545a-4677-a423-8965cf71efed")
 	)
 	(no_connect
 		(at 262.89 30.48)
@@ -2654,6 +2638,17 @@
 		)
 		(uuid "2f204f79-7dca-44d3-9ac7-540cad5ab068")
 	)
+	(label "clearB"
+		(at 110.49 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "314ecab4-9b8b-4e9a-a565-d3c9769f0b74")
+	)
 	(label "bus6"
 		(at 250.19 33.02 180)
 		(fields_autoplaced yes)
@@ -2699,7 +2694,7 @@
 		(uuid "40ddd433-207b-4041-b000-a89c6297842a")
 	)
 	(label "en_sub"
-		(at 95.25 50.8 180)
+		(at 95.25 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2710,7 +2705,7 @@
 		(uuid "440dd63d-8c96-4552-bc13-02dfe0c18229")
 	)
 	(label "cf"
-		(at 95.25 53.34 180)
+		(at 95.25 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2775,6 +2770,39 @@
 		)
 		(uuid "56467403-bc40-4daa-9021-6b9a1d02d90f")
 	)
+	(label "~{A_IE}"
+		(at 250.19 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57de1e86-19f8-403f-a998-2da0b6dd0394")
+	)
+	(label "~{B_IE}"
+		(at 250.19 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6008bae1-5a13-4111-9a73-52d81fa40690")
+	)
+	(label "clearA"
+		(at 110.49 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "68c76019-f3e8-4b6f-9051-486820f1e55b")
+	)
 	(label "clock"
 		(at 110.49 43.18 0)
 		(fields_autoplaced yes)
@@ -2796,6 +2824,17 @@
 			(justify right bottom)
 		)
 		(uuid "6e8d0a44-dd48-4d1b-b633-1e09de5de36b")
+	)
+	(label "clearB"
+		(at 250.19 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "757c6275-4136-4cdc-aa71-9104c1336241")
 	)
 	(label "bus4"
 		(at 149.86 60.96 0)
@@ -2873,6 +2912,17 @@
 			(justify left bottom)
 		)
 		(uuid "8a5d331b-9a66-4ff3-b91a-9e4f4f6ad1b1")
+	)
+	(label "clearA"
+		(at 250.19 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c2402da-0bc6-4376-8813-14ecb5b75416")
 	)
 	(label "ir7"
 		(at 134.62 46.99 180)
@@ -2952,7 +3002,7 @@
 		(uuid "a0c0d095-5952-4fca-96fd-626ec8ba6cef")
 	)
 	(label "fi"
-		(at 95.25 60.96 180)
+		(at 95.25 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2985,7 +3035,7 @@
 		(uuid "a961f6a7-d2ad-46c8-b44f-753db4e56668")
 	)
 	(label "zf"
-		(at 95.25 55.88 180)
+		(at 95.25 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3017,6 +3067,17 @@
 		)
 		(uuid "b8a418f0-b956-43d9-8651-d035573307dc")
 	)
+	(label "~{A_IE}"
+		(at 95.25 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bbd236ba-0402-4051-bcc8-255c6075e2f0")
+	)
 	(label "~{ALU_OE}"
 		(at 95.25 48.26 180)
 		(fields_autoplaced yes)
@@ -3028,8 +3089,19 @@
 		)
 		(uuid "c525e3c8-85d0-4040-94e5-a3ae8f0b2e7f")
 	)
+	(label "~{B_IE}"
+		(at 95.25 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9883700-d3bc-4d44-9178-257c76b79033")
+	)
 	(label "~{A_OE}"
-		(at 95.25 45.72 180)
+		(at 95.25 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3040,7 +3112,7 @@
 		(uuid "e802f618-3976-4b41-80ed-6c0295b93e01")
 	)
 	(label "en_sub"
-		(at 250.19 93.98 180)
+		(at 250.19 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3062,18 +3134,18 @@
 		(uuid "f1537240-bf3d-4480-aea5-9f455a9b5c52")
 	)
 	(label "~{B_OE}"
-		(at 110.49 45.72 0)
+		(at 95.25 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f6a14a4e-249a-47b5-b33a-f4b4afba67ca")
 	)
 	(label "clear"
-		(at 95.25 58.42 180)
+		(at 95.25 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3413,7 +3485,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28a4cc93-aa51-47e5-9aa8-4bdd9a7342a2")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR02"
 			(at 111.76 125.73 0)
 			(effects
 				(font
@@ -3463,7 +3535,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR044")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3479,7 +3551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b48082d-f567-4b56-b7eb-03a8ee9ee66f")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR04"
 			(at 262.89 115.57 0)
 			(effects
 				(font
@@ -3529,7 +3601,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR052")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3545,7 +3617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fdbeebb-e9f4-47c3-942a-52043bd7b94f")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR05"
 			(at 264.16 29.21 0)
 			(effects
 				(font
@@ -3595,7 +3667,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR055")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3611,7 +3683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65014434-094d-447a-a806-f15008e0edf0")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR06"
 			(at 266.7 102.87 0)
 			(effects
 				(font
@@ -3661,7 +3733,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR056")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3677,7 +3749,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5dcd8dd-da48-4a1a-b00f-04f297f659ff")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR01"
 			(at 104.14 119.38 0)
 			(effects
 				(font
@@ -3727,7 +3799,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR043")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3743,7 +3815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c016f359-fd0c-42cd-a137-574f2e42a59e")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR07"
 			(at 267.97 34.29 0)
 			(effects
 				(font
@@ -3793,7 +3865,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR054")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3809,7 +3881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c46cb479-b2e8-492c-bfde-1da5a3a7db37")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR03"
 			(at 250.19 115.57 0)
 			(effects
 				(font
@@ -3859,7 +3931,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(reference "#PWR053")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4150,12 +4222,12 @@
 			(uuid "f42c7a91-ef55-4f45-90b4-e63174fc0374")
 		)
 		(pin "~{B_OE}" input
-			(at 110.49 45.72 0)
+			(at 95.25 45.72 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "bc3b36b3-7e19-49b1-87eb-65b6c5fdc5e6")
 		)
@@ -4240,7 +4312,7 @@
 			(uuid "33f70472-c146-4e48-be41-4bb666f088c7")
 		)
 		(pin "~{A_OE}" input
-			(at 95.25 45.72 180)
+			(at 95.25 43.18 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,7 +4332,7 @@
 			(uuid "7599213d-f396-4dc7-9a72-f711b664be06")
 		)
 		(pin "en_sub" input
-			(at 95.25 50.8 180)
+			(at 95.25 55.88 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4270,7 +4342,7 @@
 			(uuid "44e44341-afee-4f77-8cc1-5688aca2dd76")
 		)
 		(pin "fi" input
-			(at 95.25 60.96 180)
+			(at 95.25 66.04 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4280,7 +4352,7 @@
 			(uuid "de4e08b9-0fe9-40f0-8979-f5c746eae70f")
 		)
 		(pin "clear" input
-			(at 95.25 58.42 180)
+			(at 95.25 63.5 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4290,7 +4362,7 @@
 			(uuid "5e18a079-075e-471d-8a50-2551d65b148b")
 		)
 		(pin "zf" input
-			(at 95.25 55.88 180)
+			(at 95.25 60.96 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4300,7 +4372,7 @@
 			(uuid "37be1bad-c2bd-4752-a14f-3999f2528d0d")
 		)
 		(pin "cf" input
-			(at 95.25 53.34 180)
+			(at 95.25 58.42 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,6 +4380,46 @@
 				(justify left)
 			)
 			(uuid "636f2077-34b6-4574-8ccf-82a769a201c0")
+		)
+		(pin "~{A_IE}" input
+			(at 95.25 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "87f06f07-e105-43fc-9f18-68de64a02038")
+		)
+		(pin "clearA" input
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5fbd858d-58d8-4bf0-a501-2a1cc2270e26")
+		)
+		(pin "clearB" input
+			(at 110.49 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b85fecb4-d75e-41be-8177-861c51c6c865")
+		)
+		(pin "~{B_IE}" input
+			(at 95.25 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "137a42fd-8e4b-47cd-af20-d89a38b33bfb")
 		)
 		(instances
 			(project "Arithmetic_Logic_Unit"

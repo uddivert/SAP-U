@@ -459,12 +459,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Default",
-        "pattern": "/Register A/q0"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -532,11 +527,53 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -589,16 +626,16 @@
       "Register A"
     ],
     [
-      "153d2c94-69bc-4df5-b30d-cfbe4ac08e51",
-      "Register B"
-    ],
-    [
       "50241097-74f7-4639-b588-846dbecb9e73",
       "ALU"
     ],
     [
       "3ce677bd-df36-4d44-96af-981e5f64c209",
       "Instruction Register"
+    ],
+    [
+      "363112a2-1d74-42e7-a447-b328122798da",
+      "Register B"
     ]
   ],
   "text_variables": {}

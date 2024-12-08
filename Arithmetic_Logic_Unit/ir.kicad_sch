@@ -2665,7 +2665,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06d1beeb-da3f-45b6-9425-d02755e22ca3")
-		(property "Reference" "R29"
+		(property "Reference" "R21"
 			(at 157.48 118.11 0)
 			(effects
 				(font
@@ -2719,7 +2719,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R29")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -2735,7 +2735,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1dfd59b2-7142-47b8-8f4f-7716b2e1fa7a")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR060"
 			(at 161.29 139.7 0)
 			(effects
 				(font
@@ -2785,7 +2785,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR066")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2800,7 +2800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26b85126-f9af-4054-a72c-c23370aaa609")
-		(property "Reference" "R32"
+		(property "Reference" "R24"
 			(at 176.53 118.11 0)
 			(effects
 				(font
@@ -2854,7 +2854,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R32")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -2869,7 +2869,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d63678a-3256-43c6-ad03-77da9aee4347")
-		(property "Reference" "U8"
+		(property "Reference" "U12"
 			(at 57.658 65.024 90)
 			(effects
 				(font
@@ -2977,7 +2977,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "U8")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -2992,7 +2992,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e2c008a-9d80-4af2-b6d4-4bc2e4b200f8")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR059"
 			(at 135.89 93.98 0)
 			(effects
 				(font
@@ -3042,7 +3042,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR065")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -3058,7 +3058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "321bb617-a12e-4f52-b6f7-9cdd70276528")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR054"
 			(at 111.76 139.7 0)
 			(effects
 				(font
@@ -3108,7 +3108,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR060")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -3124,7 +3124,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39778d9b-ee54-45b4-a2b4-35f8625da6a2")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR051"
 			(at 54.61 77.47 0)
 			(effects
 				(font
@@ -3174,7 +3174,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR057")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -3189,7 +3189,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "403320a6-2f44-4bce-a30a-3a683b9a614b")
-		(property "Reference" "D29"
+		(property "Reference" "D21"
 			(at 156.972 105.156 90)
 			(effects
 				(font
@@ -3243,7 +3243,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D29")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -3258,7 +3258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47525d8a-9f71-47c9-8ccb-28295c937d9e")
-		(property "Reference" "R30"
+		(property "Reference" "R22"
 			(at 163.83 118.11 0)
 			(effects
 				(font
@@ -3312,7 +3312,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R30")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -3327,7 +3327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5214effb-1240-414e-80b6-9c1f04ca0ae7")
-		(property "Reference" "D32"
+		(property "Reference" "D24"
 			(at 176.022 105.156 90)
 			(effects
 				(font
@@ -3381,7 +3381,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D32")
+					(reference "D24")
 					(unit 1)
 				)
 			)
@@ -3396,7 +3396,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a6ac159-43ff-4db5-9d07-44b54372ed79")
-		(property "Reference" "D28"
+		(property "Reference" "D20"
 			(at 126.492 105.156 90)
 			(effects
 				(font
@@ -3450,7 +3450,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D28")
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -3466,7 +3466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b66d6fc-8b6a-4004-b1b3-1f3e8a27b7dd")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR056"
 			(at 118.11 139.7 0)
 			(effects
 				(font
@@ -3516,7 +3516,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR062")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -3531,7 +3531,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5c691c5b-c8ae-40ba-9dda-8b5555b958f5")
-		(property "Reference" "R27"
+		(property "Reference" "R19"
 			(at 120.65 118.11 0)
 			(effects
 				(font
@@ -3585,7 +3585,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R27")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -3601,7 +3601,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e46887b-5c23-4d01-a5d5-2257bfb4993d")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR064"
 			(at 180.34 139.7 0)
 			(effects
 				(font
@@ -3651,7 +3651,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR070")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -3666,7 +3666,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6bb3c466-d55e-4805-b470-930c18919431")
-		(property "Reference" "R25"
+		(property "Reference" "R17"
 			(at 107.95 118.11 0)
 			(effects
 				(font
@@ -3720,7 +3720,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R25")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -3735,7 +3735,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f57f062-dc5c-43b5-8b4d-9509db53403c")
-		(property "Reference" "R28"
+		(property "Reference" "R20"
 			(at 127 118.11 0)
 			(effects
 				(font
@@ -3789,7 +3789,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R28")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -3804,7 +3804,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "714053a7-34d0-402b-a5a2-558d5481025d")
-		(property "Reference" "D27"
+		(property "Reference" "D19"
 			(at 120.142 105.156 90)
 			(effects
 				(font
@@ -3858,7 +3858,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D27")
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -3874,7 +3874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7316ae90-fbe6-42f4-95cd-2dd15b6c17c5")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR057"
 			(at 124.46 139.7 0)
 			(effects
 				(font
@@ -3924,7 +3924,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR063")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -3939,7 +3939,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cb2ccca-fdd9-4c83-b163-215fd15c7db0")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR055"
 			(at 118.11 48.26 0)
 			(effects
 				(font
@@ -3989,7 +3989,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR061")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -4005,7 +4005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cca64b2-2255-4ba7-a056-7fc717765e17")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR061"
 			(at 167.64 48.26 0)
 			(effects
 				(font
@@ -4055,7 +4055,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR067")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -4070,7 +4070,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "803d491f-5176-4cdd-a853-ee67ebefd789")
-		(property "Reference" "D25"
+		(property "Reference" "D17"
 			(at 107.442 105.156 90)
 			(effects
 				(font
@@ -4124,7 +4124,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D25")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -4139,7 +4139,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90d9faed-dde7-479f-8b5f-6671af50a9b4")
-		(property "Reference" "IC6"
+		(property "Reference" "IC2"
 			(at 159.512 71.12 90)
 			(effects
 				(font
@@ -4285,7 +4285,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "IC6")
+					(reference "IC2")
 					(unit 1)
 				)
 			)
@@ -4300,7 +4300,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "939fb071-a76b-4248-8723-9b271d9dc723")
-		(property "Reference" "R26"
+		(property "Reference" "R18"
 			(at 114.3 118.11 0)
 			(effects
 				(font
@@ -4354,7 +4354,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R26")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4370,7 +4370,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98a55f1a-c848-453d-abc3-342f98a406fb")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR065"
 			(at 185.42 101.6 0)
 			(effects
 				(font
@@ -4420,7 +4420,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR071")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -4435,7 +4435,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9066caa-ddff-4ae5-aab6-80adcc0d7b8b")
-		(property "Reference" "D26"
+		(property "Reference" "D18"
 			(at 113.792 105.156 90)
 			(effects
 				(font
@@ -4489,7 +4489,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D26")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -4504,7 +4504,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c61e928e-6b7d-4aaa-b571-b937efb2f653")
-		(property "Reference" "R31"
+		(property "Reference" "R23"
 			(at 170.18 118.11 0)
 			(effects
 				(font
@@ -4558,7 +4558,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "R31")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -4573,7 +4573,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d33a04e6-199d-45c5-8edc-fea5c4f0d7ca")
-		(property "Reference" "D30"
+		(property "Reference" "D22"
 			(at 163.322 105.156 90)
 			(effects
 				(font
@@ -4627,7 +4627,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D30")
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -4642,7 +4642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d5d55cdc-928e-427a-8019-88f692df5f09")
-		(property "Reference" "IC5"
+		(property "Reference" "IC1"
 			(at 108.966 76.962 90)
 			(effects
 				(font
@@ -4788,7 +4788,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "IC5")
+					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -4803,7 +4803,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9f7ad69-a26d-489c-8e1a-50b12985744b")
-		(property "Reference" "D31"
+		(property "Reference" "D23"
 			(at 169.672 105.156 90)
 			(effects
 				(font
@@ -4857,7 +4857,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "D31")
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -4872,7 +4872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0b2be5e-79c5-40f6-952e-e27496c8456a")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR052"
 			(at 95.25 91.44 0)
 			(effects
 				(font
@@ -4922,7 +4922,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR058")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4938,7 +4938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f11151db-b549-4c87-aa8a-198814d4ed9d")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR058"
 			(at 130.81 139.7 0)
 			(effects
 				(font
@@ -4988,7 +4988,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR064")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -5004,7 +5004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f22b7fd4-673c-484f-a3d3-88e4e7455d5b")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR063"
 			(at 173.99 139.7 0)
 			(effects
 				(font
@@ -5054,7 +5054,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR069")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -5070,7 +5070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3a13d4e-86f9-4356-8097-388fe30435ab")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR053"
 			(at 96.52 80.01 0)
 			(effects
 				(font
@@ -5120,7 +5120,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR059")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5136,7 +5136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd71b589-e6b9-4df9-8e95-1b0be7d5d5ca")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR062"
 			(at 167.64 139.7 0)
 			(effects
 				(font
@@ -5186,7 +5186,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/3ce677bd-df36-4d44-96af-981e5f64c209"
-					(reference "#PWR068")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
