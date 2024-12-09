@@ -2599,6 +2599,26 @@
 		)
 		(uuid "ffa65fe6-b92b-470b-a453-5e7314b16eee")
 	)
+	(text "FLip Flop"
+		(exclude_from_sim no)
+		(at 82.296 43.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "654f129f-b2e7-4378-9e5c-a0518025a156")
+	)
+	(text "FLip Flop"
+		(exclude_from_sim no)
+		(at 138.684 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6c552f7d-e6dd-458a-9525-a5cecb84dd01")
+	)
 	(text "output enable controlled\nwith tristate buffer"
 		(exclude_from_sim no)
 		(at 113.284 33.274 0)
@@ -2618,6 +2638,16 @@
 			)
 		)
 		(uuid "fb2522a3-8a96-4fc5-91a5-b739cf5e1f7f")
+	)
+	(text "Tristate Buffer"
+		(exclude_from_sim no)
+		(at 35.052 45.974 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fd7e0edb-d917-4ad7-b327-691e96fa664f")
 	)
 	(label "q6"
 		(at 158.75 72.39 180)
