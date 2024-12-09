@@ -3248,7 +3248,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
 			(at 57.15 60.96 0)
 			(effects
 				(font
@@ -3375,7 +3375,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 148.59 97.79 0)
 			(effects
 				(font
@@ -3448,7 +3448,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 99.06 97.79 0)
 			(effects
 				(font
@@ -3591,7 +3591,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 142.24 97.79 0)
 			(effects
 				(font
@@ -3664,7 +3664,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 105.41 97.79 0)
 			(effects
 				(font
@@ -3877,7 +3877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 146.812 111.76 90)
 			(effects
 				(font
@@ -3950,7 +3950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 109.982 111.76 90)
 			(effects
 				(font
@@ -4092,7 +4092,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 159.512 111.76 90)
 			(effects
 				(font
@@ -4156,7 +4156,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" ".01µF"
 			(at 29.464 68.072 0)
 			(effects
 				(font
@@ -4165,7 +4165,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 34.5948 62.23 0)
 			(effects
 				(font
@@ -4377,7 +4377,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 103.632 111.76 90)
 			(effects
 				(font
@@ -4433,7 +4433,7 @@
 		(dnp no)
 		(uuid "4f3dc23c-3ad8-496e-a0db-7d121cfa9b62")
 		(property "Reference" "C2"
-			(at 80.01 59.69 0)
+			(at 79.756 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4441,8 +4441,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
-			(at 81.026 62.484 0)
+		(property "Value" ".01µF"
+			(at 78.74 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4450,7 +4450,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 84.1248 59.69 0)
 			(effects
 				(font
@@ -4523,7 +4523,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 154.94 97.79 0)
 			(effects
 				(font
@@ -4595,7 +4595,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 168.91 57.15 0)
 			(effects
 				(font
@@ -4701,7 +4701,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" ".01µF"
 			(at 139.954 62.992 0)
 			(effects
 				(font
@@ -4710,7 +4710,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 145.0848 57.15 0)
 			(effects
 				(font
@@ -4783,7 +4783,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 111.76 97.79 0)
 			(effects
 				(font
@@ -4926,7 +4926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 90.932 111.76 90)
 			(effects
 				(font
@@ -5069,7 +5069,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 92.71 97.79 0)
 			(effects
 				(font
@@ -5141,7 +5141,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 107.95 59.69 0)
 			(effects
 				(font
@@ -5325,7 +5325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 153.162 111.76 90)
 			(effects
 				(font
@@ -5468,7 +5468,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 161.29 97.79 0)
 			(effects
 				(font
@@ -5541,7 +5541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 97.282 111.76 90)
 			(effects
 				(font
@@ -6102,7 +6102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 			(at 140.462 111.76 90)
 			(effects
 				(font
