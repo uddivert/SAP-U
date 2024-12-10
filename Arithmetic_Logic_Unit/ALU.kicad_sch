@@ -4808,7 +4808,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 88.9) (xy 69.85 93.98)
+			(xy 22.86 88.9) (xy 22.86 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4918,7 +4918,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 101.6) (xy 44.45 107.95)
+			(xy 48.26 101.6) (xy 48.26 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4928,7 +4928,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 88.9) (xy 57.15 93.98)
+			(xy 35.56 88.9) (xy 35.56 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5058,7 +5058,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 115.57) (xy 25.4 120.65)
+			(xy 67.31 115.57) (xy 67.31 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5108,7 +5108,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 115.57) (xy 44.45 120.65)
+			(xy 48.26 115.57) (xy 48.26 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5248,7 +5248,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 101.6) (xy 25.4 107.95)
+			(xy 67.31 101.6) (xy 67.31 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5298,7 +5298,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 101.6) (xy 31.75 107.95)
+			(xy 60.96 101.6) (xy 60.96 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5308,7 +5308,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 101.6) (xy 57.15 107.95)
+			(xy 35.56 101.6) (xy 35.56 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5358,7 +5358,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 115.57) (xy 69.85 120.65)
+			(xy 22.86 115.57) (xy 22.86 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5368,7 +5368,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 101.6) (xy 69.85 107.95)
+			(xy 22.86 101.6) (xy 22.86 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5518,7 +5518,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 88.9) (xy 44.45 93.98)
+			(xy 48.26 88.9) (xy 48.26 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5528,7 +5528,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 115.57) (xy 57.15 120.65)
+			(xy 35.56 115.57) (xy 35.56 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5568,7 +5568,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 101.6) (xy 38.1 107.95)
+			(xy 54.61 101.6) (xy 54.61 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5648,7 +5648,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 115.57) (xy 31.75 120.65)
+			(xy 60.96 115.57) (xy 60.96 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5658,7 +5658,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 115.57) (xy 38.1 120.65)
+			(xy 54.61 115.57) (xy 54.61 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5808,7 +5808,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 115.57) (xy 63.5 120.65)
+			(xy 29.21 115.57) (xy 29.21 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5818,7 +5818,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 88.9) (xy 50.8 93.98)
+			(xy 41.91 88.9) (xy 41.91 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5828,7 +5828,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 88.9) (xy 38.1 93.98)
+			(xy 54.61 88.9) (xy 54.61 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5908,7 +5908,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 88.9) (xy 31.75 93.98)
+			(xy 60.96 88.9) (xy 60.96 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5948,7 +5948,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 115.57) (xy 50.8 120.65)
+			(xy 41.91 115.57) (xy 41.91 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6058,7 +6058,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 88.9) (xy 25.4 93.98)
+			(xy 67.31 88.9) (xy 67.31 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6088,7 +6088,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 88.9) (xy 63.5 93.98)
+			(xy 29.21 88.9) (xy 29.21 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6108,7 +6108,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 101.6) (xy 50.8 107.95)
+			(xy 41.91 101.6) (xy 41.91 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6118,7 +6118,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 101.6) (xy 63.5 107.95)
+			(xy 29.21 101.6) (xy 29.21 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6306,13 +6306,13 @@
 		(uuid "2c3c3510-829b-4394-ac37-0b61ac726963")
 	)
 	(label "s2"
-		(at 57.15 88.9 180)
+		(at 35.56 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "313c6290-3c33-4964-9185-f845bf1148af")
 	)
@@ -6394,13 +6394,13 @@
 		(uuid "3b1fc2c3-0e3c-409e-a60b-a66d9d83ab89")
 	)
 	(label "s0"
-		(at 69.85 88.9 180)
+		(at 22.86 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "43678609-bb1a-4d71-9624-e9d69bffce88")
 	)
@@ -6537,24 +6537,24 @@
 		(uuid "8387a87b-5365-4ae8-88bf-892064addfb8")
 	)
 	(label "s3"
-		(at 50.8 88.9 180)
+		(at 41.91 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "85ac6453-cfd5-4e05-9670-b3bd1a0a3e64")
 	)
 	(label "s4"
-		(at 44.45 88.9 180)
+		(at 48.26 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "85d32ca9-703f-4628-9161-505ed0be3991")
 	)
@@ -6581,13 +6581,13 @@
 		(uuid "936ea01f-8975-40de-b421-b3e13d6e0c27")
 	)
 	(label "s7"
-		(at 25.4 88.9 180)
+		(at 67.31 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "955ed1ab-207c-4ca7-9782-58d1ad47e9a9")
 	)
@@ -6636,13 +6636,13 @@
 		(uuid "aa252ced-02c3-46a1-b8d0-0a01bcee1155")
 	)
 	(label "s6"
-		(at 31.75 88.9 180)
+		(at 60.96 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "aaa7481b-07b5-4ccd-b8b3-00df7655f671")
 	)
@@ -6801,13 +6801,13 @@
 		(uuid "db820c5b-def6-4b03-8cec-64dcb7afba2b")
 	)
 	(label "s1"
-		(at 63.5 88.9 180)
+		(at 29.21 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "de8534b3-33e4-4926-93bc-d9a998687a71")
 	)
@@ -6856,13 +6856,13 @@
 		(uuid "ecb24267-7a45-4449-afc3-bf638a29bdd2")
 	)
 	(label "s5"
-		(at 38.1 88.9 180)
+		(at 54.61 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ef069571-7813-45f5-963f-c93c2ee0a7e3")
 	)
@@ -7414,15 +7414,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 63.5 97.79 90)
+		(at 29.21 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "02a5fb3f-da6b-4a15-afe5-0f8232c1bac9")
-		(property "Reference" "D15"
-			(at 59.182 92.456 90)
+		(property "Reference" "D10"
+			(at 24.892 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7431,7 +7431,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 59.182 94.996 90)
+			(at 24.892 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7440,7 +7440,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 63.5 97.79 0)
+			(at 29.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7449,7 +7449,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 97.79 0)
+			(at 29.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7458,7 +7458,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 63.5 97.79 0)
+			(at 29.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7475,7 +7475,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D15")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -7483,7 +7483,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 120.65 0)
+		(at 60.96 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7491,8 +7492,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04bbc60f-eed6-423a-962e-ca4ac1f8b45f")
-		(property "Reference" "#PWR032"
-			(at 31.75 127 0)
+		(property "Reference" "#PWR042"
+			(at 60.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7501,7 +7502,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 125.73 0)
+			(at 60.96 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7509,7 +7510,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7518,7 +7519,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7527,7 +7528,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7541,7 +7542,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR032")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -8483,7 +8484,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ea92930-dd67-497a-98ca-540d27976569")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR040"
 			(at 54.61 157.48 0)
 			(effects
 				(font
@@ -8533,7 +8534,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -8749,15 +8750,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 44.45 97.79 90)
+		(at 48.26 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "353dbe6d-9e04-4a2f-bcf9-f25814ab5363")
-		(property "Reference" "D12"
-			(at 40.132 92.456 90)
+		(property "Reference" "D13"
+			(at 43.942 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8766,7 +8767,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 40.132 94.996 90)
+			(at 43.942 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8775,7 +8776,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 44.45 97.79 0)
+			(at 48.26 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8784,7 +8785,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 97.79 0)
+			(at 48.26 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8793,7 +8794,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 44.45 97.79 0)
+			(at 48.26 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8810,7 +8811,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -8826,7 +8827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ea4a9dd-f22d-425c-8610-64e64eb3eca4")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR043"
 			(at 62.23 166.37 0)
 			(effects
 				(font
@@ -8876,7 +8877,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR042")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -8884,15 +8885,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 25.4 111.76 0)
+		(at 67.31 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "40963b2b-e5af-418b-bb39-146d055b1e4d")
-		(property "Reference" "R9"
-			(at 21.59 105.41 0)
+		(property "Reference" "R16"
+			(at 71.12 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8901,7 +8903,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 21.59 107.95 0)
+			(at 71.12 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8910,7 +8912,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 23.622 111.76 90)
+			(at 69.088 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8919,7 +8921,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 111.76 0)
+			(at 67.31 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8928,7 +8930,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 25.4 111.76 0)
+			(at 67.31 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8945,7 +8947,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R9")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -8953,7 +8955,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 120.65 0)
+		(at 41.91 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8961,8 +8964,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40ca589f-4cc5-4f08-b927-3e92eee6c63a")
-		(property "Reference" "#PWR038"
-			(at 50.8 127 0)
+		(property "Reference" "#PWR036"
+			(at 41.91 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8971,7 +8974,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 125.73 0)
+			(at 41.91 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8979,7 +8982,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 120.65 0)
+			(at 41.91 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8988,7 +8991,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 120.65 0)
+			(at 41.91 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8997,7 +9000,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 120.65 0)
+			(at 41.91 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9011,7 +9014,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR038")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -9322,15 +9325,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 63.5 111.76 0)
+		(at 29.21 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "500ed46f-1ebb-496d-bd38-2cf0dcee37fc")
-		(property "Reference" "R15"
-			(at 59.69 105.41 0)
+		(property "Reference" "R10"
+			(at 33.02 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9339,7 +9343,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 59.69 107.95 0)
+			(at 33.02 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9348,7 +9352,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 61.722 111.76 90)
+			(at 30.988 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9357,7 +9361,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 111.76 0)
+			(at 29.21 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9366,7 +9370,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 63.5 111.76 0)
+			(at 29.21 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9383,7 +9387,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R15")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -9753,15 +9757,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 25.4 97.79 90)
+		(at 67.31 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "5a3f6378-6b00-4ec7-8cc0-1ff2daa3cdd4")
-		(property "Reference" "D9"
-			(at 21.082 92.456 90)
+		(property "Reference" "D16"
+			(at 62.992 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9770,7 +9774,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 21.082 94.996 90)
+			(at 62.992 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9779,7 +9783,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 25.4 97.79 0)
+			(at 67.31 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9788,7 +9792,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 97.79 0)
+			(at 67.31 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9797,7 +9801,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 25.4 97.79 0)
+			(at 67.31 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9814,7 +9818,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D9")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -10162,15 +10166,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 57.15 111.76 0)
+		(at 35.56 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "74f889b9-747a-4e9b-a574-1b94e7314436")
-		(property "Reference" "R14"
-			(at 53.34 105.41 0)
+		(property "Reference" "R11"
+			(at 39.37 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10179,7 +10184,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 53.34 107.95 0)
+			(at 39.37 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10188,7 +10193,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 55.372 111.76 90)
+			(at 37.338 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10197,7 +10202,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 111.76 0)
+			(at 35.56 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10206,7 +10211,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 57.15 111.76 0)
+			(at 35.56 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10223,7 +10228,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R14")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10231,15 +10236,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 38.1 111.76 0)
+		(at 54.61 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7ca320f5-f8c1-49c1-9992-ff4c19f52e54")
-		(property "Reference" "R11"
-			(at 34.29 105.41 0)
+		(property "Reference" "R14"
+			(at 58.42 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10248,7 +10254,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 34.29 107.95 0)
+			(at 58.42 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10257,7 +10263,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 36.322 111.76 90)
+			(at 56.388 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10266,7 +10272,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 111.76 0)
+			(at 54.61 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10275,7 +10281,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 38.1 111.76 0)
+			(at 54.61 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10292,7 +10298,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R11")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -10497,7 +10503,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 120.65 0)
+		(at 67.31 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -10505,8 +10512,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a77238e-32ab-4a07-8de4-343a2f74e1f5")
-		(property "Reference" "#PWR029"
-			(at 25.4 127 0)
+		(property "Reference" "#PWR044"
+			(at 67.31 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10515,7 +10522,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 125.73 0)
+			(at 67.31 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10523,7 +10530,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 120.65 0)
+			(at 67.31 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10532,7 +10539,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 120.65 0)
+			(at 67.31 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10541,7 +10548,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 120.65 0)
+			(at 67.31 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10555,7 +10562,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR029")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -10771,15 +10778,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 50.8 111.76 0)
+		(at 41.91 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "90f8f72e-5866-4a67-8ce4-7e595cb7b33a")
-		(property "Reference" "R13"
-			(at 46.99 105.41 0)
+		(property "Reference" "R12"
+			(at 45.72 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10788,7 +10796,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 46.99 107.95 0)
+			(at 45.72 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10797,7 +10805,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 49.022 111.76 90)
+			(at 43.688 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10806,7 +10814,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 111.76 0)
+			(at 41.91 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10815,7 +10823,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 50.8 111.76 0)
+			(at 41.91 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10832,7 +10840,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R13")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -11120,7 +11128,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 120.65 0)
+		(at 54.61 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -11128,8 +11137,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a30460e3-276c-48cd-ad1b-50e8fc35021f")
-		(property "Reference" "#PWR035"
-			(at 38.1 127 0)
+		(property "Reference" "#PWR039"
+			(at 54.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11138,7 +11147,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 125.73 0)
+			(at 54.61 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11146,7 +11155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 120.65 0)
+			(at 54.61 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11155,7 +11164,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 120.65 0)
+			(at 54.61 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11164,7 +11173,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 120.65 0)
+			(at 54.61 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11178,7 +11187,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR035")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -11194,7 +11203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a347d97e-e6f4-467f-a4b5-7e5f0f40c15c")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR041"
 			(at 54.61 189.23 0)
 			(effects
 				(font
@@ -11244,7 +11253,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR040")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -11252,15 +11261,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 50.8 97.79 90)
+		(at 41.91 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "a8ef16bf-5e72-4005-9d7f-7d017458867f")
-		(property "Reference" "D13"
-			(at 46.482 92.456 90)
+		(property "Reference" "D12"
+			(at 37.592 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11269,7 +11278,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 46.482 94.996 90)
+			(at 37.592 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11278,7 +11287,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 50.8 97.79 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11287,7 +11296,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 97.79 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11296,7 +11305,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 50.8 97.79 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11313,7 +11322,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D13")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -11517,7 +11526,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 120.65 0)
+		(at 22.86 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -11525,8 +11535,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0ecfa16-c0cb-4408-a311-8baa388e1f56")
-		(property "Reference" "#PWR044"
-			(at 69.85 127 0)
+		(property "Reference" "#PWR029"
+			(at 22.86 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11535,7 +11545,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 125.73 0)
+			(at 22.86 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11543,7 +11553,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 120.65 0)
+			(at 22.86 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11552,7 +11562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 120.65 0)
+			(at 22.86 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11561,7 +11571,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 120.65 0)
+			(at 22.86 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11575,7 +11585,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR044")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -11716,15 +11726,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 69.85 111.76 0)
+		(at 22.86 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b4c7c7c3-004c-4d3c-a602-3f0b97409911")
-		(property "Reference" "R16"
-			(at 66.04 105.41 0)
+		(property "Reference" "R9"
+			(at 26.67 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11733,7 +11744,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 66.04 107.95 0)
+			(at 26.67 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11742,7 +11753,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 68.072 111.76 90)
+			(at 24.638 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11751,7 +11762,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 111.76 0)
+			(at 22.86 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11760,7 +11771,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 69.85 111.76 0)
+			(at 22.86 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11777,7 +11788,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R16")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -11785,7 +11796,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 120.65 0)
+		(at 48.26 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -11793,8 +11805,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7d125d0-ed1b-45b0-b9af-2187f827bf4d")
-		(property "Reference" "#PWR037"
-			(at 44.45 127 0)
+		(property "Reference" "#PWR038"
+			(at 48.26 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11803,7 +11815,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 125.73 0)
+			(at 48.26 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11811,7 +11823,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 120.65 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11820,7 +11832,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 120.65 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11829,7 +11841,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 120.65 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11843,7 +11855,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR037")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -12400,15 +12412,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 111.76 0)
+		(at 60.96 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "dae455e3-955a-48e9-b6d2-d0c736633f72")
-		(property "Reference" "R10"
-			(at 27.94 105.41 0)
+		(property "Reference" "R15"
+			(at 64.77 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12417,7 +12430,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 27.94 107.95 0)
+			(at 64.77 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12426,7 +12439,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 29.972 111.76 90)
+			(at 62.738 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12435,7 +12448,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 111.76 0)
+			(at 60.96 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12444,7 +12457,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 111.76 0)
+			(at 60.96 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12461,7 +12474,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R10")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -12469,15 +12482,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 38.1 97.79 90)
+		(at 54.61 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e1b1c855-074d-4d62-85f6-ac5838d1d500")
-		(property "Reference" "D11"
-			(at 33.782 92.456 90)
+		(property "Reference" "D14"
+			(at 50.292 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12486,7 +12499,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 33.782 94.996 90)
+			(at 50.292 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12495,7 +12508,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 38.1 97.79 0)
+			(at 54.61 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12504,7 +12517,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 97.79 0)
+			(at 54.61 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12513,7 +12526,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 38.1 97.79 0)
+			(at 54.61 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12530,7 +12543,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D11")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -12771,7 +12784,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 120.65 0)
+		(at 29.21 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -12779,8 +12793,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e70a052e-54fb-4c05-9ed3-cace9ab8fa1f")
-		(property "Reference" "#PWR043"
-			(at 63.5 127 0)
+		(property "Reference" "#PWR032"
+			(at 29.21 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12789,7 +12803,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 125.73 0)
+			(at 29.21 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12797,7 +12811,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 120.65 0)
+			(at 29.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12806,7 +12820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 120.65 0)
+			(at 29.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12815,7 +12829,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 120.65 0)
+			(at 29.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12829,7 +12843,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR043")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -12905,7 +12919,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 120.65 0)
+		(at 35.56 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -12913,8 +12928,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e89e39d0-7635-4c38-86aa-3dde24629325")
-		(property "Reference" "#PWR041"
-			(at 57.15 127 0)
+		(property "Reference" "#PWR035"
+			(at 35.56 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12923,7 +12938,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 125.73 0)
+			(at 35.56 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12931,7 +12946,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 120.65 0)
+			(at 35.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12940,7 +12955,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 120.65 0)
+			(at 35.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12949,7 +12964,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 120.65 0)
+			(at 35.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12963,7 +12978,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR041")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -13082,15 +13097,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 69.85 97.79 90)
+		(at 22.86 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ec1f34aa-8067-4466-a687-842c848d4fbb")
-		(property "Reference" "D16"
-			(at 65.532 92.456 90)
+		(property "Reference" "D9"
+			(at 18.542 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13099,7 +13114,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 65.532 94.996 90)
+			(at 18.542 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13108,7 +13123,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 69.85 97.79 0)
+			(at 22.86 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13117,7 +13132,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 97.79 0)
+			(at 22.86 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13126,7 +13141,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 69.85 97.79 0)
+			(at 22.86 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13143,7 +13158,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D16")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -13290,7 +13305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f53dbf5d-3cbb-4474-ae5a-7b6f2ddfdfd2")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 41.91 166.37 0)
 			(effects
 				(font
@@ -13340,7 +13355,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -13348,15 +13363,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 44.45 111.76 0)
+		(at 48.26 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f59b245e-f221-41e1-8902-ae495f3765c8")
-		(property "Reference" "R12"
-			(at 40.64 105.41 0)
+		(property "Reference" "R13"
+			(at 52.07 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13365,7 +13381,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 40.64 107.95 0)
+			(at 52.07 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13374,7 +13390,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 42.672 111.76 90)
+			(at 50.038 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13383,7 +13399,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 111.76 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13392,7 +13408,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 44.45 111.76 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13409,7 +13425,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "R12")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -13417,15 +13433,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 57.15 97.79 90)
+		(at 35.56 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f5f533a0-e873-4148-bd4d-64bc01354f8a")
-		(property "Reference" "D14"
-			(at 52.832 92.456 90)
+		(property "Reference" "D11"
+			(at 31.242 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13434,7 +13450,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 52.832 94.996 90)
+			(at 31.242 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13443,7 +13459,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 57.15 97.79 0)
+			(at 35.56 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13452,7 +13468,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 97.79 0)
+			(at 35.56 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13461,7 +13477,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 57.15 97.79 0)
+			(at 35.56 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13478,7 +13494,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D14")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -13590,15 +13606,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 31.75 97.79 90)
+		(at 60.96 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "fa8eef67-5fb0-4d9c-b6e2-20a164ed80ef")
-		(property "Reference" "D10"
-			(at 27.432 92.456 90)
+		(property "Reference" "D15"
+			(at 56.642 92.456 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13607,7 +13623,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 27.432 94.996 90)
+			(at 56.642 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13616,7 +13632,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 31.75 97.79 0)
+			(at 60.96 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13625,7 +13641,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 97.79 0)
+			(at 60.96 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13634,7 +13650,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 31.75 97.79 0)
+			(at 60.96 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13651,7 +13667,7 @@
 		(instances
 			(project "Arithmetic_Logic_Unit"
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73"
-					(reference "D10")
+					(reference "D15")
 					(unit 1)
 				)
 			)

@@ -2531,28 +2531,6 @@
 		)
 		(uuid "10a4a13d-7d89-468d-a28a-45245650b6f5")
 	)
-	(label "clock"
-		(at 149.86 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "17cfd069-9496-4a4b-b5c5-c800f267c3d7")
-	)
-	(label "ir5"
-		(at 134.62 52.07 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "188563d4-bf7a-42a8-b8bd-52dd7e1b233d")
-	)
 	(label "bus5"
 		(at 250.19 35.56 180)
 		(fields_autoplaced yes)
@@ -2652,39 +2630,6 @@
 		)
 		(uuid "39dd8bcd-40da-4bbe-ac2e-926defab92d5")
 	)
-	(label "~{IR_OE}"
-		(at 149.86 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ab3b203-18cb-4870-bcd9-31396e550be5")
-	)
-	(label "bus7"
-		(at 149.86 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b3d7f12-0c08-407a-93ab-81c8c6e7450c")
-	)
-	(label "bus3"
-		(at 149.86 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40ddd433-207b-4041-b000-a89c6297842a")
-	)
 	(label "en_sub"
 		(at 95.25 55.88 180)
 		(fields_autoplaced yes)
@@ -2718,39 +2663,6 @@
 		)
 		(uuid "4f0e943c-d527-4459-ac59-abf7a6755591")
 	)
-	(label "bus6"
-		(at 149.86 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "50010993-8987-4882-9d97-cc1cb104b25c")
-	)
-	(label "ir6"
-		(at 134.62 49.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "51347273-c21e-4048-9fcf-503a9925f0c2")
-	)
-	(label "ir4"
-		(at 134.62 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "538b7a94-e441-4446-9cfb-8c9bc203dd77")
-	)
 	(label "clearIR"
 		(at 250.19 60.96 180)
 		(fields_autoplaced yes)
@@ -2761,17 +2673,6 @@
 			(justify right bottom)
 		)
 		(uuid "53b68b30-1d6b-4de7-a9c8-468408b937b9")
-	)
-	(label "bus5"
-		(at 149.86 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "56467403-bc40-4daa-9021-6b9a1d02d90f")
 	)
 	(label "~{A_IE}"
 		(at 250.19 91.44 180)
@@ -2838,28 +2739,6 @@
 			(justify right bottom)
 		)
 		(uuid "757c6275-4136-4cdc-aa71-9104c1336241")
-	)
-	(label "bus4"
-		(at 149.86 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75bac27a-26d2-4254-8953-5614d7461d55")
-	)
-	(label "bus2"
-		(at 149.86 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75f8775a-0502-49f4-92d2-2a576a670ca5")
 	)
 	(label "~{ALU_OE}"
 		(at 250.19 96.52 180)
@@ -2938,17 +2817,6 @@
 		)
 		(uuid "8c2402da-0bc6-4376-8813-14ecb5b75416")
 	)
-	(label "ir7"
-		(at 134.62 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "906952b2-7c34-42c8-bb04-64026de1c5c7")
-	)
 	(label "~{B_OE}"
 		(at 250.19 101.6 180)
 		(fields_autoplaced yes)
@@ -2994,17 +2862,6 @@
 		(uuid "9b897aca-73ae-4c7f-856d-9df81bc65347")
 	)
 	(label "bus0"
-		(at 149.86 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9de94622-78d6-4ce5-8085-1675c9644a58")
-	)
-	(label "bus0"
 		(at 110.49 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3036,17 +2893,6 @@
 			(justify left bottom)
 		)
 		(uuid "a67b12ae-353c-4686-abc5-40c720a43237")
-	)
-	(label "bus1"
-		(at 149.86 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a961f6a7-d2ad-46c8-b44f-753db4e56668")
 	)
 	(label "zf"
 		(at 95.25 60.96 180)
@@ -3103,17 +2949,6 @@
 		)
 		(uuid "c525e3c8-85d0-4040-94e5-a3ae8f0b2e7f")
 	)
-	(label "clearIR"
-		(at 134.62 59.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c5b21cba-7121-42fc-afdc-748f56a9cd50")
-	)
 	(label "en_sub"
 		(at 250.19 58.42 180)
 		(fields_autoplaced yes)
@@ -3146,17 +2981,6 @@
 			(justify right bottom)
 		)
 		(uuid "e802f618-3976-4b41-80ed-6c0295b93e01")
-	)
-	(label "~{IR_IE}"
-		(at 134.62 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e9d9b01c-d547-4afd-9441-57df142eab0e")
 	)
 	(label "bus7"
 		(at 250.19 30.48 180)
@@ -4035,204 +3859,6 @@
 				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
 					(reference "#FLG02")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 134.62 44.45)
-		(size 15.24 27.94)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3ce677bd-df36-4d44-96af-981e5f64c209")
-		(property "Sheetname" "Instruction Register"
-			(at 134.62 43.7384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "ir.kicad_sch"
-			(at 134.62 72.9746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "q7" input
-			(at 134.62 46.99 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f255c425-2a0c-46cf-82f0-6edef803a145")
-		)
-		(pin "q6" input
-			(at 134.62 49.53 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4ef4c407-d6ef-481f-a59e-f27dc6c5bc27")
-		)
-		(pin "q4" input
-			(at 134.62 54.61 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "922c3058-a2cd-4465-bf31-1270af792354")
-		)
-		(pin "q5" input
-			(at 134.62 52.07 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "20328ecf-8079-4545-887a-dc0bd416b38a")
-		)
-		(pin "bus3" input
-			(at 149.86 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "87d3d59d-4db7-427c-b0c2-b7b27a941e5e")
-		)
-		(pin "bus2" input
-			(at 149.86 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "58940bd1-d083-4dd2-9d3e-f813ed542fef")
-		)
-		(pin "bus1" input
-			(at 149.86 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "d36f6efa-5292-4654-a824-674b819aed66")
-		)
-		(pin "bus0" input
-			(at 149.86 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "16be71ea-4457-4b32-baa9-c320e0239cac")
-		)
-		(pin "bus7" input
-			(at 149.86 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "9141d429-b56b-4e39-9983-1d6b1b6ffe4e")
-		)
-		(pin "bus4" input
-			(at 149.86 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "9b7a6e46-fdc8-433c-b245-33e34265d31e")
-		)
-		(pin "bus5" input
-			(at 149.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "84380db7-5d7d-46d6-8ced-11cad4749115")
-		)
-		(pin "bus6" input
-			(at 149.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "51e6694b-a440-4825-be75-6190fb580795")
-		)
-		(pin "clock" input
-			(at 149.86 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "663a882d-2749-4a5c-b2fd-2e4152ce8feb")
-		)
-		(pin "~{OE}" input
-			(at 149.86 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "761a1150-4e2d-435c-8df1-9a4247b6c3b9")
-		)
-		(pin "~{IE}" input
-			(at 134.62 57.15 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "3262f48c-b12b-413d-93b0-a32baecdc3d9")
-		)
-		(pin "clear" input
-			(at 134.62 59.69 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "0f42297c-6dee-4c8d-a58f-434a276465be")
-		)
-		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1"
-					(page "5")
 				)
 			)
 		)
