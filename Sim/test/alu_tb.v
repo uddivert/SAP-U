@@ -5,6 +5,10 @@ module alu_tb();
     reg [7:0] b;
     reg enable;
     reg subtract;
+    reg flag_fi; // controls if flag is holding value or updating
+    reg flagclr; // clears flags
+    reg clk;
+    wire [1:0] flag_out;
     wire [7:0] result;
 
     alu uut (
@@ -12,13 +16,26 @@ module alu_tb();
         .b(b),
         .enable(enable),
         .subtract(subtract),
-        .result(result)
+        .result(result),
+	.flag_fi(flag_fi), // low to update
+	.flagclr(flagclr), // clear flag
+	.clk(clk),
+	.flag_out(flag_out)
     );
+
+    initial begin
+	clk = 0;
+	forever #5 clk = ~clk; // 10ns clock period
+    end
 
     // Testbench stimulus
     initial begin
         $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
         $dumpvars(0, alu_tb);
+
+	flag_fi = 0; // set flag register to update
+	flagclr = 0; // set flags cleared
+        #10;
 
         // Test 1: Addition with enable = 1, subtract = 0 (expected result = a + b)
         a = 8'b00000001;  // a = 1
