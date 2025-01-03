@@ -15,7 +15,7 @@
 		)
 	)
 	(property "Value" "PC104-Standard"
-		(at -89.6 -91.8 0)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "be1fb162-10a5-4dfc-bd01-2a7b6c2bbec6")
 		(effects
@@ -156,6 +156,17 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "468e58ea-9ac2-4bc6-a1b8-8932f2b2f841")
+	)
+	(fp_rect
+		(start -14 -86.5)
+		(end -9 -5.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "74536391-3b96-4795-a140-3304f3cb1934")
 	)
 	(pad "" thru_hole circle
 		(at -90.81 -82.55)
@@ -703,7 +714,7 @@
 	)
 	(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x32_P2.54mm_Vertical.wrl"
 		(offset
-			(xyz -10.14 85.65 0)
+			(xyz -10.4 85.43 0)
 		)
 		(scale
 			(xyz 1 1 1)
