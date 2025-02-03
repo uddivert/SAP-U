@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[6]",
+					"strict" : false
+				},
+				{
+					"name" : "bus[7]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_enable",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a_enable",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b_enable",
+					"strict" : false
+				},
+				{
+					"name" : "alu_subtract",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a_load",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a_idata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b_load",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b_idata[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

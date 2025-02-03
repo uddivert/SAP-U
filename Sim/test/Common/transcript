@@ -1,0 +1,31 @@
+# do sim_build/runsim.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -c 
+# ** Warning: vmap will not overwrite local modelsim.ini.
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work sim_build/work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:32:18 on Dec 13,2024
+# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" ../../hdl/common/d_latch.v 
+# -- Compiling module d_latch
+# 
+# Top level modules:
+# 	d_latch
+# End time: 22:32:18 on Dec 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -onfinish exit -pli "/usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so" sim_build/work.d_latch 
+# Start time: 22:32:18 on Dec 13,2024
+# Loading sv_std.std
+# Loading sim_build/work.d_latch
+# ** Warning: ** Warning: (vsim-3772) Failed to find the undefined symbols for shared library file "/usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so".
+# 
+#    Time: 0 ps  Iteration: 0  Root: /
+# Loading /usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so
+# ** Error: (vsim-125) The shared library /usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so being loaded was built on a 64-bit machine. A 64-bit shared library cannot be loaded in a 32-bit simulation. Please use compatible machines to build and load the library
+# ** Error (suppressible): (vsim-3197) Load of "/usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so" failed: /usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so: wrong ELF class: ELFCLASS64.
+# ** Error (suppressible): (vsim-PLI-3002) Failed to load PLI object file "/usr/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_modelsim.so".
+#    Time: 0 ps  Iteration: 0  Root: /
+# Error loading design
+# End time: 22:32:18 on Dec 13,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 1, Suppressed Warnings: 1

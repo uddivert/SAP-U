@@ -1,0 +1,597 @@
+|SAP_U
+clk => clk.IN2
+reset => reset.IN2
+reg_a_load => reg_a_load.IN1
+reg_a_enable => reg_a_enable.IN1
+reg_a_idata[0] => reg_a_idata[0].IN1
+reg_a_idata[1] => reg_a_idata[1].IN1
+reg_a_idata[2] => reg_a_idata[2].IN1
+reg_a_idata[3] => reg_a_idata[3].IN1
+reg_a_idata[4] => reg_a_idata[4].IN1
+reg_a_idata[5] => reg_a_idata[5].IN1
+reg_a_idata[6] => reg_a_idata[6].IN1
+reg_a_idata[7] => reg_a_idata[7].IN1
+reg_b_load => reg_b_load.IN1
+reg_b_enable => reg_b_enable.IN1
+reg_b_idata[0] => reg_b_idata[0].IN1
+reg_b_idata[1] => reg_b_idata[1].IN1
+reg_b_idata[2] => reg_b_idata[2].IN1
+reg_b_idata[3] => reg_b_idata[3].IN1
+reg_b_idata[4] => reg_b_idata[4].IN1
+reg_b_idata[5] => reg_b_idata[5].IN1
+reg_b_idata[6] => reg_b_idata[6].IN1
+reg_b_idata[7] => reg_b_idata[7].IN1
+alu_enable => alu_enable.IN1
+alu_subtract => alu_subtract.IN1
+bus[0] <= alu:m_alu.result
+bus[1] <= alu:m_alu.result
+bus[2] <= alu:m_alu.result
+bus[3] <= alu:m_alu.result
+bus[4] <= alu:m_alu.result
+bus[5] <= alu:m_alu.result
+bus[6] <= alu:m_alu.result
+bus[7] <= alu:m_alu.result
+
+
+|SAP_U|register:register_a
+load => load.IN4
+enable => enable.IN4
+clr => clr.IN2
+clk => clk.IN2
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+q[0] <= sn54173_quad_flip_flop:sn54173_1.q
+q[1] <= sn54173_quad_flip_flop:sn54173_1.q
+q[2] <= sn54173_quad_flip_flop:sn54173_1.q
+q[3] <= sn54173_quad_flip_flop:sn54173_1.q
+q[4] <= sn54173_quad_flip_flop:sn54173_2.q
+q[5] <= sn54173_quad_flip_flop:sn54173_2.q
+q[6] <= sn54173_quad_flip_flop:sn54173_2.q
+q[7] <= sn54173_quad_flip_flop:sn54173_2.q
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+clr => clr.IN4
+clk => clk.IN4
+data[0] => flop_data.IN1
+data[1] => flop_data.IN1
+data[2] => flop_data.IN1
+data[3] => flop_data.IN1
+q[0] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[0].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[1].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[2].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[3].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_2
+m => q.IN1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+clr => clr.IN4
+clk => clk.IN4
+data[0] => flop_data.IN1
+data[1] => flop_data.IN1
+data[2] => flop_data.IN1
+data[3] => flop_data.IN1
+q[0] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[0].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[1].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[2].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_a|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[3].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b
+load => load.IN4
+enable => enable.IN4
+clr => clr.IN2
+clk => clk.IN2
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+q[0] <= sn54173_quad_flip_flop:sn54173_1.q
+q[1] <= sn54173_quad_flip_flop:sn54173_1.q
+q[2] <= sn54173_quad_flip_flop:sn54173_1.q
+q[3] <= sn54173_quad_flip_flop:sn54173_1.q
+q[4] <= sn54173_quad_flip_flop:sn54173_2.q
+q[5] <= sn54173_quad_flip_flop:sn54173_2.q
+q[6] <= sn54173_quad_flip_flop:sn54173_2.q
+q[7] <= sn54173_quad_flip_flop:sn54173_2.q
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+clr => clr.IN4
+clk => clk.IN4
+data[0] => flop_data.IN1
+data[1] => flop_data.IN1
+data[2] => flop_data.IN1
+data[3] => flop_data.IN1
+q[0] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[0].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[1].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[2].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_1|d_flip_flop:g_d_flip_flops[3].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_2
+m => q.IN1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+clr => clr.IN4
+clk => clk.IN4
+data[0] => flop_data.IN1
+data[1] => flop_data.IN1
+data[2] => flop_data.IN1
+data[3] => flop_data.IN1
+q[0] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[0].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[1].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[2].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|register:register_b|sn54173_quad_flip_flop:sn54173_2|d_flip_flop:g_d_flip_flops[3].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => internal_b.DATAA
+b[0] => internal_b.DATAB
+b[1] => internal_b.DATAA
+b[1] => internal_b.DATAB
+b[2] => internal_b.DATAA
+b[2] => internal_b.DATAB
+b[3] => internal_b.DATAA
+b[3] => internal_b.DATAB
+b[4] => internal_b.DATAA
+b[4] => internal_b.DATAB
+b[5] => internal_b.DATAA
+b[5] => internal_b.DATAB
+b[6] => internal_b.DATAA
+b[6] => internal_b.DATAB
+b[7] => internal_b.DATAA
+b[7] => internal_b.DATAB
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+enable => result.OUTPUTSELECT
+subtract => subtract.IN1
+flag_fi => flag_fi.IN2
+flag_clr => flag_clr.IN1
+clk => clk.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flag_out[0] <= sn54173_quad_flip_flop:flags_reg.q
+flag_out[1] <= sn54173_quad_flip_flop:flags_reg.q
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+cin => carry[0].IN1
+sum[1] <= full_adder:adder_chain[1].full_adder_inst.s
+sum[2] <= full_adder:adder_chain[2].full_adder_inst.s
+sum[3] <= full_adder:adder_chain[3].full_adder_inst.s
+sum[4] <= full_adder:adder_chain[4].full_adder_inst.s
+cout <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder1|full_adder:adder_chain[1].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder1|full_adder:adder_chain[2].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder1|full_adder:adder_chain[3].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder1|full_adder:adder_chain[4].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder2
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+cin => carry[0].IN1
+sum[1] <= full_adder:adder_chain[1].full_adder_inst.s
+sum[2] <= full_adder:adder_chain[2].full_adder_inst.s
+sum[3] <= full_adder:adder_chain[3].full_adder_inst.s
+sum[4] <= full_adder:adder_chain[4].full_adder_inst.s
+cout <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder2|full_adder:adder_chain[1].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder2|full_adder:adder_chain[2].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder2|full_adder:adder_chain[3].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|dm74ls283_quad_adder:adder2|full_adder:adder_chain[4].full_adder_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|sn54173_quad_flip_flop:flags_reg
+m => q.IN1
+m => q.IN1
+m => q.IN1
+m => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+n => q.IN1
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g1 => flop_data.IN0
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+g2 => flop_data.IN1
+clr => clr.IN4
+clk => clk.IN4
+data[0] => flop_data.IN1
+data[1] => flop_data.IN1
+data[2] => flop_data.IN1
+data[3] => flop_data.IN1
+q[0] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|sn54173_quad_flip_flop:flags_reg|d_flip_flop:g_d_flip_flops[0].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|sn54173_quad_flip_flop:flags_reg|d_flip_flop:g_d_flip_flops[1].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|sn54173_quad_flip_flop:flags_reg|d_flip_flop:g_d_flip_flops[2].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP_U|alu:m_alu|sn54173_quad_flip_flop:flags_reg|d_flip_flop:g_d_flip_flops[3].dff
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+reset => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_not <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

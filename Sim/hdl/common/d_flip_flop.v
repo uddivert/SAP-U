@@ -1,10 +1,10 @@
 `default_nettype none
 module d_flip_flop (
-    input  wire clk,     // Input: clock
-    input  wire data,  // Input: data for the signal
+    input  wire clk,    // Input: clock
+    input  wire data,   // Input: data for the signal
     input  wire reset,  // Input: reset signal
-    output reg  q,     // Output: Q
-    output wire q_not  // Output: Not Q
+    output reg  q,      // Output: Q
+    output wire q_not   // Output: Not Q
 );
 
   // On the rising edge of the clock, the flip-flop captures the input data
