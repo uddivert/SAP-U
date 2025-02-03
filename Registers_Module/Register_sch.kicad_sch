@@ -3160,7 +3160,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02aa244e-5119-4662-907d-50deab1fb8b6")
-		(property "Reference" "D18"
+		(property "Reference" "D2"
 			(at 94.742 92.456 90)
 			(effects
 				(font
@@ -3206,19 +3206,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "a1825e84-1509-4c49-95ae-ec73f0dc7b56")
+			(uuid "61283a7a-a58b-44d7-9692-6b45e03ac316")
 		)
 		(pin "1"
-			(uuid "da5d17a0-198e-4dd5-a003-de8a7522ffea")
+			(uuid "4a1d09a3-a4ad-4e2e-9fdf-8c410243d4b7")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D18")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D2")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D2")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -3233,7 +3233,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0601e222-89c4-4958-85ce-e58fc6352bec")
-		(property "Reference" "D21"
+		(property "Reference" "D5"
 			(at 137.922 92.456 90)
 			(effects
 				(font
@@ -3279,19 +3279,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "0931ece3-ccae-4b2c-b2f1-4aef387a8f41")
+			(uuid "baaf9ef1-ab05-4133-a9c3-205631b20df0")
 		)
 		(pin "1"
-			(uuid "4692b2f9-89dc-4c06-af93-484e1a26eca2")
+			(uuid "c6ef3de7-0278-4b50-9235-17bb692132d3")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D21")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D5")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D5")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -3307,7 +3307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0801df09-caae-44e1-9315-51699bb9fc35")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR08"
 			(at 85.09 62.23 0)
 			(effects
 				(font
@@ -3352,16 +3352,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "9018126b-be8e-4ca5-91af-8938a14b2ef5")
+			(uuid "9ff64d46-eda1-479c-bd5b-80a73c421860")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR063")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR08")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR09")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -3377,7 +3377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c7857bd-caa0-428c-b9c2-d1531b2cd1dc")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR02"
 			(at 35.56 63.5 0)
 			(effects
 				(font
@@ -3422,16 +3422,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "dce11b12-0e18-4515-b33c-6862e0c9c5cf")
+			(uuid "15285d58-83aa-479e-9bf7-70c21b9bc8f7")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR059")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR02")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR05")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3446,7 +3446,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f07e58d-e45c-4251-aa1f-259014d7be4b")
-		(property "Reference" "C14"
+		(property "Reference" "C3"
 			(at 139.954 60.452 0)
 			(effects
 				(font
@@ -3492,19 +3492,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "40c9dce2-52e8-4c55-8067-7f9dd3192774")
+			(uuid "17b24fad-1a52-438e-a27b-1ad0ccbb3522")
 		)
 		(pin "2"
-			(uuid "1c218841-5c70-485b-a73c-910d47df42c8")
+			(uuid "3acc6ac4-2f13-4086-9b5b-6fdcfcaf9a87")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "C14")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "C3")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "C3")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3519,7 +3519,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "148f427d-8ba1-4376-b0dc-57a079fa6676")
-		(property "Reference" "D24"
+		(property "Reference" "D8"
 			(at 156.972 92.456 90)
 			(effects
 				(font
@@ -3565,19 +3565,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "8aa9bca1-34ca-4c3a-8067-ef521bb86845")
+			(uuid "759c44a4-e430-42b9-8c97-2fdacf220b0a")
 		)
 		(pin "1"
-			(uuid "b449a861-eb0e-4306-8515-714fc29b7bb4")
+			(uuid "d55019c5-4450-43bf-ae0e-787d13c24437")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D24")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D8")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D8")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D24")
 					(unit 1)
 				)
 			)
@@ -3592,7 +3592,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14f08ec9-1b6e-47de-ac28-d9b4532d9f6f")
-		(property "Reference" "R17"
+		(property "Reference" "R1"
 			(at 88.9 105.41 0)
 			(effects
 				(font
@@ -3638,19 +3638,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "2e0c853c-cb84-4188-a664-43cea9f94c74")
+			(uuid "31fdc0b1-9095-4b81-a3f3-6d0eeaf30f17")
 		)
 		(pin "2"
-			(uuid "71b19b06-777e-4212-acdd-20443db8ac00")
+			(uuid "0facc912-2459-4dc9-a4af-b66cd5e9de9a")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R17")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R1")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R1")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -3666,7 +3666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1902e1e2-8d0f-4afd-8a26-fc8c90100eaa")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR016"
 			(at 142.24 127 0)
 			(effects
 				(font
@@ -3711,16 +3711,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "a0eb786e-30d0-4f9e-8b12-bd9e15e50a64")
+			(uuid "ecafbe42-8ae7-4b54-92d3-9a19a1e477e7")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR071")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR016")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR017")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -3736,7 +3736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f5467d0-5582-426b-9089-1d053fa32d3c")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR015"
 			(at 130.81 68.58 0)
 			(effects
 				(font
@@ -3781,16 +3781,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "c91672bc-ed12-43f4-9000-ee1e1276c21a")
+			(uuid "1d28bd3d-2baa-4175-903e-0745919b658b")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR070")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR015")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR016")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -3806,7 +3806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21278378-bc6c-46af-ac18-f3d5c82e15a5")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR07"
 			(at 77.47 67.31 0)
 			(effects
 				(font
@@ -3851,16 +3851,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "515102ac-164e-4f5c-8b32-d39f11a89a26")
+			(uuid "ecf276d9-a089-4ae3-aa41-f1f4d7e4bed5")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR062")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR07")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR08")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -3875,7 +3875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3768a423-dc28-464b-b1a6-8a2744244116")
-		(property "Reference" "R19"
+		(property "Reference" "R3"
 			(at 101.6 105.41 0)
 			(effects
 				(font
@@ -3921,19 +3921,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "35aaa991-39f5-48de-9601-f82192ac220f")
+			(uuid "575e37eb-0c0a-4897-9a1f-23e52b485491")
 		)
 		(pin "2"
-			(uuid "f708f570-aff9-45a6-a5e6-4b053ff81b38")
+			(uuid "5caaea9d-82f6-4ca8-b6c4-2b044b722380")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R19")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R3")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R3")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -3949,7 +3949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42fdc209-cb28-4e31-ad55-5e9e42ea20f9")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR013"
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -3994,16 +3994,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f637351-1cab-4697-a30c-5ed831968576")
+			(uuid "19acd56e-79fe-4787-ac52-b742da7b4c40")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR068")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR013")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR014")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -4018,7 +4018,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43a3fd5e-d314-40df-85ef-ec133a99e160")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR018"
 			(at 146.05 71.12 0)
 			(effects
 				(font
@@ -4063,16 +4063,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "e50de555-3c53-4d69-96d5-a7ee3a308aa9")
+			(uuid "ee2947a4-c092-440a-97b1-daa840704fd0")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR073")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR018")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR019")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -4087,7 +4087,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47304d1b-12d1-4e5a-ad65-0eca9fa00c20")
-		(property "Reference" "R24"
+		(property "Reference" "R8"
 			(at 157.48 105.41 0)
 			(effects
 				(font
@@ -4133,19 +4133,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "24680325-5a49-46e0-9216-aaac5359ab4c")
+			(uuid "e07f5156-b1c2-4757-923e-80da6ed88d80")
 		)
 		(pin "2"
-			(uuid "8e547fc5-22db-40b9-bd28-0ec6a010e688")
+			(uuid "09cd4f47-3128-4cd5-b85a-9c1d883e8d2c")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R24")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R8")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R8")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -4160,7 +4160,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63b4e910-dcd8-4879-b901-a6859a63c57c")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR05"
 			(at 35.56 76.2 0)
 			(effects
 				(font
@@ -4205,16 +4205,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "a3849863-1756-4c3f-9b03-3859b9a1ef44")
+			(uuid "5b35767d-f683-46fd-9664-3aab8cd7435a")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR060")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR05")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR06")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4230,7 +4230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6adfea1b-2f5f-4e48-b565-2e815f9a4a60")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR011"
 			(at 99.06 127 0)
 			(effects
 				(font
@@ -4275,16 +4275,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "40dea1da-ffca-4220-9a59-01026976a258")
+			(uuid "784d746a-34ce-4de3-b89c-f553b41ff580")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR066")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR011")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR012")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -4300,7 +4300,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7442d0e9-1e6b-4c06-8f59-d1ed4e516180")
-		(property "Reference" "U13"
+		(property "Reference" "U2"
 			(at 85.344 45.466 90)
 			(effects
 				(font
@@ -4344,61 +4344,61 @@
 			)
 		)
 		(pin "16"
-			(uuid "c8acdd02-0b48-44a1-a36e-f0dccecd9c8d")
+			(uuid "b8721372-744f-4cab-bcd6-82b52ca4c97e")
 		)
 		(pin "6"
-			(uuid "a99620c1-28e0-4a9a-ba04-e44e1ab5df15")
+			(uuid "94d18159-70dc-4faa-a8f0-a129f592565e")
 		)
 		(pin "4"
-			(uuid "4b7c0b74-660a-4783-8480-3ba6f10d6374")
+			(uuid "bba4b1ec-20a5-474e-9fbd-a8488d4a8336")
 		)
 		(pin "3"
-			(uuid "73e9b4a9-17c8-4690-b57a-9c94b2b36434")
+			(uuid "779570b7-20b3-4156-befb-c30870857ca0")
 		)
 		(pin "7"
-			(uuid "aec93812-d14f-4bc9-b3b2-081274806614")
+			(uuid "c25573b0-0777-4532-9049-7fecb1142871")
 		)
 		(pin "2"
-			(uuid "bfd05d4e-9a0a-47a7-8443-ed9505aa3f15")
+			(uuid "eafadee4-795e-468a-8c93-63e7b51f208b")
 		)
 		(pin "8"
-			(uuid "0f7c7d85-d2ed-4f52-b7c4-e843c6529760")
+			(uuid "ce534d50-dc9d-496e-bbdb-3458e7d5486a")
 		)
 		(pin "12"
-			(uuid "7d32cce2-2288-46f6-be7f-c86c664aef25")
+			(uuid "60db4973-340a-4569-9f89-b55949a56044")
 		)
 		(pin "13"
-			(uuid "47a7f009-ee90-4390-a1ea-3d97ad09a4b5")
+			(uuid "d488bad2-d81d-4d2b-9c60-e35e13271ae7")
 		)
 		(pin "10"
-			(uuid "08059bc0-6a2b-48c0-85af-c4eb7444b695")
+			(uuid "90d36372-1bba-4de1-a46a-28ee6baf9288")
 		)
 		(pin "1"
-			(uuid "5c7b04fe-f39d-4c82-9b5d-b55718d31caa")
+			(uuid "1d81c8a6-4828-4975-bf6a-c7fd4508ecd7")
 		)
 		(pin "11"
-			(uuid "1eccc0a2-d366-4982-a12f-e4c68090efb3")
+			(uuid "cc0aa92f-4f7b-4de0-8c99-8c44efb51b2a")
 		)
 		(pin "9"
-			(uuid "da0c8181-2ad0-4d99-9e4a-e0fa08deb751")
+			(uuid "d616a0f6-5eba-4138-bb9a-fc27bfed04ad")
 		)
 		(pin "15"
-			(uuid "2bb8fff7-5c62-4586-82d9-b5c58c6918a4")
+			(uuid "a6b76f1f-cf64-4736-800b-b6d76a4b02f6")
 		)
 		(pin "5"
-			(uuid "497e3b9b-6233-4245-bf0b-0ead16700347")
+			(uuid "3399c62a-f701-43b5-8acf-6d6101b9b533")
 		)
 		(pin "14"
-			(uuid "f53260da-a47f-4d92-9354-52b78af88a5f")
+			(uuid "9cef355f-62c8-49b9-a0e6-d723c5b81ec6")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "U13")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "U2")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "U2")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -4414,7 +4414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a15011d-99f4-4c02-b85f-24898801efb3")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR020"
 			(at 154.94 127 0)
 			(effects
 				(font
@@ -4459,16 +4459,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "8b4a2da0-addd-4184-8ec2-68a75e381903")
+			(uuid "f4244819-c72b-4ab0-b838-ff83577c9133")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR075")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR020")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR021")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -4484,7 +4484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "803558b1-501c-4f34-acca-5de385c5b79e")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR017"
 			(at 146.05 59.69 0)
 			(effects
 				(font
@@ -4529,16 +4529,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "98bbe8da-eee6-423f-9953-c3c5ab3e8a90")
+			(uuid "8afb75a5-f9ba-49de-9c77-ca26a5e9617a")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR072")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR017")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR018")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -4554,7 +4554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82eadf9b-5b50-46fa-8fc5-d99616006f7f")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR014"
 			(at 111.76 127 0)
 			(effects
 				(font
@@ -4599,16 +4599,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f1a25cc-c440-4557-8ac7-412747e9ef6f")
+			(uuid "283eb0bb-7862-43e3-b1cd-1499ae353b7c")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR069")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR014")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR015")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -4623,7 +4623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83e483e7-e02d-4236-90a3-ca7e96c8126d")
-		(property "Reference" "R21"
+		(property "Reference" "R5"
 			(at 138.43 105.41 0)
 			(effects
 				(font
@@ -4669,19 +4669,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "d87a0761-3b2b-49c2-bfe1-9d318b0120eb")
+			(uuid "a74dae49-e0b7-48d6-a621-b63814f95000")
 		)
 		(pin "2"
-			(uuid "f61cda70-f561-4709-83dd-6b49119057da")
+			(uuid "1a0c1a7a-8493-4914-adc3-a2ac9de3ac6c")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R21")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R5")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R5")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -4696,7 +4696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8cd3a0c8-e6e1-4820-a0c6-d11b87101c82")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR06"
 			(at 76.2 78.74 0)
 			(effects
 				(font
@@ -4741,16 +4741,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "20023eb6-f486-4642-a429-6f6a98241e27")
+			(uuid "9f9dfa6e-f4b0-4c36-88c4-a5a99a2ce1c0")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR061")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR06")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR07")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4765,7 +4765,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "916b5fa4-e19c-4ce7-958c-b0febd436ad7")
-		(property "Reference" "U12"
+		(property "Reference" "U1"
 			(at 38.608 52.324 90)
 			(effects
 				(font
@@ -4811,73 +4811,73 @@
 			)
 		)
 		(pin "1"
-			(uuid "34dc003e-7ba8-4855-840e-b22cd4fca896")
+			(uuid "2a16ea53-ca0d-459e-baf1-9e8e0cd8534a")
 		)
 		(pin "2"
-			(uuid "4d19d578-3a2a-4796-948c-5fd49383261e")
+			(uuid "be0ecd55-32a7-4fe3-a1d1-40079a2550f5")
 		)
 		(pin "3"
-			(uuid "9d8f7ca7-6c78-427c-97ad-3e282c6a340d")
+			(uuid "1ebb847f-2641-4e39-90d8-7f3f18925a2e")
 		)
 		(pin "15"
-			(uuid "c6087099-21db-40cd-b78b-7efc83a5e514")
+			(uuid "22a20ed1-0e34-4ea7-b3e6-d34d4fc31b9b")
 		)
 		(pin "5"
-			(uuid "9f90d35e-d38d-4564-9561-caefbbc2a933")
+			(uuid "8e89583a-d241-4256-9c17-62ff8fc9481f")
 		)
 		(pin "9"
-			(uuid "fb64e7f3-87ba-4eb4-9e1f-0b2e8e5664d3")
+			(uuid "b28f3888-1cbe-4e8f-bdc9-1f16927263ac")
 		)
 		(pin "18"
-			(uuid "7b774f44-8315-4437-82ab-94c01ef4f85a")
+			(uuid "0250be12-8728-4aa9-9a28-70ec8057fb26")
 		)
 		(pin "17"
-			(uuid "7842e09e-396b-4f8a-95c8-8c3f66007fc1")
+			(uuid "76a80cd4-09c0-4dd2-8cec-fd2ff4720be8")
 		)
 		(pin "6"
-			(uuid "438ebabe-b84b-483e-8467-1910a5151bbb")
+			(uuid "0f387a0d-42ee-45e1-bb14-82f1753bd62d")
 		)
 		(pin "14"
-			(uuid "233168ce-e960-42f2-9c6c-0cda21c19c57")
+			(uuid "320d5e51-2681-49f9-aa81-22eb0d755b3a")
 		)
 		(pin "11"
-			(uuid "d59494ba-9573-4f86-a6ca-bfff30986fe1")
+			(uuid "a2b98176-dd5b-475a-b398-586510f7b1d6")
 		)
 		(pin "13"
-			(uuid "840e0d18-e17f-422a-9d34-43d0771ddbe5")
+			(uuid "f4f0ce66-3a80-40cd-8551-0ab953e4d945")
 		)
 		(pin "4"
-			(uuid "133a121c-cefa-4bfb-85f6-32e846b5797c")
+			(uuid "3bfcc164-068b-46bd-8eb4-d4e4b58e393c")
 		)
 		(pin "7"
-			(uuid "7da873c6-0485-4607-bf95-94773ae006ac")
+			(uuid "0aa92067-13f7-4897-bc1a-f9eef5839794")
 		)
 		(pin "20"
-			(uuid "ba6d549b-7e56-48fe-8a07-7998692e086c")
+			(uuid "756ad048-40b2-439c-8ab8-db3112110c2e")
 		)
 		(pin "12"
-			(uuid "427c3213-6d0e-4984-8e56-e3fc45fbdd67")
+			(uuid "966d38dc-974d-4c37-96b4-c91fffd0e333")
 		)
 		(pin "8"
-			(uuid "2a1b08d9-d4e7-4669-805b-b3b2f84f950f")
+			(uuid "6ab2eb75-3563-4906-9296-90f2280c6200")
 		)
 		(pin "19"
-			(uuid "133a3c4d-a78a-49e7-add1-0cb25a1393ad")
+			(uuid "bfd97019-64f0-4438-ab27-5f19569d1089")
 		)
 		(pin "10"
-			(uuid "42eff663-8811-4d21-abf5-d6db83ab91e4")
+			(uuid "9ec16400-04b9-422c-90b2-5b37d52abbb8")
 		)
 		(pin "16"
-			(uuid "5f6d9ab3-0920-41eb-aac2-0e3bb27bd4f3")
+			(uuid "9e288fd7-a959-4449-89bc-70f61bd73c16")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "U12")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "U1")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "U1")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -4892,7 +4892,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9551f26b-34a2-4da1-920f-629a9a4bc031")
-		(property "Reference" "D20"
+		(property "Reference" "D4"
 			(at 107.442 92.456 90)
 			(effects
 				(font
@@ -4938,19 +4938,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "62d02330-aa56-4ba1-ac0c-0cb54801728a")
+			(uuid "2b792c52-7e36-40af-be9c-7929ab003bff")
 		)
 		(pin "1"
-			(uuid "4bd6d917-9656-4dda-8337-dcfea3f03909")
+			(uuid "95680a9d-49ed-4b36-89e3-035d8b4ada77")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D20")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D4")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D4")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -4966,7 +4966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "983bfcba-c08d-4404-a179-9602a5d1e225")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR022"
 			(at 191.77 67.31 0)
 			(effects
 				(font
@@ -5011,16 +5011,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "67ed83d6-6bdd-4dbc-b965-ba2f5d96d322")
+			(uuid "9da895cf-b07f-41d1-979b-6919f488a9d8")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR077")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR022")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR023")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -5036,7 +5036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aabbd3df-4599-40e2-adee-681c76c95994")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR010"
 			(at 92.71 127 0)
 			(effects
 				(font
@@ -5081,16 +5081,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "782d6042-c1a2-47c5-ab79-5ed3f0502a3d")
+			(uuid "2c98431c-3058-4324-8911-2f81b3c21a93")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR065")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR010")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR011")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -5105,7 +5105,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1568d9e-5e4c-467c-8473-3881e6be4b7c")
-		(property "Reference" "R18"
+		(property "Reference" "R2"
 			(at 95.25 105.41 0)
 			(effects
 				(font
@@ -5151,19 +5151,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "7551b9d4-2fe4-4a39-a7fe-b5fa4b4a094b")
+			(uuid "8451e69d-ac35-41b9-b8b0-226cef2f5d5b")
 		)
 		(pin "2"
-			(uuid "75e4d37a-aaeb-4a73-834b-a60eda150cc7")
+			(uuid "07123a2d-0527-40cd-8ccf-be1a0279f79f")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R18")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R2")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R2")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -5179,7 +5179,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b209a8e9-f70e-464e-aebe-e380db8ddba6")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR021"
 			(at 161.29 127 0)
 			(effects
 				(font
@@ -5224,16 +5224,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "851bd60c-618e-4e0e-bd72-eb99967cd916")
+			(uuid "c7564125-5d0e-43ce-8f3a-45eeb84e6e2b")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR076")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR021")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR022")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -5248,7 +5248,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2370410-3c5f-4d1b-9d4d-797b1a9a45e3")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR09"
 			(at 85.09 73.66 0)
 			(effects
 				(font
@@ -5293,16 +5293,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "b5b52d49-f05e-40ee-bba7-1948699651c4")
+			(uuid "341a8dae-7673-4f9f-8dcb-82459527934b")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR064")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR09")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR010")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -5317,7 +5317,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3ce799b-80e2-48b5-a3ce-86932e9ad5fa")
-		(property "Reference" "D19"
+		(property "Reference" "D3"
 			(at 101.092 92.456 90)
 			(effects
 				(font
@@ -5363,19 +5363,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "3c08997d-f479-49da-b9b3-783b2d6b146c")
+			(uuid "4e38471e-152d-4dbb-a766-c2fa4644293c")
 		)
 		(pin "1"
-			(uuid "11a983c5-c25c-4b3d-8445-ca245e63f200")
+			(uuid "97085c7f-a496-4fcb-bd6d-40d989b93c70")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D19")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D3")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D3")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -5390,7 +5390,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be273cf3-10fa-4b53-a81e-7d9bb8980bca")
-		(property "Reference" "R23"
+		(property "Reference" "R7"
 			(at 151.13 105.41 0)
 			(effects
 				(font
@@ -5436,19 +5436,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "ecbc7254-6841-406b-81b2-0b865b1c02ce")
+			(uuid "56cc3a36-72de-42e1-8e44-43cd0b529ed0")
 		)
 		(pin "2"
-			(uuid "7c38cc28-e8ea-4984-8d9f-a1eb7d5cd3c5")
+			(uuid "5da8e81a-1e62-4dc0-ab5b-f9593e1e56a4")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R23")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R7")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R7")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -5464,7 +5464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1eb3b3d-7de2-4126-894d-8bffaeae70c9")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR019"
 			(at 148.59 127 0)
 			(effects
 				(font
@@ -5509,16 +5509,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "9328db53-e3c1-4492-8f9b-0c20c671ba91")
+			(uuid "5b1ddd04-1cad-4555-8b83-dc98cb5fb755")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR074")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR019")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR020")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -5533,7 +5533,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c304cfd7-6863-446a-af5f-4d800db8b4e6")
-		(property "Reference" "D17"
+		(property "Reference" "D1"
 			(at 88.392 92.456 90)
 			(effects
 				(font
@@ -5579,19 +5579,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "600db3b3-284a-44b2-9408-01820bd84f14")
+			(uuid "760a0f25-5d12-41ce-9f67-53913770953a")
 		)
 		(pin "1"
-			(uuid "4bea031b-c8cb-4420-9b82-c8886be48c80")
+			(uuid "c48936e6-575e-4bea-b8f1-1c7f0e57e96f")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D17")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D1")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D1")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -5606,7 +5606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4f7f5e9-63cf-4345-a596-b3d2480bc8d8")
-		(property "Reference" "D22"
+		(property "Reference" "D6"
 			(at 144.272 92.456 90)
 			(effects
 				(font
@@ -5652,19 +5652,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "489c030a-16c0-4715-a055-d7f048658525")
+			(uuid "6f718ae2-32f8-49c8-848b-ef0520bf190a")
 		)
 		(pin "1"
-			(uuid "3d00b32a-3d26-464b-b686-cd5a374ec42d")
+			(uuid "20cb3f56-63b7-4b6f-86e7-fbc16c30ccd0")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D22")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D6")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D6")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -5679,7 +5679,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ccacff31-478d-4f4e-a3f4-4687d921bab7")
-		(property "Reference" "R20"
+		(property "Reference" "R4"
 			(at 107.95 105.41 0)
 			(effects
 				(font
@@ -5725,19 +5725,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "b252b14b-5e26-42cd-9674-fc2133129f1c")
+			(uuid "9c382573-0b4b-4b1d-961a-0940260f5978")
 		)
 		(pin "2"
-			(uuid "e84d9adb-adfc-471e-a440-2c6d2c488d15")
+			(uuid "64171938-9f4e-4f43-997b-3f61f864e2b7")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R20")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R4")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R4")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -5752,7 +5752,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d943eff7-ac9e-452c-b7fd-5c717f4845cd")
-		(property "Reference" "D23"
+		(property "Reference" "D7"
 			(at 150.622 92.456 90)
 			(effects
 				(font
@@ -5798,19 +5798,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "1ba46421-950f-4369-93e3-2e093429c859")
+			(uuid "3a217f0b-fcea-47f1-a604-59a84aeee518")
 		)
 		(pin "1"
-			(uuid "ff4e92a8-1837-4fdb-bbba-cfe50cd1c50e")
+			(uuid "0e237dac-e30d-4af9-b18f-812ed9e4e9b8")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "D23")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "D7")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "D7")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -5825,7 +5825,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9d3014c-2749-4343-84e9-5f32b62b9285")
-		(property "Reference" "R22"
+		(property "Reference" "R6"
 			(at 144.78 105.41 0)
 			(effects
 				(font
@@ -5871,19 +5871,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "7214e5aa-c680-49c2-8c0d-e9312636c39f")
+			(uuid "139397c6-5e6b-445b-a7d9-c89bf7cf6667")
 		)
 		(pin "2"
-			(uuid "dea5d6e0-0882-4d0e-a248-0798275bbf6a")
+			(uuid "7adfc7bb-6fee-4331-99e5-9de9b7407e1d")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "R22")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "R6")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "R6")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -5898,7 +5898,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e251c0ab-6fa0-41f8-9166-c37da7212d7c")
-		(property "Reference" "C12"
+		(property "Reference" "C1"
 			(at 29.464 65.532 0)
 			(effects
 				(font
@@ -5944,19 +5944,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "abb7ee57-06a4-4b62-a105-05c66993b9de")
+			(uuid "68d2b235-cf94-4aee-937e-7d2978e00194")
 		)
 		(pin "2"
-			(uuid "a1ae05e2-6549-4d43-8f41-c535f5bc5476")
+			(uuid "4afd2609-6923-47e3-a724-1471e96ad9d1")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "C12")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "C1")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "C1")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -5971,7 +5971,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f369991b-6da2-4134-84c9-b2db57d0a36a")
-		(property "Reference" "C13"
+		(property "Reference" "C2"
 			(at 79.756 58.42 0)
 			(effects
 				(font
@@ -6017,19 +6017,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ee13dae-5c5a-42ce-b386-fccea262ba44")
+			(uuid "50646be7-33f4-4198-ac26-02f1ff27e222")
 		)
 		(pin "2"
-			(uuid "44b1e568-16c4-4170-8e77-5be7cedcc965")
+			(uuid "9475e4c7-a164-41b1-be55-0a7a12ac3d9e")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "C13")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "C2")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "C2")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -6045,7 +6045,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f3e1c1c4-3eb2-4828-89fb-e4750ccd61da")
-		(property "Reference" "U14"
+		(property "Reference" "U3"
 			(at 145.288 45.72 90)
 			(effects
 				(font
@@ -6089,61 +6089,61 @@
 			)
 		)
 		(pin "16"
-			(uuid "dfdcad15-4708-4079-9214-47693016b90f")
+			(uuid "241c9acd-f534-4ccb-a3c6-2d7cbf82f260")
 		)
 		(pin "6"
-			(uuid "dafbbfdb-86bd-43c5-af3b-3148431248ac")
+			(uuid "c52db8cc-ff5a-47e9-a6f1-4243fb4ee25b")
 		)
 		(pin "4"
-			(uuid "26a2644d-c1ea-482c-b903-89d7aafe4f6b")
+			(uuid "68ce10d9-5beb-403f-8212-87ce5f24ccb3")
 		)
 		(pin "3"
-			(uuid "61e798e4-6511-48ec-8c3f-375d8f97170c")
+			(uuid "0cdf4118-e614-4d6e-afbc-18770705f773")
 		)
 		(pin "7"
-			(uuid "c966bdfb-c8cf-428b-9e3b-c5b382cc331d")
+			(uuid "57c66ea3-c276-4f64-ab56-a021486e2d8d")
 		)
 		(pin "2"
-			(uuid "d964736e-53ea-48aa-b199-b0f37b967a97")
+			(uuid "34c7e01a-3db9-42c2-b0d6-5676eccd3ec0")
 		)
 		(pin "8"
-			(uuid "7bb51199-42f6-47cc-92d9-3bb221ea46c9")
+			(uuid "ea7855bf-57a5-4a54-b2f9-2bc214ba847f")
 		)
 		(pin "12"
-			(uuid "e69e2662-1188-438f-b061-210ee2be3a23")
+			(uuid "c4c37188-2032-4a07-8b0c-c5ef6c9fed8c")
 		)
 		(pin "13"
-			(uuid "5abd814b-0a74-4b1a-a97a-91a0f93c4628")
+			(uuid "85fa9f31-502a-4738-b1f8-2fc688fbd88f")
 		)
 		(pin "10"
-			(uuid "4a01bc0f-7f96-4a70-91d7-28a61b05b17a")
+			(uuid "87dd59ed-56fd-4c37-ab5b-031d9046f234")
 		)
 		(pin "1"
-			(uuid "16c1a214-427c-4b7c-a675-82a4e655e91d")
+			(uuid "5f338272-71e1-4469-9992-f9b3b84c11e4")
 		)
 		(pin "11"
-			(uuid "bdd817c3-f53b-411f-a063-cc64cd728625")
+			(uuid "74136077-07e2-43ab-8b28-91c2bedfdcdb")
 		)
 		(pin "9"
-			(uuid "a4b40a51-0044-44c3-a7bf-756ae608be88")
+			(uuid "ea324b11-2dc5-409a-b53d-c71d87310b3c")
 		)
 		(pin "15"
-			(uuid "5ca323bc-3eb9-469f-8a39-21670c889b41")
+			(uuid "d6e59f37-856e-4a2c-b97f-6c0fdf7fb809")
 		)
 		(pin "5"
-			(uuid "29ad93d2-6932-40a6-8a74-7d5262d82f12")
+			(uuid "608ec8ba-3f1a-4ce2-b4e7-a63c1ba45a69")
 		)
 		(pin "14"
-			(uuid "e2534bce-82ae-480c-984e-26cee952dea5")
+			(uuid "6a552e06-5eb8-4aca-95f6-da720c120c4e")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "U14")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "U3")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "U3")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -6158,7 +6158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fde769cb-9d08-488c-876a-e630b0a61e5c")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR012"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -6203,16 +6203,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "377e9c33-2513-4ad4-ae02-2f871b37ad8d")
+			(uuid "fdd633be-dbee-4014-b254-2761c98be780")
 		)
 		(instances
-			(project "Arithmetic_Logic_Unit"
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/363112a2-1d74-42e7-a447-b328122798da"
-					(reference "#PWR067")
+			(project "Registers_Module"
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/5d5ad862-fcfa-4a67-8e3d-dcaf465c3313"
+					(reference "#PWR012")
 					(unit 1)
 				)
-				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/50241097-74f7-4639-b588-846dbecb9e73/380bcfdd-a920-4b5b-9609-de7b647a2481"
-					(reference "#PWR013")
+				(path "/71235e3f-9de8-4596-887a-1aa4526e80d1/d5935b3e-a1b9-4cb6-8654-be94e8f46961"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
