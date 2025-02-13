@@ -22,6 +22,7 @@ async def test_dff(dut):
     for i in range(10):
         dut.data_dff.value = i % 2
         await RisingEdge(dut.clk)
+        await Timer(1, units="ns")  # Small delay before checking
         assert dut.q_dff.value == dut.data_dff.value, f"Mismatch Q={dut.q_dff.value}, expected={dut.data_dff.value}"
         assert dut.q_not_dff.value == ~dut.data_dff.value, f"Mismatch Not Q={dut.q_not_dff.value}, expected={~dut.data_dff.value & 1}"
 
