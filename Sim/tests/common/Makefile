@@ -1,10 +1,11 @@
 TOPLEVEL_LANG = verilog
 
-VERILOG_SOURCES = ../hdl/common/sr_latch.v
+VERILOG_SOURCES = ../hdl/common/d_latch.v ../hdl/common/d_flip_flop.v ./test_module.v
 
-TOPLEVEL = sr_latch
+TOPLEVEL = test_module
 
-MODULE = test_sr_latch
-
+MODULE = test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim 
+clean:
+	@rm -rf sim_build __pycache__ results.xml *.vcd
