@@ -101,8 +101,6 @@ async def test_dlatch(dut):
 
 @cocotb.test()
 async def test_full_adder(dut):
-    """Test the full adder for all possible input combinations."""
-
     # Helper function to apply inputs and check outputs
     async def apply_and_check(a, b, cin, expected_sum, expected_carry):
         dut.a_fa.value = a
@@ -127,3 +125,38 @@ async def test_full_adder(dut):
     for vector in test_vectors:
         a, b, cin, expected_sum, expected_carry = vector
         await apply_and_check(a, b, cin, expected_sum, expected_carry)
+
+@cocotb.test()
+async def test_dm74ls283_quad_adder(dut):
+    # Helper function to apply inputs and check outputs
+    async def apply_and_check(a_vals, b_vals, cin, expected_sum, expected_cout):
+        # Applying input values
+        dut.a_cla.value = int("".join(map(str, a_vals[::-1])), 2) # Converts list to integer
+        dut.b_cla.value = int("".join(map(str, b_vals[::-1])), 2)
+        dut.cin_cla.value = cin
+        await Timer(1, units="ns")
+        
+        # Convert dut outputs to integers for comparison
+        actual_sum = [dut.sum_cla[i].value.integer for i in range(1, 5)]
+        actual_cout = dut.cout_cla.value.integer
+        
+        # Verifying the outputs
+        assert actual_sum == expected_sum, f"Sum mismatch: a={a_vals}, b={b_vals}, cin={cin}, expected={expected_sum}, got={actual_sum}"
+        assert actual_cout == expected_cout, f"Carry out mismatch: a={a_vals}, b={b_vals}, cin={cin}, expected={expected_cout}, got={actual_cout}"
+
+    # Test vectors as tuples: (a, b, cin, expected_sum, expected_cout)
+    test_vectors = [
+        ([0, 0, 0, 0], [0, 0, 0, 0], 0, [0, 0, 0, 0], 0),
+        ([0, 0, 0, 1], [0, 0, 0, 1], 0, [0, 0, 0, 0], 1),  # 1 + 1 = 10
+        ([0, 0, 1, 1], [0, 0, 1, 0], 0, [0, 0, 0, 1], 1),  # 11 + 10 = 101
+        ([1, 1, 1, 1], [1, 1, 1, 1], 0, [0, 1, 1, 1], 1),  # 1111 + 1111 = 11110
+        ([1, 0, 1, 0], [0, 1, 0, 1], 1, [0, 0, 0, 0], 1),  # 1010 + 0101 + 1 = 10000
+        ([1, 1, 1, 1], [0, 0, 0, 0], 1, [1, 1, 1, 0], 0),  # 1111 + 0000 + 1 = 01111
+        ([1, 0, 1, 0], [1, 0, 1, 0], 0, [0, 1, 0, 1], 1),  # 1010 + 1010 = 10100
+        ([0, 1, 0, 1], [1, 0, 0, 1], 1, [1, 1, 0, 1], 0),  # 0101 + 1001 + 1 = 1101 (+ carry-out 0)
+    ]
+
+    # Loop over the test vectors and run the tests
+    for vector in test_vectors:
+        a, b, cin, expected_sum, expected_cout = vector
+        await apply_and_check(a, b, cin, expected_sum, expected_cout)
