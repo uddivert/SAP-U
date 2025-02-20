@@ -98,3 +98,32 @@ async def test_dlatch(dut):
     last_value = dut.q_dl.value
     await Timer(5, units="ns")
     assert dut.q_dl.value == last_value, f"Latch should hold the last value Q={dut.q_dl.value}, expected={last_value}"
+
+@cocotb.test()
+async def test_full_adder(dut):
+    """Test the full adder for all possible input combinations."""
+
+    # Helper function to apply inputs and check outputs
+    async def apply_and_check(a, b, cin, expected_sum, expected_carry):
+        dut.a_fa.value = a
+        dut.b_fa.value = b
+        dut.cin_fa.value = cin
+        await Timer(1, units="ns")
+        assert dut.s_fa.value == expected_sum, f"Sum mismatch: a={a}, b={b}, cin={cin}, expected={expected_sum}, got={dut.s_fa.value}"
+        assert dut.cout_fa.value == expected_carry, f"Carry out mismatch: a={a}, b={b}, cin={cin}, expected={expected_carry}, got={dut.cout_fa.value}"
+
+    # Test all possible input combinations
+    test_vectors = [
+        (0, 0, 0, 0, 0),  # a, b, cin, expected_sum, expected_carry
+        (0, 0, 1, 1, 0),
+        (0, 1, 0, 1, 0),
+        (0, 1, 1, 0, 1),
+        (1, 0, 0, 1, 0),
+        (1, 0, 1, 0, 1),
+        (1, 1, 0, 0, 1),
+        (1, 1, 1, 1, 1)
+    ]
+
+    for vector in test_vectors:
+        a, b, cin, expected_sum, expected_carry = vector
+        await apply_and_check(a, b, cin, expected_sum, expected_carry)
