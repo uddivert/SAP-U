@@ -34,7 +34,13 @@ module test_module (
     input wire b_fa, // input b
     input wire cin_fa, // carry in
     output wire s_fa, // sum
-    output wire cout_fa // carry out
+    output wire cout_fa, // carry out
+
+    // SR Latch
+    input wire set_sr,    // Input: Set signal
+    input wire reset_sr,  // Input: Reset signal
+    output wire q_sr,      // Output: Q
+    output wire q_not_sr   // Output: Not Q
 );
     d_flip_flop dff (
         .clk(clk),
@@ -83,5 +89,12 @@ module test_module (
         .cin(cin_cla), // carry in
         .sum(sum_cla), // sum
         .cout(cout_cla) // carry out
+    );
+
+    sr_latch sl(
+        .set(set_sr),
+        .reset(reset_sr),
+        .q(q_sr),
+        .q_not(q_not_sr)
     );
 endmodule

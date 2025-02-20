@@ -38,6 +38,36 @@ async def test_dff(dut):
     assert dut.q_not_dff.value == 1, "Mismatch after reset Not Q should be 1"
 
 @cocotb.test()
+async def test_srlatch(dut):
+    await setup_clock(dut)  # Setup clock for input signal
+    dut.set_sr.setimmediatevalue = 0  # Initialize inputs
+    dut.reset_sr.setimmediatevalue = 1
+ 
+    await Timer(10, units="ns")  # Allow time for initial stabilization
+
+    async def test_combination(set_val, reset_val, expected_q, expected_q_not):
+        dut.set_sr.setimmediatevalue = set_val
+        dut.reset_sr.setimmediatevalue = reset_val
+        await Timer(10, units="ns")  # Allow propagation delay
+        actual_q = dut.q_sr.value
+        actual_q_not = dut.q_not_sr.value
+
+        if actual_q != expected_q or actual_q_not != expected_q_not:
+            assert (f"Failed: set={set_val}, reset={reset_val}: "
+                    f"Expected q={expected_q}, q_not={expected_q_not}, "
+                    f"Got q={actual_q}, q_not={actual_q_not}")
+        else:
+            dut._log.info(f"Passed: set={set_val}, reset={reset_val}: "
+                            f"q={actual_q}, q_not={actual_q_not}")
+
+    # Test sequence - Comprehensive
+    await test_combination(1, 0, 1, 0)  # Set
+    await test_combination(0, 0, 1, 0)  # Hold after set
+    await test_combination(0, 1, 0, 1)  # Reset
+    await test_combination(0, 0, 0, 1)  # Hold after reset
+    await test_combination(1, 0, 1, 0)  # Set again
+
+@cocotb.test()
 async def test_dlatch(dut):
     await setup_clock(dut)  # Set up the clock for input signal
     dut.enable_dl.setimmediatevalue(0)
