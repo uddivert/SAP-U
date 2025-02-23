@@ -30,7 +30,7 @@ module alu_tb();
 
     // Testbench stimulus
     initial begin
-        $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
+        $dumpfile("./simulation/alu.vcd");  // VCD file for waveform generation
         $dumpvars(0, alu_tb);
 
 	flag_fi = 0; // set flag register to update

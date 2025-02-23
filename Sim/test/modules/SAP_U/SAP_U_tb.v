@@ -75,5 +75,7 @@ initial begin
     #10;
     // test subtraction
     alu_subtract = 1;
+
+    $finish;
 end
 endmodule

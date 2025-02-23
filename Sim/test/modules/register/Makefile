@@ -1,12 +1,13 @@
 # Directories
-HDL_DIR_COMMON = ../../hdl/common
+HDL_DIR_COMMON = ../../../hdl/common
+HDL_DIR_MODULE = ../../../hdl/modules
 SIM_DIR = ./simulation
 
-# Automatically find all Verilog source files
+# Automatically find all Verilog source files in HDL and TEST directories
 HDL_SRCS_COMMON = $(wildcard $(HDL_DIR_COMMON)/*.v)
-HDL_SRCS = $(HDL_SRCS_COMMON)
+HDL_SRCS = $(HDL_SRCS_COMMON) $(HDL_DIR_MODULE)/register.v
 
-TEST_SRCS = common_tb.v
+TEST_SRCS = register_tb.v
 
 # Output binary for simulation
 TB_BINARY = $(SIM_DIR)/testbench.out
@@ -33,7 +34,7 @@ run: compile
 # Clean simulation files
 clean:
 	rm -rf $(SIM_DIR)
-	
+
 # Additional help target
 help:
 	@echo "Makefile targets:"

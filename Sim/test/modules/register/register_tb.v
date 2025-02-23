@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module instruction_register_tb;
+module register_tb;
 
   // Inputs
   reg load;
@@ -10,7 +10,7 @@ module instruction_register_tb;
   reg [7:0] data;
 
   // Output
-  wire [3:0] q;
+  wire [7:0] q;
 
   // Instantiate the Unit Under Test (UUT)
   register uut (
@@ -31,7 +31,8 @@ module instruction_register_tb;
 
   // Testbench stimulus
   initial begin
-    $dumpvars(0, instruction_register_tb);
+    $dumpfile("./simulation/register.vcd");  // VCD file for waveform generation
+    $dumpvars(0, register_tb);
 
     // Initialize all inputs
     load = 0;  // enable load
@@ -42,7 +43,7 @@ module instruction_register_tb;
 
     // Case 1: clr deasserted, load is high, data is 1
     clr  = 0;
-    data = 8'b11110101;
+    data = 8'b11111111;  // only lower 4 bits should show
     #10;  // Wait for a clock edge
 
     // Case 2: Load is low, holding the previous data
@@ -52,7 +53,7 @@ module instruction_register_tb;
 
     // Case 3: Load the new data
     load = 0;  // enable load
-    data = 8'b00001111;
+    data = 8'b00000011;
     #10;  // Wait for a clock edge
 
     // Case 4: Disable output

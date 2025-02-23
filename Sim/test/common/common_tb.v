@@ -86,6 +86,7 @@ module common_tb;
   end
 
   initial begin
+    $dumpfile("./simulation/common.vcd");  // VCD file for waveform generation
     $dumpvars(0, common_tb);
 
     /************************************************************/
