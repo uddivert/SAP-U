@@ -17,7 +17,7 @@ module sn54173_quad_flip_flop (
 
   genvar i;
   generate
-    for (i = 0; i <= 3; i = i + 1) begin : g_d_flip_flops // label for generate function
+    for (i = 0; i <= 3; i = i + 1) begin : g_d_flip_flops  // label for generate function
 
       // If  g1 and g2 BOTH low, data is loaded into d flipflop.
       // else value stays with current value of Q

@@ -39,32 +39,31 @@ module register_tb;
     enable = 0;  // enable output
     data = 8'b00000000;
     clr = 1;  // Start with clear active
-    #12;  // Wait a bit to see the clr effect
+    #12;
 
     // Case 1: clr deasserted, load is high, data is 1
     clr  = 0;
     data = 8'b11111111;  // only lower 4 bits should show
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 2: Load is low, holding the previous data
     load = 1;  // disable load
     data = 8'b01010101;  // should not show up
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 3: Load the new data
     load = 0;  // enable load
     data = 8'b00000011;
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 4: Disable output
     enable = 1;  // disable output
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 5: Activate clr, observe q goes to 0
     clr = 1;
-    #10;  // Wait for a clock edge
+    #10;
 
-    // End simulation
     $finish;
   end
 endmodule

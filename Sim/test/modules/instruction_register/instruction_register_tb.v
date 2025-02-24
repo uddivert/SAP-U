@@ -44,27 +44,26 @@ module instruction_register_tb;
     // Case 1: clr deasserted, load is high, data is 1
     clr  = 0;
     data = 8'b11110101;
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 2: Load is low, holding the previous data
     load = 1;  // disable load
     data = 8'b01010101;  // should not show up
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 3: Load the new data
     load = 0;  // enable load
     data = 8'b00001111;
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 4: Disable output
     enable = 1;  // disable output
-    #10;  // Wait for a clock edge
+    #10;
 
     // Case 5: Activate clr, observe q goes to 0
     clr = 1;
-    #10;  // Wait for a clock edge
+    #10;
 
-    // End simulation
     $finish;
   end
 endmodule
