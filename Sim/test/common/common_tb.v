@@ -77,6 +77,18 @@ module common_tb;
       .cout(cla_cout)
   );
 
+  reg [3:0] ram_a, ram_d;
+  reg ram_cs, ram_we;
+  wire [3:0] ram_o;
+
+  f189 ram (
+      .a (ram_a),
+      .d (ram_d),
+      .cs(ram_cs),
+      .we(ram_we),
+      .o (ram_o)
+  );
+
   // Clock signal generation: 50% duty cycle with a period of 10 time units
   always begin
     clk = 0;
@@ -337,6 +349,30 @@ module common_tb;
     cla_cin = 1;  // carry in
     #10;
 
+
+    /************************************************************/
+    /* Ram testbench                                            */
+    /************************************************************/
+    ram_cs = 1;
+    ram_we = 1;
+    ram_a  = 0;
+    ram_d  = 0;
+    #10;
+
+    // Write data to memory
+    ram_cs = 0;
+    ram_we = 0;
+    ram_a  = 4'b0010;
+    ram_d  = 4'b1100;
+    #10;
+    ram_we = 1;
+    #10;
+
+    // Read data from memory
+    ram_cs = 0;
+    ram_we = 1;
+    ram_a  = 4'b0010;
+    #10;
 
     $finish;  // End simulation
   end
