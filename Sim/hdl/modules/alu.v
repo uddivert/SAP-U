@@ -48,7 +48,7 @@ module alu (
 
   // compute zero flag
   assign flag_data[1] = ~|internal_result;  // Simplifies zero flag logic
-  assign result = enable ? 8'b0 : internal_result;  // assign result dependent on enable
+  assign result = enable ? 8'bZ : internal_result;  // assign result dependent on enable
 
   // handle flags
   sn54173_quad_flip_flop flags_reg (

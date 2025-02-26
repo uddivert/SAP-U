@@ -1,0 +1,34 @@
+// Difference from circuit board'set implementaton
+// No tristate buffer used
+
+`default_nettype none
+module ram (
+    input wire [3:0] address,
+    input wire [7:0] data,
+    input wire write_enable,
+    input wire enable,  // reverse logic
+    output wire [7:0] bus_out
+);
+  wire [3:0] mem_low, mem_high;
+  wire [7:0] memory;
+
+  reg cs = 0;  // f189 output always on
+  f189 sram1 (
+      .a (address),
+      .d (data[3:0]),
+      .cs(cs),
+      .we(write_enable),
+      .o (mem_low)
+  );
+
+  f189 sram2 (
+      .a (address),
+      .d (data[7:4]),
+      .cs(cs),
+      .we(write_enable),
+      .o (mem_high)
+  );
+  assign memory  = {~mem_high, ~mem_low};
+  assign bus_out = enable ? 8'bZ : memory;  // enable bus out dependendent on enable
+
+endmodule
