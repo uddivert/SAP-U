@@ -391,8 +391,8 @@ module common_tb;
     /************************************************************/
     mux_strobe = 0;  // set output always on
     mux_select = 0;
-    mux_a = 1010;
-    mux_b = 0101;
+    mux_a = 4'b1010;
+    mux_b = 4'b0101;
     mux_select = 0;
     #10;
     mux_select = 1;

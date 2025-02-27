@@ -1,7 +1,7 @@
 // memory address register
 
 module mar (
-    input wire [3:0] button_input,
+    input wire [3:0] dipswitch_input,
     input wire [3:0] bus,
     input wire load,
     input wire button_select,
@@ -10,23 +10,23 @@ module mar (
     input wire clk,
     output wire [3:0] mar_out
 );
-wire [3:0] qff_out;
-sn74ls159 mux (
-    .a(qff_out),
-    .b(button_input),
-    .select(button_select),
-    .strobe(0), // output always on
-    .y(mar_out)
-);
- sn54173_quad_flip_flop qff (
-     .m(enable),
-    .n(enable),
-    .g1(load),
-    .g2(load),
-    .clr(clear),
-    .clk(clk),
-    .data(bus),
-    .q(qff_out)
-);
+  wire [3:0] qff_out;
+  sn74ls159 mux (
+      .a(qff_out),
+      .b(dipswitch_input),
+      .select(button_select),
+      .strobe(0),  // output always on
+      .y(mar_out)
+  );
+  sn54173_quad_flip_flop qff (
+      .m(enable),
+      .n(enable),
+      .g1(load),
+      .g2(load),
+      .clr(clear),
+      .clk(clk),
+      .data(bus),
+      .q(qff_out)
+  );
 
 endmodule
