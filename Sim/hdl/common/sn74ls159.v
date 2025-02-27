@@ -5,10 +5,10 @@ module sn74ls159 (
     input wire strobe,
     output wire [3:0] y
 );
- genvar i;
+  genvar i;
   generate
-    for (i = 0; i <= 3; i = i + 1) begin : mux
-    assign y[i] = (a[i] & ~select & ~strobe) | (b[i] & select & ~strobe);
+    for (i = 0; i <= 3; i = i + 1) begin : g_mux
+      assign y[i] = (a[i] & ~select & ~strobe) | (b[i] & select & ~strobe);
     end
-    endgenerate
+  endgenerate
 endmodule

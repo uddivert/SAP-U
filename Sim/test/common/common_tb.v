@@ -93,13 +93,13 @@ module common_tb;
   reg mux_select, mux_strobe;
   wire [3:0] mux_y;
 
-  module sn74ls159 (
-    .a(mux_a),
-    .b(mux_b),
-    .select(mux_select),
-    .strobe(mux_strobe),
-    .y(mux_y)
-);
+  sn74ls159 mux (
+      .a(mux_a),
+      .b(mux_b),
+      .select(mux_select),
+      .strobe(mux_strobe),
+      .y(mux_y)
+  );
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
   always begin
@@ -389,14 +389,14 @@ module common_tb;
     /************************************************************/
     /* sn74ls159 testbench                                      */
     /************************************************************/
-    strobe = 0; // set output always on
-    mux_select = 0
+    mux_strobe = 0;  // set output always on
+    mux_select = 0;
     mux_a = 1010;
     mux_b = 0101;
-    mux_select = 0
+    mux_select = 0;
     #10;
     mux_select = 1;
-
+    #10;
     $finish;  // End simulation
   end
 endmodule
