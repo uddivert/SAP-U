@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps `default_nettype none
 
-module ram_tb;
+module memory_tb;
   reg [3:0] address;
   reg [7:0] data;
   reg write_enable;
   reg enable;
   wire [7:0] bus_out;
 
-  // Instantiate the RAM module
-  ram uut (
+  // Instantiate the Memory module
+  memory uut (
       .address(address),
       .data(data),
       .write_enable(write_enable),
@@ -17,8 +17,8 @@ module ram_tb;
   );
 
   initial begin
-    $dumpfile("./simulation/ram_tb.vcd");
-    $dumpvars(0, ram_tb);
+    $dumpfile("./simulation/memory_tb.vcd");
+    $dumpvars(0, memory_tb);
 
     // Initialize signals
     address = 4'b0000;

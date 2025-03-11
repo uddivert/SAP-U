@@ -1,7 +1,7 @@
 // memory address register
 
 module mar (
-    input wire [3:0] dipswitch_input,
+    input wire [3:0] dipswitch_input,   // sets address
     input wire [3:0] bus,
     input wire load,
     input wire button_select,
