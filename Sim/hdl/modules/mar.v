@@ -11,7 +11,7 @@ module mar (
     output wire [3:0] mar_out
 );
   wire [3:0] qff_out;
-  sn74ls159 mux (
+  sn74ls157 mux (
       .a(qff_out),
       .b(dipswitch_input),
       .select(button_select),

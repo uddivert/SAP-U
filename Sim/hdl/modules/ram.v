@@ -20,7 +20,7 @@ module ram(
   wire run_mode;
   wire address;
 
-  sn74ls159 mux1 (
+  sn74ls157 mux1 (
       .a(dipswitch_data[3:0]),
       .b(bus_data[3:0]),
       .select(data_button),
@@ -28,7 +28,7 @@ module ram(
       .y(mem_low)
   );
 
-  sn74ls159 mux2 (
+  sn74ls157 mux2 (
       .a(dipswitch_data[7:4]),
       .b(bus_data[7:4]),
       .select(data_button),
@@ -36,7 +36,7 @@ module ram(
       .y(mem_high)
   );
 
-  sn74ls159 mux3 (
+  sn74ls157 mux3 (
       .a(run_mode),
       .b(addr_button),
       .select(data_button),

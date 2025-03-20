@@ -93,7 +93,7 @@ module common_tb;
   reg mux_select, mux_strobe;
   wire [3:0] mux_y;
 
-  sn74ls159 mux (
+  sn74ls157 mux (
       .a(mux_a),
       .b(mux_b),
       .select(mux_select),
@@ -387,7 +387,7 @@ module common_tb;
     #10;
 
     /************************************************************/
-    /* sn74ls159 testbench                                      */
+    /* sn74ls157 testbench                                      */
     /************************************************************/
     mux_strobe = 0;  // set output always on
     mux_select = 0;

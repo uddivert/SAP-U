@@ -1,4 +1,4 @@
-module sn74ls159 (
+module sn74ls157 (
     input wire [3:0] a,
     input wire [3:0] b,
     input wire select,
