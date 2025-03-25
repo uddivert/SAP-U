@@ -2,7 +2,7 @@
 module ram(
     input wire [7:0] dipswitch_data,
     input wire [3:0] dipswitch_addr,
-    input wire [7:0] bus_data,
+    input wire [7:0] bus_in,
     input wire addr_button,
     input wire data_button,
     input wire write_enable,
@@ -11,18 +11,18 @@ module ram(
     input wire load_addr_reg,
     input wire clear_addr_reg,
     input wire enable_addr_reg,
-    input wire clk
-    output wire bus_out
+    input wire clk,
+    output wire [7:0] bus_out
 );
 
   wire [3:0] mem_low, mem_high;
   wire write_mode;
   wire run_mode;
-  wire address;
+  wire [3:0] address;
 
   sn74ls157 mux1 (
       .a(dipswitch_data[3:0]),
-      .b(bus_data[3:0]),
+      .b(bus_in[3:0]),
       .select(data_button),
       .strobe(0),  // output always on
       .y(mem_low)
@@ -30,7 +30,7 @@ module ram(
 
   sn74ls157 mux2 (
       .a(dipswitch_data[7:4]),
-      .b(bus_data[7:4]),
+      .b(bus_in[7:4]),
       .select(data_button),
       .strobe(0),  // output always on
       .y(mem_high)
@@ -48,7 +48,7 @@ mar addr_reg(
     .dipswitch_input(dipswitch_addr),
     .button_select(addr_button),
     .clk(clk)
-    .bus(bus_data[3:0]),
+    .bus(bus_in[3:0]),
     .load(load_addr_reg),
     .clear(clear_addr_reg),
     .enable(enable_addr_reg),
@@ -58,12 +58,10 @@ mar addr_reg(
 assign internal_data = {~mem_high, ~mem_low};
 assign run_mode = ~(clk & control_signal);
 memory mem(
-
+    .address(address),
     .data(internal_data),
     .write_enable(write_mode),
     .enable(0),
-    .address(address),
     .bus_out(bus_out)
-
 );
 endmodule
