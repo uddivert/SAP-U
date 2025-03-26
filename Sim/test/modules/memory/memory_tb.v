@@ -46,12 +46,12 @@ module memory_tb;
     address = 4'b0010;
     enable = 0;  // Enable output
     #10;
-    $display("Read from 0x2: %b (Expected: 01010101)", bus_out);
+    $display("Read from 0x2: %b (Expected: 10101010)", bus_out);
 
     // Test 4: Read from address 0x5
     address = 4'b0101;
     #10;
-    $display("Read from 0x5: %b (Expected: b11001100)", bus_out);
+    $display("Read from 0x5: %b (Expected: 11001100)", bus_out);
 
     // Test 5: Tri-state output when enable = 1
     enable = 1;
