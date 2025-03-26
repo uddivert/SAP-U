@@ -37,20 +37,20 @@ module ram(
       .y(mem_high)
   );
 
-  sn74ls157 mux3 (
-      .a(run_mode),
-      .b(addr_button),
-      .select(data_button),
-      .strobe(0),  // output always on
-      .y(write_mode)
-  );
+sn74ls157 mux3 (
+    .a(run_mode),
+    .b(addr_button),
+    .select(data_button),
+    .strobe(0),  // output always on
+    .y(write_mode)
+);
 
-mar addr_reg(
+mar addr_reg (
     .dipswitch_input(dipswitch_addr),
-    .button_select(addr_button),
-    .clk(clk),
     .bus(bus_in[3:0]),
     .load(load_addr_reg),
+    .button_select(addr_button),
+    .clk(clk),
     .clear(clear_addr_reg),
     .enable(enable_addr_reg),
     .mar_out(address)
