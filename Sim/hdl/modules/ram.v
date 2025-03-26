@@ -16,6 +16,7 @@ module ram(
 );
 
   wire [3:0] mem_low, mem_high;
+  wire [7:0] internal_data;
   wire write_mode;
   wire run_mode;
   wire [3:0] address;
@@ -47,7 +48,7 @@ module ram(
 mar addr_reg(
     .dipswitch_input(dipswitch_addr),
     .button_select(addr_button),
-    .clk(clk)
+    .clk(clk),
     .bus(bus_in[3:0]),
     .load(load_addr_reg),
     .clear(clear_addr_reg),
