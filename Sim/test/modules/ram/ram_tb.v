@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 `default_nettype none
 
-module tb_ram;
+module ram_tb;
 
     reg [7:0] dipswitch_data;
     reg [3:0] dipswitch_addr;
     reg [7:0] bus_in;
     reg addr_button;
-    reg data_button;
+    reg prog_mode;
     reg write_enable;
     reg output_enable;
     reg control_signal;
@@ -23,7 +23,7 @@ module tb_ram;
         .dipswitch_addr(dipswitch_addr),
         .bus_in(bus_in),
         .addr_button(addr_button),
-        .data_button(data_button),
+        .prog_mode(prog_mode),
         .write_enable(write_enable),
         .output_enable(output_enable),
         .control_signal(control_signal),
@@ -43,9 +43,9 @@ module tb_ram;
         // Initialize inputs
         dipswitch_data = 8'b00001111;
         dipswitch_addr = 4'h0;
-        bus_in = 8'h11110000;
+        bus_in = 8'b11110000;
         addr_button = 0;
-        data_button = 0;
+        prog_mode = 0;
         write_enable = 0;
         output_enable = 0;
         control_signal = 0;

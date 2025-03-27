@@ -4,7 +4,7 @@ module ram(
     input wire [3:0] dipswitch_addr,
     input wire [7:0] bus_in,
     input wire addr_button,
-    input wire data_button,
+    input wire prog_mode, // selects between switches?
     input wire write_enable,
     input wire output_enable,
     input wire control_signal,
@@ -17,14 +17,13 @@ module ram(
 
   wire [3:0] mem_low, mem_high;
   wire [7:0] internal_data;
-  wire write_mode;
-  wire run_mode;
+
   wire [3:0] address;
 
   sn74ls157 mux1 (
       .a(dipswitch_data[3:0]),
       .b(bus_in[3:0]),
-      .select(data_button),
+      .select(prog_mode),
       .strobe(0),  // output always on
       .y(mem_low)
   );
@@ -32,17 +31,27 @@ module ram(
   sn74ls157 mux2 (
       .a(dipswitch_data[7:4]),
       .b(bus_in[7:4]),
-      .select(data_button),
+      .select(prog_mode),
       .strobe(0),  // output always on
       .y(mem_high)
   );
+  
+// assign run mode based on control signal
+assign run_mode = ~(clk & control_signal);
+
+/* Padding and unpadding so lengths of signals are proper */
+wire run_mode;
+wire [3:0] padded_run_mode = {run_mode, 3'b000};
+wire [3:0] padded_addr_button = {addr_button, 3'b000};
+wire [3:0] padded_write_mode;
+wire write_mode = padded_write_mode[3];
 
 sn74ls157 mux3 (
-    .a(run_mode),
-    .b(addr_button),
-    .select(data_button),
+    .a(padded_run_mode), // wrong size
+    .b(padded_addr_button), // wrong size
+    .select(prog_mode),
     .strobe(0),  // output always on
-    .y(write_mode)
+    .y(padded_write_mode) // wrong size
 );
 
 mar addr_reg (
@@ -57,7 +66,6 @@ mar addr_reg (
 );
 
 assign internal_data = {~mem_high, ~mem_low};
-assign run_mode = ~(clk & control_signal);
 memory mem(
     .address(address),
     .data(internal_data),
