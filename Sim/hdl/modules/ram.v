@@ -24,7 +24,7 @@ module ram(
       .a(dipswitch_data[3:0]),
       .b(bus_in[3:0]),
       .select(prog_mode),
-      .strobe(0),  // output always on
+      .strobe(1'b0),  // output always on
       .y(mem_low)
   );
 
@@ -32,7 +32,7 @@ module ram(
       .a(dipswitch_data[7:4]),
       .b(bus_in[7:4]),
       .select(prog_mode),
-      .strobe(0),  // output always on
+      .strobe(1'b0),  // output always on
       .y(mem_high)
   );
   
@@ -50,7 +50,7 @@ sn74ls157 mux3 (
     .a(padded_run_mode), // wrong size
     .b(padded_addr_button), // wrong size
     .select(prog_mode),
-    .strobe(0),  // output always on
+    .strobe(1'b0),  // output always on
     .y(padded_write_mode) // wrong size
 );
 
@@ -70,7 +70,7 @@ memory mem(
     .address(address),
     .data(internal_data),
     .write_enable(write_mode),
-    .enable(0),
+    .enable(1'b0),
     .bus_out(bus_out)
 );
 endmodule

@@ -15,7 +15,7 @@ module mar (
       .a(qff_out),
       .b(dipswitch_input),
       .select(button_select),
-      .strobe(0),  // output always on
+      .strobe(1'b0),  // output always on
       .y(mar_out)
   );
   sn54173_quad_flip_flop qff (
