@@ -46,11 +46,11 @@ wire [3:0] padded_write_mode;
 wire write_mode = padded_write_mode[3];
 
 sn74ls157 mux3 (
-    .a(padded_run_mode), // wrong size
-    .b(padded_addr_button), // wrong size
+    .a(padded_run_mode),
+    .b(padded_addr_button),
     .select(prog_mode),
     .strobe(1'b0),  // output always on
-    .y(padded_write_mode) // wrong size
+    .y(padded_write_mode)
 );
 
 mar addr_reg (

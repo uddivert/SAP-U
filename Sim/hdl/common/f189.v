@@ -1,3 +1,4 @@
+// TODO make async and use proper implementation
 `default_nettype none
 module f189 (
     input  wire [3:0] a,   // address inputs

@@ -62,6 +62,9 @@ module ram_tb;
         // Display initial state
         #20 $display("Initial state: bus_out = %h", bus_out);
 
+        #1  prog_mode = 1;
+        #10 dipswitch_addr = 4'h1;
+
         $finish;
     end
 
