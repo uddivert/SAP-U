@@ -67,7 +67,7 @@ assign internal_data = {~mem_high, ~mem_low};
 memory mem(
     .address(address),
     .data(internal_data),
-    .write_enable(write_mode),
+    .write_enable(write_enable),
     .enable(1'b0),
     .bus_out(bus_out)
 );
