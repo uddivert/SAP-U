@@ -13,7 +13,6 @@ module ram_tb;
     reg control_signal;
     reg load_addr_reg;
     reg clear_addr_reg;
-    reg enable_addr_reg;
     reg clk;
     wire [7:0] bus_out;
 
@@ -29,33 +28,39 @@ module ram_tb;
         .control_signal(control_signal),
         .load_addr_reg(load_addr_reg),
         .clear_addr_reg(clear_addr_reg),
-        .enable_addr_reg(enable_addr_reg),
         .clk(clk),
         .bus_out(bus_out)
     );
 
-   initial begin
+  // Clock signal generation: 50% duty cycle with a period of 10 time units
+  always begin
     clk = 0;
-    forever #5 clk = ~clk;  // 10ns clock period
+    #5;  // Clock low for 5 time units
+    clk = 1;
+    #5;  // Clock high for 5 time units
   end
 
     initial begin
+    $dumpfile("./simulation/ram_tb.vcd");  // VCD file for waveform generation
+    $dumpvars(0, ram_tb);
         // Initialize inputs
         dipswitch_data = 8'b00001111;
         dipswitch_addr = 4'h0;
         bus_in = 8'b11110000;
         addr_button = 0;
-        prog_mode = 0;
-        write_enable = 0;
-        output_enable = 0;
+        prog_mode = 0; // set to dipswitch_data
+        write_enable = 1;
         control_signal = 0;
         load_addr_reg = 0;
+        clear_addr_reg = 1;
+
+        #6
+        write_enable = 0;
+        output_enable = 0;
         clear_addr_reg = 0;
-        enable_addr_reg = 0;
-        clk = 0;
 
         // Display initial state
-        #10 $display("Initial state: bus_out = %h", bus_out);
+        #20 $display("Initial state: bus_out = %h", bus_out);
 
         $finish;
     end

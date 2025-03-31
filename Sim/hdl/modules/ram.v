@@ -10,7 +10,6 @@ module ram(
     input wire control_signal,
     input wire load_addr_reg,
     input wire clear_addr_reg,
-    input wire enable_addr_reg,
     input wire clk,
     output wire [7:0] bus_out
 );
@@ -61,7 +60,6 @@ mar addr_reg (
     .button_select(addr_button),
     .clk(clk),
     .clear(clear_addr_reg),
-    .enable(enable_addr_reg),
     .mar_out(address)
 );
 

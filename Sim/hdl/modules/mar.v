@@ -6,7 +6,6 @@ module mar (
     input wire load,
     input wire button_select,
     input wire clear,
-    input wire enable,
     input wire clk,
     output wire [3:0] mar_out
 );
@@ -19,8 +18,8 @@ module mar (
       .y(mar_out)
   );
   sn54173_quad_flip_flop qff (
-      .m(enable),
-      .n(enable),
+      .m(1'b0),
+      .n(1'b0),
       .g1(load),
       .g2(load),
       .clr(clear),

@@ -12,11 +12,10 @@ module memory (
   wire [3:0] mem_low, mem_high;
   wire [7:0] internal_data;
 
-  reg cs = 0;  // f189 output always on
   f189 sram1 (
       .a (address),
       .d (data[3:0]),
-      .cs(cs),
+      .cs(1'b0),
       .we(write_enable),
       .o (mem_low)
   );
@@ -24,7 +23,7 @@ module memory (
   f189 sram2 (
       .a (address),
       .d (data[7:4]),
-      .cs(cs),
+      .cs(1'b0),
       .we(write_enable),
       .o (mem_high)
   );
