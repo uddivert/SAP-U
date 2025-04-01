@@ -62,8 +62,8 @@ module ram_tb;
         // Display initial state
         #20 $display("Initial state: bus_out = %h", bus_out);
 
-
-        #20 prog_mode = 1;
+        prog_mode = 1;
+        #20 $display("Second state: bus_out = %h", bus_out);
 
         $finish;
     end
