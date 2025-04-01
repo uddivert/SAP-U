@@ -27,7 +27,7 @@ module memory (
       .we(write_enable),
       .o (mem_high)
   );
-  assign internal_data = {~mem_high, ~mem_low};
+  assign internal_data = {mem_high, mem_low};
   assign bus_out = enable ? 8'bZ : internal_data;  // enable bus out dependendent on enable
 
 endmodule

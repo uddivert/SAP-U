@@ -44,10 +44,10 @@ module ram_tb;
     $dumpfile("./simulation/ram_tb.vcd");  // VCD file for waveform generation
     $dumpvars(0, ram_tb);
         // Initialize inputs
-        dipswitch_data = 8'b00001111;
+        dipswitch_data = 8'b11001111;
         dipswitch_addr = 4'h0;
-        bus_in = 8'b11110000;
-        addr_button = 0;
+        bus_in = 8'b11110111;
+        addr_button = 1; // don't load address from bus
         prog_mode = 0; // set to dipswitch_data
         write_enable = 1;
         control_signal = 0;
@@ -62,8 +62,7 @@ module ram_tb;
         // Display initial state
         #20 $display("Initial state: bus_out = %h", bus_out);
 
-        #1  prog_mode = 1;
-        #10 dipswitch_addr = 4'h1;
+        #20 prog_mode = 1;
 
         $finish;
     end
