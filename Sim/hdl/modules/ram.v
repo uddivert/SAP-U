@@ -68,7 +68,7 @@ memory mem(
     .address(address),
     .data(internal_data),
     .write_enable(write_enable),
-    .enable(1'b0),
+    .enable(output_enable),
     .bus_out(bus_out)
 );
 endmodule

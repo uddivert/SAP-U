@@ -10,7 +10,7 @@ module f189 (
 
   reg [3:0] mem[0:15];  // 16x4-bit memory
 
-  always @(negedge we) begin
+  always @( we or cs or d) begin
     if (!cs && !we) begin
       mem[a] <= d;  // Write operation
     end
