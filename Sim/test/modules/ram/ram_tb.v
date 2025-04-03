@@ -53,17 +53,37 @@ module ram_tb;
         control_signal = 0;
         load_addr_reg = 0; // load address
         clear_addr_reg = 1; // clear mar
+        output_enable = 0;
 
         #6
         write_enable = 0;
-        output_enable = 0;
         clear_addr_reg = 0;
 
         // Display initial state
-        #20 $display("Initial state: bus_out = %h", bus_out);
+        #10 $display("Initial state: bus_out = %h", bus_out);
+        write_enable= 1;
 
+        // change address and save data here
         prog_mode = 1;
-        #20 $display("Second state: bus_out = %h", bus_out);
+        dipswitch_addr = 4'h1;
+        write_enable= 0;
+        #10 $display("Second state: bus_out = %h", bus_out);
+        write_enable= 1;
+
+        // try change address without load address set off
+        #10 load_addr_reg= 1;
+        dipswitch_addr = 4'h0;
+
+        // check memory to make sure if memory in address 0 is still same
+        load_addr_reg = 0;
+        #10
+
+        // clear address reg
+        dipswitch_addr = 4'h5;
+        #10
+        clear_addr_reg = 1; // clear qff in mar
+        #10
+
 
         $finish;
     end
