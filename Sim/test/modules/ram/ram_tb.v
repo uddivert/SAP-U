@@ -39,6 +39,7 @@ module ram_tb;
     #5;  // Clock high for 5 time units
   end
 
+  // TODO retime test when updated f189
   initial begin
     $dumpfile("./simulation/ram_tb.vcd");  // VCD file for waveform generation
     $dumpvars(0, ram_tb);
@@ -58,14 +59,14 @@ module ram_tb;
     clear_addr_reg = 0;
 
     // Display initial state
-    #10 $display("Initial state: bus_out = %h", bus_out);
+    #1 $display("Initial state: bus_out = %h", bus_out);
     write_enable = 1;
 
     // change address and save data here
     prog_mode = 1;
     dipswitch_addr = 4'h1;
     write_enable = 0;
-    #10 $display("Second state: bus_out = %h", bus_out);
+    #1 $display("Second state: bus_out = %h", bus_out);
     write_enable = 1;
 
     // try change address without load address set off
