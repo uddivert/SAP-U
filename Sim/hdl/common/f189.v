@@ -1,4 +1,3 @@
-// TODO make async and use proper implementation
 `default_nettype none
 module f189 (
     input  wire [3:0] a,   // address inputs
@@ -8,14 +7,29 @@ module f189 (
     output wire [3:0] o    // inverted data outputs
 );
 
-  reg [3:0] mem[0:15];  // 16x4-bit memory
+  genvar i;
 
-  always @( we or cs or d) begin
-    if (!cs && !we) begin
-      mem[a] <= d;  // Write operation
+  wire [15:0] write_enable;
+  wire [15:0] output_enable;
+  wire [3:0] q_internal[15];  // 16x4-bit storage
+
+  assign o = ~q_internal[a];
+
+  generate
+    for (i = 0; i <= 15; i = i + 1) begin : g_enables
+      assign write_enable[i]  = (a == i) & ~we & ~cs;
+      assign output_enable[i] = (a == i) & we & ~cs;
     end
-  end
+  endgenerate
 
-  assign o = ~mem[a];  // Read operation with inverted output
-
+  generate
+    for (i = 0; i <= 15; i = i + 1) begin : g_d_storage_regist
+      d_storage_register dlatch_inst (
+          .data(d),
+          .write(write_enable[i]),
+          .enable(output_enable[i]),
+          .q(q_internal[i])
+      );
+    end
+  endgenerate
 endmodule

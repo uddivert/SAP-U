@@ -59,15 +59,15 @@ module ram_tb;
     clear_addr_reg = 0;
 
     // Display initial state
-    #1 $display("Initial state: bus_out = %h", bus_out);
-    write_enable = 1;
+    #1 write_enable = 1;
+    $display("Initial state: bus_out = %h", bus_out);
 
     // change address and save data here
     prog_mode = 1;
     dipswitch_addr = 4'h1;
     write_enable = 0;
-    #1 $display("Second state: bus_out = %h", bus_out);
-    write_enable = 1;
+    #1 write_enable = 1;
+    $display("Second state: bus_out = %h", bus_out);
 
     // try change address without load address set off
     #10 load_addr_reg = 1;
