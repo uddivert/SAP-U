@@ -18,5 +18,5 @@ module d_storage_register (
     end
   endgenerate
 
-  assign q = enable ? q_internal : 4'b000z;
+  assign q = enable ? q_internal : 4'b0000;
 endmodule

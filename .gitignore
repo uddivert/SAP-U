@@ -40,3 +40,4 @@ fp-info-cache
  Sim/incremental_db/*
  Sim/output_files/*
 
+Sim/test/modules/ram/simulation/gtkwave-settings.gtkw

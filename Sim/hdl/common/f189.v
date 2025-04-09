@@ -11,7 +11,7 @@ module f189 (
 
   wire [15:0] write_enable;
   wire [15:0] output_enable;
-  wire [3:0] q_internal[15];  // 16x4-bit storage
+  wire [3:0] q_internal [15:0];  // 16x4-bit storage
 
   assign o = ~q_internal[a];
 
@@ -25,10 +25,10 @@ module f189 (
   generate
     for (i = 0; i <= 15; i = i + 1) begin : g_d_storage_regist
       d_storage_register dlatch_inst (
-          .data(d),
-          .write(write_enable[i]),
-          .enable(output_enable[i]),
-          .q(q_internal[i])
+        .data(d),
+        .write(write_enable[i]),
+        .enable(output_enable[i]),
+        .q(q_internal[i])
       );
     end
   endgenerate
