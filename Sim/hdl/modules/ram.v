@@ -63,7 +63,7 @@ module ram (
       .mar_out(address)
   );
 
-  assign internal_data = {~mem_high, ~mem_low};
+  assign internal_data = {mem_high, mem_low};
   memory mem (
       .address(address),
       .data(internal_data),
