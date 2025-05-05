@@ -5,13 +5,13 @@ module ram_tb;
   reg [7:0] dipswitch_data;
   reg [3:0] dipswitch_addr;
   reg [7:0] bus_in;
-  reg addr_button;
+  reg addr_select;
   reg prog_mode;
   reg write_enable;
   reg output_enable;
   reg control_signal;
-  reg load_addr_reg;
-  reg clear_addr_reg;
+  reg load_mar_reg;
+  reg clear_mar_reg;
   reg clk;
   wire [7:0] bus_out;
 
@@ -20,13 +20,13 @@ module ram_tb;
       .dipswitch_data(dipswitch_data),
       .dipswitch_addr(dipswitch_addr),
       .bus_in(bus_in),
-      .addr_button(addr_button),
+      .addr_select(addr_select),
       .prog_mode(prog_mode),
       .write_enable(write_enable),
       .output_enable(output_enable),
       .control_signal(control_signal),
-      .load_addr_reg(load_addr_reg),
-      .clear_addr_reg(clear_addr_reg),
+      .load_mar_reg(load_mar_reg),
+      .clear_mar_reg(clear_mar_reg),
       .clk(clk),
       .bus_out(bus_out)
   );
@@ -47,16 +47,16 @@ module ram_tb;
     dipswitch_data = 8'b11001111;
     dipswitch_addr = 4'h0;
     bus_in = 8'b11110111;
-    addr_button = 1;  // don't load address from bus
+    addr_select = 1;  // don't load address from bus
     prog_mode = 0;  // set to dipswitch_data
     write_enable = 1;  // don't write to memory
     control_signal = 0;
-    load_addr_reg = 0;  // load address
-    clear_addr_reg = 1;  // clear mar
+    load_mar_reg = 0;  // load address
+    clear_mar_reg = 1;  // clear mar
     output_enable = 0;
 
     #6 write_enable = 0;
-    clear_addr_reg = 0;
+    clear_mar_reg = 0;
 
     // Display initial state
     #1 write_enable = 1;
@@ -68,16 +68,16 @@ module ram_tb;
     #1 write_enable = 1;
 
     // try change address without load address set off
-    #10 load_addr_reg = 1;
+    #10 load_mar_reg = 1;
     dipswitch_addr = 4'h0;
 
     // check memory to make sure if memory in address 0 is still same
-    load_addr_reg  = 0;
+    load_mar_reg  = 0;
     #10
 
     // clear address reg
     dipswitch_addr = 4'h5;
-    #10 clear_addr_reg = 1;  // clear qff in mar
+    #10 clear_mar_reg = 1;  // clear qff in mar
     #10 $finish;
   end
 
