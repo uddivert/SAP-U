@@ -19,6 +19,18 @@ module SAP_U_tb ();
   reg        alu_enable;
   reg        alu_subtract;
 
+  // Ram
+  reg  [7:0] ram_dipswitch_data;
+  reg  [3:0] ram_dipswitch_addr;
+  reg  [7:0] ram_bus_in;
+  reg        ram_addr_select;
+  reg        ram_prog_mode;
+  reg        ram_write_enable;
+  reg        ram_output_enable;
+  reg        ram_control_signal;
+  reg        ram_load_mar_reg;
+  reg        ram_clear_mar_reg;
+
   // Outputs
   wire [7:0] bus;  // 8-bit bus
 
@@ -39,8 +51,21 @@ module SAP_U_tb ();
       .reg_b_idata (reg_b_idata),   // 8-bit data input
 
       // ALU
-      .alu_enable(alu_enable),
+      .alu_enable  (alu_enable),
       .alu_subtract(alu_subtract),
+
+      // Ram
+      .ram_dipswitch_data(ram_dipswitch_data),
+      .ram_dipswitch_addr(ram_dipswitch_addr),
+      .ram_bus_in(bus),
+      .ram_addr_select(ram_addr_select),
+      .ram_prog_mode(ram_prog_mode),
+      .ram_write_enable(ram_write_enable),
+      .ram_output_enable(ram_output_enable),
+      .ram_control_signal(ram_control_signal),
+      .ram_load_mar_reg(ram_load_mar_reg),
+      .ram_clear_mar_reg(ram_clear_mar_reg),
+
       .bus(bus)  // 8-bit bus
   );
 

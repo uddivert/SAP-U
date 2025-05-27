@@ -32,11 +32,9 @@ module ram_tb;
   );
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
-  always begin
+  initial begin
     clk = 0;
-    #5;  // Clock low for 5 time units
-    clk = 1;
-    #5;  // Clock high for 5 time units
+    forever #5 clk = ~clk;  // 10ns clock period
   end
 
   // TODO retime test when updated f189
@@ -55,29 +53,41 @@ module ram_tb;
     clear_mar_reg = 1;  // clear mar
     output_enable = 0;
 
-    #6 write_enable = 0;
+    #5 write_enable = 0;
     clear_mar_reg = 0;
+    load_mar_reg = 0;  // load address
 
-    // Display initial state
-    #1 write_enable = 1;
+    /*********** MAR TEST **********/
+    addr_select = 0;  // load address from bus
+    dipswitch_addr = 4'b1010;
+    #10;
+    addr_select = 1;  // load address from switch
+    #10;
 
-    // change address and save data here
+    /*********** RAM TEST **********/
     prog_mode = 1;
-    dipswitch_addr = 4'h1;
-    write_enable = 0;
+    write_enable = 0;  // write data
     #1 write_enable = 1;
+    #10
+
+
+    // Load address from bus and write to it
+    addr_select = 0;  // load address from bus
+    write_enable = 0;  // write data
+    prog_mode = 1;  // set to bus
+    #10
+
+    // Test Control signal
+    control_signal = 1;
+    #10
 
     // try change address without load address set off
-    #10 load_mar_reg = 1;
-    dipswitch_addr = 4'h0;
-
-    // check memory to make sure if memory in address 0 is still same
-    load_mar_reg  = 0;
+    load_mar_reg = 1;
+    prog_mode = 0;  // set to dipswitch
     #10
 
     // clear address reg
-    dipswitch_addr = 4'h5;
-    #10 clear_mar_reg = 1;  // clear qff in mar
+    clear_mar_reg = 1;  // clear qff in mar
     #10 $finish;
   end
 

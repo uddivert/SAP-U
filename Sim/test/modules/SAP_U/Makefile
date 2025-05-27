@@ -5,7 +5,7 @@ SIM_DIR = ./simulation
 
 # Automatically find all Verilog source files in HDL and TEST directories
 HDL_SRCS_COMMON = $(wildcard $(HDL_DIR_COMMON)/*.v)
-HDL_SRCS = $(HDL_SRCS_COMMON) $(HDL_DIR_MODULE)/register.v $(HDL_DIR_MODULE)/instruction_register.v $(HDL_DIR_MODULE)/alu.v $(HDL_DIR_MODULE)/SAP_U.v
+HDL_SRCS = $(HDL_SRCS_COMMON) $(HDL_DIR_MODULE)/register.v $(HDL_DIR_MODULE)/instruction_register.v $(HDL_DIR_MODULE)/alu.v $(HDL_DIR_MODULE)/memory.v $(HDL_DIR_MODULE)/ram.v $(HDL_DIR_MODULE)/SAP_U.v
 
 TEST_SRCS = SAP_U_tb.v
 

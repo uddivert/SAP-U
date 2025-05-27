@@ -20,6 +20,18 @@ module SAP_U (
     input wire alu_enable,
     input wire alu_subtract,
 
+    // RAM
+    input wire [7:0] ram_dipswitch_data,
+    input wire [3:0] ram_dipswitch_addr,
+    input wire [7:0] ram_bus_in,
+    input wire ram_addr_select,
+    input wire ram_prog_mode,
+    input wire ram_write_enable,
+    input wire ram_output_enable,
+    input wire ram_control_signal,
+    input wire ram_load_mar_reg,
+    input wire ram_clear_mar_reg,
+
     // Outputs
     output wire [7:0] bus  // 8-bit bus
 );
@@ -51,6 +63,20 @@ module SAP_U (
       .enable(alu_enable),
       .subtract(alu_subtract),
       .result(bus)
+  );
+  ram m_ram (
+      .dipswitch_data(ram_dipswitch_data),
+      .dipswitch_addr(ram_dipswitch_addr),
+      .bus_in(bus),
+      .addr_select(ram_addr_select),
+      .prog_mode(ram_prog_mode),
+      .write_enable(ram_write_enable),
+      .output_enable(ram_output_enable),
+      .control_signal(ram_control_signal),
+      .load_mar_reg(ram_load_mar_reg),
+      .clear_mar_reg(ram_clear_mar_reg),
+      .clk(clk),
+      .bus_out(bus)
   );
 
 endmodule
