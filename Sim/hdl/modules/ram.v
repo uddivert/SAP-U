@@ -1,10 +1,14 @@
 `default_nettype none
+`define PUSH_BUTTON write_enable
+
+// if program mode 0, read from dipswitch. To read PUSH_BUTTON 1
+// if program_mode 1, read from bus. To read control_signal 1
 module ram (
     input wire [7:0] dipswitch_data,
     input wire [3:0] dipswitch_addr,
     input wire [7:0] bus_in,
+    input wire prog_mode,
     input wire addr_select,
-    input wire prog_mode,  // selects between switches?
     input wire write_enable,
     input wire output_enable,
     input wire control_signal,
@@ -14,9 +18,7 @@ module ram (
     output wire [7:0] bus_out
 );
 
-  ///////////////////////////////////////
-  /// MAR //////////////////////////////
-  /////////////////////////////////////
+// Memory Address Register (MAR)
   wire [3:0] qff_out;
   wire [3:0] reversed_address;
   wire [3:0] dipswitch_addr_reversed;
@@ -25,11 +27,10 @@ module ram (
   };
 
   sn74ls157 mux (
-      .a(qff_out),
-      .b(dipswitch_addr_reversed),
+      .a(dipswitch_addr_reversed),
+      .b(qff_out),
       .select(addr_select),
       .strobe(1'b0),  // output always on
-      //.y(address)
       .y(reversed_address)
   );
 
@@ -46,8 +47,37 @@ module ram (
       .clr(clear_mar_reg),
       .clk(clk),
       .data({bus_in[0], bus_in[1], bus_in[2], bus_in[3]}),
-      //.data(bus_in[3:0]),
       .q(qff_out)
+  );
+
+// Static Ram
+   wire [7:0] internal_data;
+   assign internal_data = {mem_high, mem_low};
+   memory mem (
+      .address(address),
+      .data(internal_data),
+      .write_enable(padded_memory_write_mode[1]),
+      .enable(output_enable),
+      .bus_out(bus_out)
+  );
+
+  wire [3:0] padded_write_enable;
+  assign padded_write_enable = {1'b0, 1'b0, write_enable, 1'b0};
+
+  reg run_mode;
+  always @ (posedge clk) begin
+        run_mode <= ~control_signal;
+    end
+
+  wire [3:0] padded_run_mode;
+  assign padded_run_mode = {1'b0, 1'b0, run_mode, 1'b0};  
+  wire [3:0] padded_memory_write_mode; // only care about [1]
+  sn74ls157 u32 (
+      .a(padded_write_enable),
+      .b(padded_run_mode),
+      .select(prog_mode),
+      .strobe(1'b0),  // output always on
+      .y(padded_memory_write_mode)
   );
 
   wire [3:0] mem_low;
@@ -68,32 +98,4 @@ module ram (
       .y(mem_high)
   );
 
-  // assign run mode based on control signal
-  assign run_mode = ~(clk & control_signal);
-
-
-  /* Padding and unpadding so lengths of signals are proper */
-  wire run_mode;
-  wire [3:0] padded_run_mode = {run_mode, 3'b000};
-  wire [3:0] padded_addr_select = {addr_select, 3'b000};
-  wire [3:0] padded_write_mode;
-  wire write_mode = padded_write_mode[3];
-
-  sn74ls157 mux3 (
-      .a(padded_run_mode),
-      .b(padded_addr_select),
-      .select(prog_mode),
-      .strobe(1'b0),  // output always on
-      .y(padded_write_mode)
-  );
-
-  wire [7:0] internal_data;
-  assign internal_data = {mem_high, mem_low};
-  memory mem (
-      .address(address),
-      .data(internal_data),
-      .write_enable(write_mode),
-      .enable(output_enable),
-      .bus_out(bus_out)
-  );
 endmodule
