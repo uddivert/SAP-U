@@ -37,12 +37,10 @@ module ram_tb;
     forever #5 clk = ~clk;  // 10ns clock period
   end
 
-  // TODO retime test when updated f189
   initial begin
     $dumpfile("./simulation/ram_tb.vcd");  // VCD file for waveform generation
     $dumpvars(0, ram_tb);
     // Initialize inputs
-    dipswitch_data = 8'b11001111;
     bus_in = 8'b11110111;
     addr_select = 0;    // load address from dip switch
     prog_mode = 0;      // set to dipswitch_data
@@ -54,6 +52,22 @@ module ram_tb;
     dipswitch_addr = 4'b1010;
     #15;
     addr_select = 1;  // load address from bus
+    #10;
+
+    /*********** RAM TEST **********/
+
+    // write from dipswitch
+    load_mar_reg = 1;   // stop loading address
+    dipswitch_data = 8'b11001111;
+    write_enable = 1;
+    #1
+    write_enable = 0; 
+    #9;
+
+    // write from bus
+    dipswitch_data = 8'b11001111;
+    prog_mode = 1;
+    control_signal = 1;
     #10;
 
     $finish;
