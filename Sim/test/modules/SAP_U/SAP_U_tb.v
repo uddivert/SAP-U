@@ -25,7 +25,6 @@ module SAP_U_tb ();
   reg  [7:0] ram_bus_in;
   reg        ram_addr_select;
   reg        ram_prog_mode;
-  reg        ram_write_enable;
   reg        ram_output_enable;
   reg        ram_control_signal;
   reg        ram_load_mar_reg;
@@ -51,7 +50,7 @@ module SAP_U_tb ();
       .reg_b_idata (reg_b_idata),   // 8-bit data input
 
       // ALU
-      .alu_enable  (alu_enable),
+      .alu_enable  (alu_enable),    // Lets ALU output to bus
       .alu_subtract(alu_subtract),
 
       // Ram
@@ -60,7 +59,6 @@ module SAP_U_tb ();
       .ram_bus_in(bus),
       .ram_addr_select(ram_addr_select),
       .ram_prog_mode(ram_prog_mode),
-      .ram_write_enable(ram_write_enable),
       .ram_output_enable(ram_output_enable),
       .ram_control_signal(ram_control_signal),
       .ram_load_mar_reg(ram_load_mar_reg),
@@ -70,36 +68,53 @@ module SAP_U_tb ();
   );
 
   // Clock generation: 50% duty cycle with a period of 10 time units
-  always begin
+  initial begin
     clk = 0;
-    #5 clk = 1;
-    #5 clk = 0;  // 10ns clock period (100 MHz)
+    forever #5 clk = ~clk;  // 10ns clock period
   end
 
   initial begin
     $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
     $dumpvars(0, SAP_U_tb);
     // Test ALU
-    #1;  // 1 ns delay
+
     // allow data to be loaded into register
     reg_a_load   = 0;
     reg_b_load   = 0;
+    alu_enable   = 0; // Enable ALU output to bus
 
     // data to be loaded into register
     reg_a_idata  = 8'b00000001;
     reg_b_idata  = 8'b00000001;
 
     // enable data output
-    reg_a_enable = 0;
-    reg_b_enable = 0;
+    reg_a_enable = 1;
+    reg_b_enable = 1;
 
-    // enable alu to recieve from registers
-    alu_enable   = 0;
-    alu_subtract = 0;
-
+    #10
+    // stop registers from writing to bus
+    alu_subtract = 0; // Addition Mode
     #10;
+
     // test subtraction
     alu_subtract = 1;
+    #10
+
+    // Test Ram
+    ram_dipswitch_data = 8'h0;
+    ram_dipswitch_addr = 4'h0;
+    ram_bus_in = 8'h0;
+    ram_addr_select = 1;    // don't load address from bus
+    ram_prog_mode = 0;      // set to dipswitch_data
+    ram_control_signal = 0; // Don't read data from bus
+    ram_load_mar_reg = 0;   // load address
+    ram_clear_mar_reg = 1;  // clear mar
+    ram_output_enable = 0;  // enable output
+
+    #5 
+    // Set dipswich data to F and write to address 0
+    ram_dipswitch_data = 8'b1;
+    #10
 
     $finish;
   end

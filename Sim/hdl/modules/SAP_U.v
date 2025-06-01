@@ -26,7 +26,6 @@ module SAP_U (
     input wire [7:0] ram_bus_in,
     input wire ram_addr_select,
     input wire ram_prog_mode,
-    input wire ram_write_enable,
     input wire ram_output_enable,
     input wire ram_control_signal,
     input wire ram_load_mar_reg,
@@ -37,8 +36,8 @@ module SAP_U (
 );
 
   // stored data in registers
-  wire reg_a_data;
-  wire reg_b_data;
+  wire [7:0] reg_a_data;
+  wire [7:0] reg_b_data;
 
   register register_a (
       .clk(clk),
@@ -70,7 +69,6 @@ module SAP_U (
       .bus_in(bus),
       .addr_select(ram_addr_select),
       .prog_mode(ram_prog_mode),
-      .write_enable(ram_write_enable),
       .output_enable(ram_output_enable),
       .control_signal(ram_control_signal),
       .load_mar_reg(ram_load_mar_reg),

@@ -12,10 +12,10 @@ module alu (
 );
 
   /*
- * Addition (subtract = 0): Computes result=a+bresult=a+b.
- * Subtraction (subtract = 1): Computes result=a−bresult=a−b using two's complement logic.
- * Enable Control: The result is gated by the enable signal; when enable = 0, result = 0.
-*/
+   * Addition (subtract = 0): Computes result=a+bresult=a+b.
+   * Subtraction (subtract = 1): Computes result=a−bresult=a−b using two's complement logic.
+   * Enable Control: The result is gated by the enable signal; when enable = 0, result = 0.
+  */
 
   wire internal_carryout;
   wire external_carryout;
@@ -41,16 +41,20 @@ module alu (
   );
 
   wire [3:0] intermediate_zero_data;
-  wire [1:0] flag_data;
+  wire [3:0] flag_data;
 
   // populate flag data
   assign flag_data[0] = external_carryout;
 
   // compute zero flag
   assign flag_data[1] = ~|internal_result;  // Simplifies zero flag logic
+  assign flag_data[2] = 1'b0; // unused
+  assign flag_data[3] = 1'b0; // unused
   assign result = enable ? 8'bZ : internal_result;  // assign result dependent on enable
 
   // handle flags
+  wire [3:0] flag_out_full;
+  assign flag_out = flag_out_full[1:0]; // only output lower two bits
   sn54173_quad_flip_flop flags_reg (
       .m(1'b0),
       .n(1'b0),
@@ -59,6 +63,6 @@ module alu (
       .clr(flag_clr),
       .clk(clk),
       .data(flag_data),
-      .q(flag_out)
+      .q(flag_out_full)
   );
 endmodule
