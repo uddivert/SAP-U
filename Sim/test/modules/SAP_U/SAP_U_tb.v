@@ -6,14 +6,14 @@ module SAP_U_tb ();
   reg        reset;  // System reset
 
   // Register A
-  reg        reg_a_load;  // Load signal
-  reg        reg_a_enable;  // Enable signal
-  reg  [7:0] reg_a_idata;  // 8-bit data input
+  reg        reg_a_load_n;  // Load signal
+  reg        reg_a_bus_enable_n;  // Enable signal
+  reg  [7:0] reg_a_bus_in;  // 8-bit data input
 
   // Register B
-  reg        reg_b_load;  // Load signal
-  reg        reg_b_enable;  // Enable signal
-  reg  [7:0] reg_b_idata;  // 8-bit data input
+  reg        reg_b_load_n;  // Load signal
+  reg        reg_b_bus_enable_n;  // Enable signal
+  reg  [7:0] reg_b_bus_in;  // 8-bit data input
 
   // ALU
   reg        alu_enable;
@@ -22,7 +22,6 @@ module SAP_U_tb ();
   // Ram
   reg  [7:0] ram_dipswitch_data;
   reg  [3:0] ram_dipswitch_addr;
-  reg  [7:0] ram_bus_in;
   reg        ram_addr_select;
   reg        ram_prog_mode;
   reg        ram_output_enable;
@@ -40,19 +39,17 @@ module SAP_U_tb ();
       .reset(reset), // System reset
 
       // Register A
-      .reg_a_load  (reg_a_load),    // Load signal
-      .reg_a_enable(reg_a_enable),  // Enable signal
-      .reg_a_idata (reg_a_idata),   // 8-bit data input
+      .reg_a_load_n  (reg_a_load_n),    // Load signal
+      .reg_a_bus_enable_n(reg_a_bus_enable_n),  // Enable signal
 
       // Register B
-      .reg_b_load  (reg_b_load),    // Load signal
-      .reg_b_enable(reg_b_enable),  // Enable signal
-      .reg_b_idata (reg_b_idata),   // 8-bit data input
+      .reg_b_load_n  (reg_b_load_n),    // Load signal
+      .reg_b_bus_enable_n(reg_b_bus_enable_n),  // Enable signal
 
       // ALU
       .alu_enable  (alu_enable),    // Lets ALU output to bus
       .alu_subtract(alu_subtract),
-
+/*
       // Ram
       .ram_dipswitch_data(ram_dipswitch_data),
       .ram_dipswitch_addr(ram_dipswitch_addr),
@@ -63,6 +60,7 @@ module SAP_U_tb ();
       .ram_control_signal(ram_control_signal),
       .ram_load_mar_reg(ram_load_mar_reg),
       .ram_clear_mar_reg(ram_clear_mar_reg),
+      */
 
       .bus(bus)  // 8-bit bus
   );
@@ -79,17 +77,13 @@ module SAP_U_tb ();
     // Test ALU
 
     // allow data to be loaded into register
-    reg_a_load   = 0;
-    reg_b_load   = 0;
+    reg_a_load_n   = 0;
+    reg_b_load_n   = 0;
     alu_enable   = 0; // Enable ALU output to bus
+    reset = 0;
 
     // data to be loaded into register
-    reg_a_idata  = 8'b00000001;
-    reg_b_idata  = 8'b00000001;
-
-    // enable data output
-    reg_a_enable = 1;
-    reg_b_enable = 1;
+    // TODO
 
     #10
     // stop registers from writing to bus
@@ -100,6 +94,7 @@ module SAP_U_tb ();
     alu_subtract = 1;
     #10
 
+/*
     // Test Ram
     ram_dipswitch_data = 8'h0;
     ram_dipswitch_addr = 4'h0;
@@ -115,6 +110,7 @@ module SAP_U_tb ();
     // Set dipswich data to F and write to address 0
     ram_dipswitch_data = 8'b1;
     #10
+    */
 
     $finish;
   end

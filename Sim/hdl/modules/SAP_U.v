@@ -7,14 +7,13 @@ module SAP_U (
     input wire reset, // System reset
 
     // Register A
-    input wire       reg_a_load,    // Load signal
-    input wire       reg_a_enable,  // Enable signal
-    input wire [7:0] reg_a_idata,   // 8-bit data input
+    input wire       reg_a_load_n,
+    input wire       reg_a_bus_enable_n,
 
     // Register B
-    input wire       reg_b_load,    // Load signal
-    input wire       reg_b_enable,  // Enable signal
-    input wire [7:0] reg_b_idata,   // 8-bit data input
+    input wire       reg_b_load_n, 
+    input wire       reg_b_bus_enable_n,
+    input wire [7:0] reg_b_bus_in,
 
     // ALU
     input wire alu_enable,
@@ -23,7 +22,6 @@ module SAP_U (
     // RAM
     input wire [7:0] ram_dipswitch_data,
     input wire [3:0] ram_dipswitch_addr,
-    input wire [7:0] ram_bus_in,
     input wire ram_addr_select,
     input wire ram_prog_mode,
     input wire ram_output_enable,
@@ -34,6 +32,24 @@ module SAP_U (
     // Outputs
     output wire [7:0] bus  // 8-bit bus
 );
+    wire [7:0] a_reg_bus_in, a_reg_bus_out;
+    wire [7:0] b_reg_bus_in, b_reg_bus_out;
+    wire [7:0] alu_bus_in, alu_bus_out;
+    wire [7:0] ram_bus_in, ram_bus_out;
+    wire [7:0] data_bus_in, data_bus_out;
+
+Bus_Manager bus_manager(
+    .a_reg_bus_in(a_reg_bus_in),
+    .a_reg_bus_out(a_reg_bus_out),
+    .b_reg_bus_in(b_reg_bus_in),
+    .b_reg_bus_out(b_reg_bus_out),
+    .alu_bus_in(alu_bus_in),
+    .alu_bus_out(alu_bus_out),
+    .ram_bus_in(ram_bus_in),
+    .ram_bus_out(ram_bus_out),
+    .data_bus_in(data_bus_in),
+    .data_bus_out(data_bus_out)
+);
 
   // stored data in registers
   wire [7:0] reg_a_data;
@@ -42,17 +58,17 @@ module SAP_U (
   register register_a (
       .clk(clk),
       .clr(reset),
-      .load(reg_a_load),
-      .enable(reg_a_enable),
-      .data(reg_a_idata),
+      .load_n(reg_a_load_n),
+      .bus_in(a_reg_bus_in),
+      .bus_out(a_reg_bus_out),
       .q(reg_a_data)
   );
   register register_b (
       .clk(clk),
       .clr(reset),
-      .load(reg_b_load),
-      .enable(reg_b_enable),
-      .data(reg_b_idata),
+      .load_n(reg_b_load_n),
+      .bus_in(b_reg_bus_in),
+      .bus_out(a_reg_bus_out),
       .q(reg_b_data)
   );
 
@@ -77,4 +93,18 @@ module SAP_U (
       .bus_out(bus)
   );
 
+endmodule
+
+module Bus_Manager(
+    input wire [7:0] a_reg_bus_in,
+    input wire [7:0] a_reg_bus_out,
+    input wire [7:0] b_reg_bus_in,
+    input wire [7:0] b_reg_bus_out,
+    input wire [7:0] alu_bus_in,
+    input wire [7:0] ram_bus_in,
+    input wire [7:0] ram_bus_out,
+    input wire [7:0] alu_bus_out,
+    output wire [7:0] data_bus_in,
+    output wire [7:0] data_bus_out
+);
 endmodule
