@@ -29,26 +29,22 @@ module SAP_U (
     input wire ram_load_mar_reg,
     input wire ram_clear_mar_reg,
 
-    // Outputs
-    output wire [7:0] bus  // 8-bit bus
+    // Bus
+    input wire [7:0] data_bus_in
 );
-    wire [7:0] a_reg_bus_in, a_reg_bus_out;
-    wire [7:0] b_reg_bus_in, b_reg_bus_out;
-    wire [7:0] alu_bus_in, alu_bus_out;
-    wire [7:0] ram_bus_in, ram_bus_out;
-    wire [7:0] data_bus_in, data_bus_out;
+    wire [7:0] data_bus_out;
+    wire [7:0] a_reg_bus_out;
+    wire [7:0] b_reg_bus_out;
+    wire [7:0] alu_bus_out;
+    wire [7:0] ram_bus_out;
 
 Bus_Manager bus_manager(
-    .a_reg_bus_in(a_reg_bus_in),
-    .a_reg_bus_out(a_reg_bus_out),
-    .b_reg_bus_in(b_reg_bus_in),
-    .b_reg_bus_out(b_reg_bus_out),
-    .alu_bus_in(alu_bus_in),
-    .alu_bus_out(alu_bus_out),
-    .ram_bus_in(ram_bus_in),
-    .ram_bus_out(ram_bus_out),
     .data_bus_in(data_bus_in),
-    .data_bus_out(data_bus_out)
+    .data_bus_out(data_bus_out),
+    .a_reg_bus_out(a_reg_bus_out),
+    .b_reg_bus_out(b_reg_bus_out),
+    .alu_bus_out(alu_bus_out),
+    .ram_bus_out(ram_bus_out)
 );
 
   // stored data in registers
@@ -59,7 +55,7 @@ Bus_Manager bus_manager(
       .clk(clk),
       .clr(reset),
       .load_n(reg_a_load_n),
-      .bus_in(a_reg_bus_in),
+      .bus_in(data_bus_in),
       .bus_out(a_reg_bus_out),
       .q(reg_a_data)
   );
@@ -67,7 +63,7 @@ Bus_Manager bus_manager(
       .clk(clk),
       .clr(reset),
       .load_n(reg_b_load_n),
-      .bus_in(b_reg_bus_in),
+      .bus_in(data_bus_in),
       .bus_out(a_reg_bus_out),
       .q(reg_b_data)
   );
@@ -77,12 +73,12 @@ Bus_Manager bus_manager(
       .b(reg_b_data),
       .enable(alu_enable),
       .subtract(alu_subtract),
-      .result(bus)
+      .result(alu_bus_out)
   );
   ram m_ram (
       .dipswitch_data(ram_dipswitch_data),
       .dipswitch_addr(ram_dipswitch_addr),
-      .bus_in(bus),
+      .bus_in(data_bus_in),
       .addr_select(ram_addr_select),
       .prog_mode(ram_prog_mode),
       .output_enable(ram_output_enable),
@@ -90,21 +86,18 @@ Bus_Manager bus_manager(
       .load_mar_reg(ram_load_mar_reg),
       .clear_mar_reg(ram_clear_mar_reg),
       .clk(clk),
-      .bus_out(bus)
+      .bus_out(ram_bus_out)
   );
 
 endmodule
 
 module Bus_Manager(
-    input wire [7:0] a_reg_bus_in,
+    output wire [7:0] data_bus_in,
     input wire [7:0] a_reg_bus_out,
-    input wire [7:0] b_reg_bus_in,
     input wire [7:0] b_reg_bus_out,
-    input wire [7:0] alu_bus_in,
-    input wire [7:0] ram_bus_in,
     input wire [7:0] ram_bus_out,
     input wire [7:0] alu_bus_out,
-    output wire [7:0] data_bus_in,
     output wire [7:0] data_bus_out
 );
+    assign data_bus_out = a_reg_bus_out | b_reg_bus_out | ram_bus_out | alu_bus_out;
 endmodule

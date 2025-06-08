@@ -2,35 +2,34 @@
 
 module SAP_U_tb ();
   // System inputs
-  reg        clk;  // System clock
-  reg        reset;  // System reset
+  reg clk;   // System clock
+  reg reset; // System reset
 
   // Register A
-  reg        reg_a_load_n;  // Load signal
-  reg        reg_a_bus_enable_n;  // Enable signal
-  reg  [7:0] reg_a_bus_in;  // 8-bit data input
+  reg       reg_a_load_n;
+  reg       reg_a_bus_enable_n;
 
   // Register B
-  reg        reg_b_load_n;  // Load signal
-  reg        reg_b_bus_enable_n;  // Enable signal
-  reg  [7:0] reg_b_bus_in;  // 8-bit data input
+  reg       reg_b_load_n; 
+  reg       reg_b_bus_enable_n;
+  reg [7:0] reg_b_bus_in;
 
   // ALU
-  reg        alu_enable;
-  reg        alu_subtract;
+  reg alu_enable;
+  reg alu_subtract;
 
-  // Ram
-  reg  [7:0] ram_dipswitch_data;
-  reg  [3:0] ram_dipswitch_addr;
-  reg        ram_addr_select;
-  reg        ram_prog_mode;
-  reg        ram_output_enable;
-  reg        ram_control_signal;
-  reg        ram_load_mar_reg;
-  reg        ram_clear_mar_reg;
+  // RAM
+  reg [7:0] ram_dipswitch_data;
+  reg [3:0] ram_dipswitch_addr;
+  reg ram_addr_select;
+  reg ram_prog_mode;
+  reg ram_output_enable;
+  reg ram_control_signal;
+  reg ram_load_mar_reg;
+  reg ram_clear_mar_reg;
 
-  // Outputs
-  wire [7:0] bus;  // 8-bit bus
+  // Bus
+  reg [7:0] data_bus_in;
 
 
   SAP_U uut (
@@ -62,7 +61,8 @@ module SAP_U_tb ();
       .ram_clear_mar_reg(ram_clear_mar_reg),
       */
 
-      .bus(bus)  // 8-bit bus
+      // Bus Manager
+      .data_bus_in(data_bus_in)
   );
 
   // Clock generation: 50% duty cycle with a period of 10 time units
@@ -77,6 +77,7 @@ module SAP_U_tb ();
     // Test ALU
 
     // allow data to be loaded into register
+    data_bus_in = 8'b0;
     reg_a_load_n   = 0;
     reg_b_load_n   = 0;
     alu_enable   = 0; // Enable ALU output to bus
