@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.123 (w)1999-2025 BSI
-[*] Sun Jun  8 05:34:46 2025
+[*] Mon Jun  9 04:02:37 2025
 [*]
 [dumpfile] "/home/swami/Documents/SAP-U/Sim/test/modules/SAP_U/simulation/testbench_master.vcd"
-[dumpfile_mtime] "Sun Jun  8 05:27:51 2025"
-[dumpfile_size] 60302
+[dumpfile_mtime] "Mon Jun  9 03:57:19 2025"
+[dumpfile_size] 63248
 [savefile] "/home/swami/Documents/SAP-U/Sim/test/modules/SAP_U/simulation/Testbench.gtkw"
 [timestart] 0
 [size] 1920 988
 [pos] -1 -1
-*-13.217379 10190 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-13.217379 30000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] SAP_U_tb.
 [treeopen] SAP_U_tb.uut.
 [sst_width] 209
@@ -54,17 +54,17 @@ SAP_U_tb.uut.m_ram.run_mode
 @200
 -ALU
 @28
-SAP_U_tb.alu_enable
 SAP_U_tb.alu_subtract
 @22
-SAP_U_tb.uut.m_alu.result[7:0]
 SAP_U_tb.uut.m_alu.a[7:0]
 SAP_U_tb.uut.m_alu.b[7:0]
 @200
 -Bus Manager
 @22
 SAP_U_tb.uut.bus_manager.data_bus_out[7:0]
-@23
 SAP_U_tb.uut.bus_manager.alu_bus_out[7:0]
+SAP_U_tb.uut.bus_manager.ram_bus_out[7:0]
+@29
+SAP_U_tb.uut.bus_manager.ram_bus_enable_n
 [pattern_trace] 1
 [pattern_trace] 0

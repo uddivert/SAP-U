@@ -2,12 +2,12 @@
 module alu (
     input wire [7:0] a,  // input b
     input wire [7:0] b,  // input a
-    input wire enable,
+    input wire bus_enable_n,
     input wire subtract,
-    input wire flag_fi,  // controls if flag is holding value or updating
-    input wire flag_clr,  // clears flags
+    input wire flag_fi_n,  // controls if flag is holding value or updating
+    input wire flag_clear_n,  // clears flags
     input wire clk,
-    output wire [7:0] result,
+    output wire [7:0] bus_out,
     output wire [1:0] flag_out
 );
 
@@ -50,7 +50,7 @@ module alu (
   assign flag_data[1] = ~|internal_result;  // Simplifies zero flag logic
   assign flag_data[2] = 1'b0; // unused
   assign flag_data[3] = 1'b0; // unused
-  assign result = enable ? 8'bZ : internal_result;  // assign result dependent on enable
+  assign bus_out = bus_enable_n ? 8'bZ : internal_result;  // assign result dependent on enable
 
   // handle flags
   wire [3:0] flag_out_full;
@@ -58,9 +58,9 @@ module alu (
   sn54173_quad_flip_flop flags_reg (
       .m(1'b0),
       .n(1'b0),
-      .g1(flag_fi),
-      .g2(flag_fi),
-      .clr(flag_clr),
+      .g1(flag_fi_n),
+      .g2(flag_fi_n),
+      .clr(flag_clear_n),
       .clk(clk),
       .data(flag_data),
       .q(flag_out_full)
