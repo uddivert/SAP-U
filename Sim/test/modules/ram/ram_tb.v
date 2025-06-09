@@ -7,10 +7,10 @@ module ram_tb;
   reg [7:0] bus_in;
   reg addr_select;
   reg prog_mode;
-  reg output_enable;
+  reg bus_enable_n;
   reg write_enable;
   reg control_signal;
-  reg load_mar_reg;
+  reg load_mar_reg_n;
   reg clear_mar_reg;
   reg clk;
   wire [7:0] bus_out;
@@ -22,10 +22,10 @@ module ram_tb;
       .bus_in(bus_in),
       .addr_select(addr_select),
       .prog_mode(prog_mode),
-      .output_enable(output_enable),
+      .bus_enable_n(bus_enable_n),
       .write_enable(write_enable),
       .control_signal(control_signal),
-      .load_mar_reg(load_mar_reg),
+      .load_mar_reg_n(load_mar_reg_n),
       .clear_mar_reg(clear_mar_reg),
       .clk(clk),
       .bus_out(bus_out)
@@ -44,9 +44,9 @@ module ram_tb;
     bus_in = 8'b11110111;
     addr_select = 0;    // load address from dip switch
     prog_mode = 0;      // set to dipswitch_data
-    load_mar_reg = 0;   // load address
+    load_mar_reg_n = 0;   // load address
     clear_mar_reg = 0;  // Don't clear mar's qff
-    output_enable = 0;  // enable output on bus
+    bus_enable_n = 0;  // enable output on bus
 
     /*********** MAR TEST **********/
     dipswitch_addr = 4'b1010;
@@ -57,7 +57,7 @@ module ram_tb;
     /*********** RAM TEST **********/
 
     // write from dipswitch
-    load_mar_reg = 1;   // stop loading address
+    load_mar_reg_n = 1;   // stop loading address
     dipswitch_data = 8'b11001111;
     write_enable = 1;
     #1

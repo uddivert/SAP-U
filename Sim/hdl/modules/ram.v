@@ -10,9 +10,9 @@ module ram (
     input wire prog_mode,
     input wire addr_select,
     input wire write_enable,
-    input wire output_enable,
+    input wire bus_enable_n,
     input wire control_signal,
-    input wire load_mar_reg,
+    input wire load_mar_reg_n,
     input wire clear_mar_reg,
     input wire clk,
     output wire [7:0] bus_out
@@ -42,8 +42,8 @@ module ram (
   sn54173_quad_flip_flop qff (
       .m(1'b0),
       .n(1'b0),
-      .g1(load_mar_reg),
-      .g2(load_mar_reg),
+      .g1(load_mar_reg_n),
+      .g2(load_mar_reg_n),
       .clr(clear_mar_reg),
       .clk(clk),
       .data({bus_in[0], bus_in[1], bus_in[2], bus_in[3]}),
@@ -57,7 +57,7 @@ module ram (
       .address(address),
       .data(internal_data),
       .write_enable(padded_memory_write_mode[1]),
-      .enable(output_enable),
+      .enable(bus_enable_n),
       .bus_out(bus_out)
   );
 
