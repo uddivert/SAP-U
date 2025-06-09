@@ -47,6 +47,7 @@ module ram_tb;
     load_mar_reg_n = 0;   // load address
     clear_mar_reg = 0;  // Don't clear mar's qff
     bus_enable_n = 0;  // enable output on bus
+    control_signal = 0; // disable control signal
 
     /*********** MAR TEST **********/
     dipswitch_addr = 4'b1010;
@@ -64,12 +65,14 @@ module ram_tb;
     write_enable_n = 1; 
     #9;
 
-    // write from bus
+  // write from bus
     dipswitch_data = 8'b11001111;
     prog_mode = 1;
     control_signal = 1;
-    #10;
-
+    write_enable_n = 0;
+    #1
+    write_enable_n = 1; 
+    #9;
     $finish;
   end
 

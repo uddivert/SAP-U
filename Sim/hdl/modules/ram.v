@@ -66,7 +66,7 @@ module ram (
 
   reg run_mode;
   always @ (posedge clk) begin
-        run_mode <= ~control_signal;
+        run_mode <= control_signal;
     end
 
   wire [3:0] padded_run_mode;
