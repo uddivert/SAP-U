@@ -8,7 +8,7 @@ module ram_tb;
   reg addr_select;
   reg prog_mode;
   reg bus_enable_n;
-  reg write_enable;
+  reg write_enable_n;
   reg control_signal;
   reg load_mar_reg_n;
   reg clear_mar_reg;
@@ -23,7 +23,7 @@ module ram_tb;
       .addr_select(addr_select),
       .prog_mode(prog_mode),
       .bus_enable_n(bus_enable_n),
-      .write_enable(write_enable),
+      .write_enable_n(write_enable_n),
       .control_signal(control_signal),
       .load_mar_reg_n(load_mar_reg_n),
       .clear_mar_reg(clear_mar_reg),
@@ -59,9 +59,9 @@ module ram_tb;
     // write from dipswitch
     load_mar_reg_n = 1;   // stop loading address
     dipswitch_data = 8'b11001111;
-    write_enable = 1;
+    write_enable_n = 0;
     #1
-    write_enable = 0; 
+    write_enable_n = 1; 
     #9;
 
     // write from bus

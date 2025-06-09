@@ -9,7 +9,7 @@ module ram (
     input wire [7:0] bus_in,
     input wire prog_mode,
     input wire addr_select,
-    input wire write_enable,
+    input wire write_enable_n,
     input wire bus_enable_n,
     input wire control_signal,
     input wire load_mar_reg_n,
@@ -56,13 +56,13 @@ module ram (
    memory mem (
       .address(address),
       .data(internal_data),
-      .write_enable(padded_memory_write_mode[1]),
-      .enable(bus_enable_n),
+      .write_enable_n(padded_memory_write_mode[1]),
+      .bus_enable_n(bus_enable_n),
       .bus_out(bus_out)
   );
 
   wire [3:0] padded_write_enable;
-  assign padded_write_enable = {1'b0, 1'b0, write_enable, 1'b0};
+  assign padded_write_enable = {1'b0, 1'b0, write_enable_n, 1'b0};
 
   reg run_mode;
   always @ (posedge clk) begin

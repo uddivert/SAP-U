@@ -2,8 +2,8 @@
 module f189 (
     input  wire [3:0] a,   // address inputs
     input  wire [3:0] d,   // input data
-    input  wire       cs,  // Chip select  (active low)
-    input  wire       we,  // Write enable (active low)
+    input  wire       cs_n,  // Chip select  (active low)
+    input  wire       we_n,  // Write enable (active low)
     output wire [3:0] o    // inverted data outputs
 );
 
@@ -17,8 +17,8 @@ module f189 (
 
   generate
     for (i = 0; i <= 15; i = i + 1) begin : g_enables
-      assign write_enable[i]  = (a == i) & ~we & ~cs;
-      assign output_enable[i] = (a == i) & we & ~cs;
+      assign write_enable[i]  = (a == i) & ~we_n & ~cs_n;
+      assign output_enable[i] = (a == i) & we_n & ~cs_n;
     end
   endgenerate
 
