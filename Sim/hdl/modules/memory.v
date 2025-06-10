@@ -25,6 +25,6 @@ module memory (
       .o (mem_high)
   );
   assign internal_data = {~mem_high, ~mem_low};
-  assign bus_out = bus_enable_n ? 8'bZ : internal_data;  // enable bus out dependendent on enable
+  assign bus_out = bus_enable_n ? 8'b0000000Z : internal_data;  // enable bus out dependendent on enable
 
 endmodule

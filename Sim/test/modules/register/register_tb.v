@@ -43,7 +43,7 @@ module register_tb;
     #12;
 
     // Case 1: clr deasserted, load is high, bus_in is 1
-    clr  = 0;
+    clr = 0;
     bus_in = 8'b11111111;  // only lower 4 bits should show
     #10;
 

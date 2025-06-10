@@ -38,52 +38,52 @@ module alu_tb ();
     #10;
 
     // Test 1: Addition with bus_enable_n = 0, subtract = 0 (expected result = a + b)
-    a        = 8'b00000001;  // a = 1
-    b        = 8'b00000001;  // b = 1
-    bus_enable_n   = 0;  // bus_enable_n ALU
-    subtract = 0;  // addition
+    a            = 8'b00000001;  // a = 1
+    b            = 8'b00000001;  // b = 1
+    bus_enable_n = 0;  // bus_enable_n ALU
+    subtract     = 0;  // addition
     #10;
 
     // Test 2: Subtraction with bus_enable_n = 0, subtract = 1 (expected result = a - b)
-    a        = 8'b00000100;  // a = 4
-    b        = 8'b00000001;  // b = 1
-    bus_enable_n   = 0;  // bus_enable_n ALU
-    subtract = 1;  // subtraction
+    a            = 8'b00000100;  // a = 4
+    b            = 8'b00000001;  // b = 1
+    bus_enable_n = 0;  // bus_enable_n ALU
+    subtract     = 1;  // subtraction
     #10;
 
     // Test 3: Addition with bus_enable_n = 1, subtract = 0 (expected result = 0, ALU disabled)
-    a        = 8'b00000101;  // a = 5
-    b        = 8'b00000001;  // b = 1
-    bus_enable_n   = 1;  // disable ALU
-    subtract = 0;  // no operation
+    a            = 8'b00000101;  // a = 5
+    b            = 8'b00000001;  // b = 1
+    bus_enable_n = 1;  // disable ALU
+    subtract     = 0;  // no operation
     #10;
 
     // Test 4: Subtraction with bus_enable_n = 1, subtract = 1 (expected result = 0, ALU disabled)
-    a        = 8'b00000110;  // a = 6
-    b        = 8'b00000001;  // b = 1
-    bus_enable_n   = 1;  // disable ALU
-    subtract = 1;  // no operation
+    a            = 8'b00000110;  // a = 6
+    b            = 8'b00000001;  // b = 1
+    bus_enable_n = 1;  // disable ALU
+    subtract     = 1;  // no operation
     #10;
 
     // Test 5: Negative result of subtraction with bus_enable_n = 0, subtract = 1
-    a        = 8'b00000001;  // a = 1
-    b        = 8'b00000100;  // b = 4
-    bus_enable_n   = 0;  // enable ALU
-    subtract = 1;  // subtraction
+    a            = 8'b00000001;  // a = 1
+    b            = 8'b00000100;  // b = 4
+    bus_enable_n = 0;  // enable ALU
+    subtract     = 1;  // subtraction
     #10;
 
     // Test 6: Large addition with enable = 0, subtract = 0
-    a        = 8'b11111111;  // a = 255
-    b        = 8'b00000001;  // b = 1
-    bus_enable_n   = 0;  // enable ALU
-    subtract = 0;  // addition
+    a            = 8'b11111111;  // a = 255
+    b            = 8'b00000001;  // b = 1
+    bus_enable_n = 0;  // enable ALU
+    subtract     = 0;  // addition
     #10;
 
     // Test 7: Large subtraction with enable = 0, subtract = 1
-    a        = 8'b10000000;  // a = 128
-    b        = 8'b00000001;  // b = 1
-    bus_enable_n   = 0;  // enable ALU
-    subtract = 1;  // subtraction
+    a            = 8'b10000000;  // a = 128
+    b            = 8'b00000001;  // b = 1
+    bus_enable_n = 0;  // enable ALU
+    subtract     = 1;  // subtraction
     #10;
 
     $finish;

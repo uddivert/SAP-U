@@ -50,7 +50,7 @@ module alu (
   assign flag_data[1] = ~|internal_result;  // Simplifies zero flag logic
   assign flag_data[2] = 1'b0; // unused
   assign flag_data[3] = 1'b0; // unused
-  assign bus_out = bus_enable_n ? 8'bZ : internal_result;  // assign result dependent on enable
+  assign bus_out = bus_enable_n ? 8'b0000000Z : internal_result;  // assign result dependent on enable
 
   // handle flags
   wire [3:0] flag_out_full;

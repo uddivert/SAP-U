@@ -41,13 +41,13 @@ module ram_tb;
     $dumpfile("./simulation/ram_tb.vcd");  // VCD file for waveform generation
     $dumpvars(0, ram_tb);
     // Initialize inputs
-    bus_in = 8'b11110111;
-    addr_select = 0;    // load address from dip switch
-    prog_mode = 0;      // set to dipswitch_data
-    load_mar_reg_n = 0;   // load address
-    clear_mar_reg = 0;  // Don't clear mar's qff
-    bus_enable_n = 0;  // enable output on bus
-    control_signal = 0; // disable control signal
+    bus_in         = 8'b11110111;
+    addr_select    = 0;  // load address from dip switch
+    prog_mode      = 0;  // set to dipswitch_data
+    load_mar_reg_n = 0;  // load address
+    clear_mar_reg  = 0;  // Don't clear mar's qff
+    bus_enable_n   = 0;  // enable output on bus
+    control_signal = 0;  // disable control signal
 
     /*********** MAR TEST **********/
     dipswitch_addr = 4'b1010;
@@ -58,20 +58,18 @@ module ram_tb;
     /*********** RAM TEST **********/
 
     // write from dipswitch
-    load_mar_reg_n = 1;   // stop loading address
+    load_mar_reg_n = 1;  // stop loading address
     dipswitch_data = 8'b11001111;
     write_enable_n = 0;
-    #1
-    write_enable_n = 1; 
+    #1 write_enable_n = 1;
     #9;
 
-  // write from bus
+    // write from bus
     dipswitch_data = 8'b11001111;
     prog_mode = 1;
     control_signal = 1;
     write_enable_n = 0;
-    #1
-    write_enable_n = 1; 
+    #1 write_enable_n = 1;
     #9;
     $finish;
   end

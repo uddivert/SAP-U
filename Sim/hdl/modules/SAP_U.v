@@ -11,7 +11,7 @@ module SAP_U (
     input wire       reg_a_bus_enable_n,
 
     // Register B
-    input wire       reg_b_load_n, 
+    input wire       reg_b_load_n,
     input wire       reg_b_bus_enable_n,
     input wire [7:0] reg_b_bus_in,
 
@@ -24,9 +24,10 @@ module SAP_U (
     input wire [3:0] ram_dipswitch_addr,
     input wire ram_addr_select,
     input wire ram_prog_mode,
-    input wire ram_output_enable_n,
+    input wire ram_bus_enable_n,
+    input wire ram_write_enable_n,
     input wire ram_control_signal,
-    input wire ram_load_mar_reg,
+    input wire ram_load_mar_reg_n,
     input wire ram_clear_mar_reg,
 
     // Bus
@@ -52,7 +53,7 @@ Bus_Manager bus_manager(
     .alu_bus_enable_n(alu_enable_n),
 
     .ram_bus_out(ram_bus_out),
-    .ram_bus_enable_n(ram_output_enable_n)
+    .ram_bus_enable_n(ram_bus_enable_n)
 );
 
   // stored data in registers
@@ -94,9 +95,10 @@ Bus_Manager bus_manager(
       .bus_in(data_bus_in),
       .addr_select(ram_addr_select),
       .prog_mode(ram_prog_mode),
-      .output_enable(ram_output_enable_n),
+      .bus_enable_n(ram_bus_enable_n),
+      .write_enable_n(ram_write_enable_n),
       .control_signal(ram_control_signal),
-      .load_mar_reg(ram_load_mar_reg),
+      .load_mar_reg_n(ram_load_mar_reg_n),
       .clear_mar_reg(ram_clear_mar_reg),
       .clk(clk),
       .bus_out(ram_bus_out)
@@ -130,6 +132,6 @@ assign data_bus_out = ~reg_a_bus_enable_n ? reg_a_bus_out :
                           ~reg_b_bus_enable_n ? reg_b_bus_out :
                           ~ram_bus_enable_n   ? ram_bus_out   :
                           ~alu_bus_enable_n   ? alu_bus_out   :
-                          8'bZ;
+                          8'b0000000Z;
 
 endmodule

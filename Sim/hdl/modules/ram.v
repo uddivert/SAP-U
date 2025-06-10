@@ -70,7 +70,7 @@ module ram (
     end
 
   wire [3:0] padded_run_mode;
-  assign padded_run_mode = {1'b0, 1'b0, run_mode, 1'b0};  
+  assign padded_run_mode = {1'b0, 1'b0, run_mode, 1'b0};
   wire [3:0] padded_memory_write_mode; // only care about [1]
   sn74ls157 u32 (
       .a(padded_write_enable),
