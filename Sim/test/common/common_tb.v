@@ -78,14 +78,14 @@ module common_tb;
   );
 
   reg [3:0] ram_a, ram_d;
-  reg ram_cs, ram_we;
+  reg ram_cs_n, ram_we_n;
   wire [3:0] ram_o;
 
   f189 ram (
       .a (ram_a),
       .d (ram_d),
-      .cs(ram_cs),
-      .we(ram_we),
+      .cs_n(ram_cs_n),
+      .we_n(ram_we_n),
       .o (ram_o)
   );
 
@@ -365,24 +365,24 @@ module common_tb;
     /************************************************************/
     /* Ram testbench                                            */
     /************************************************************/
-    ram_cs = 1;
-    ram_we = 1;
+    ram_cs_n = 1;
+    ram_we_n = 1;
     ram_a  = 0;
     ram_d  = 0;
     #10;
 
     // Write data to memory
-    ram_cs = 0;
-    ram_we = 0;
+    ram_cs_n = 0;
+    ram_we_n = 0;
     ram_a  = 4'b0010;
     ram_d  = 4'b1100;
     #10;
-    ram_we = 1;
+    ram_we_n = 1;
     #10;
 
     // Read data from memory
-    ram_cs = 0;
-    ram_we = 1;
+    ram_cs_n = 0;
+    ram_we_n = 1;
     ram_a  = 4'b0010;
     #10;
 
