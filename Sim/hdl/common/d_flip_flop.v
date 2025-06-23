@@ -4,7 +4,7 @@ module d_flip_flop (
     input  wire data,   // Input: data for the signal
     input  wire reset,  // Input: reset signal
     output reg  q,      // Output: Q
-    output wire q_not   // Output: Not Q
+    output wire q_n     // Output: Not Q
 );
 
   // On the rising edge of the clock, the flip-flop captures the input data
@@ -17,5 +17,5 @@ module d_flip_flop (
   end
 
   // Not Q is simply the inverse of Q
-  assign q_not = ~q;
+  assign q_n = ~q;
 endmodule

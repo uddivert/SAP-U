@@ -9,7 +9,7 @@ module common_tb;
       .set(sr_set),
       .reset(sr_reset),
       .q(sr_q),
-      .q_not(sr_not_q)
+      .q_n(sr_not_q)
   );
 
   // Declare input signals for D latch
@@ -20,7 +20,7 @@ module common_tb;
       .enable(d_enable),
       .data(d_data),
       .q(d_q),
-      .q_not(d_not_q)
+      .q_n(d_not_q)
   );
 
   // Declare input signals for D flip flop
@@ -32,7 +32,7 @@ module common_tb;
       .data (dff_data),
       .reset(dff_reset),
       .q    (dff_q),
-      .q_not(dff_not_q)
+      .q_n(dff_not_q)
   );
 
   // Declare input signals for quad flip flop

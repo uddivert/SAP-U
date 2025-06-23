@@ -30,7 +30,7 @@ module sn54173_quad_flip_flop (
           .data(flop_data[i]),
           .reset(clr),
           .q(internal_q[i]),
-          .q_not(not_q[i])
+          .q_n(not_q[i])
       );
     end
   endgenerate
