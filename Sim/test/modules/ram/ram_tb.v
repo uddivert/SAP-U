@@ -65,11 +65,8 @@ module ram_tb;
     #9;
 
     // write from bus
-    dipswitch_data = 8'b11001111;
     prog_mode = 1;
     control_signal = 1;
-    write_enable_n = 0;
-    #1 write_enable_n = 1;
     #9;
     $finish;
   end

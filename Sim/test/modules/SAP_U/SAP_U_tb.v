@@ -115,6 +115,11 @@ module SAP_U_tb ();
     #1 ram_write_enable_n = 1;
     #9;
 
+    // write ram data from bus
+    ram_prog_mode = 1;
+    ram_control_signal =1 ;
+    #10
+
     $finish;
   end
 endmodule
