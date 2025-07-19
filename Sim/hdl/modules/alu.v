@@ -2,20 +2,20 @@
 module alu (
     input wire [7:0] a,  // input b
     input wire [7:0] b,  // input a
-    input wire enable,
+    input wire bus_enable_n,
     input wire subtract,
-    input wire flag_fi,  // controls if flag is holding value or updating
-    input wire flag_clr,  // clears flags
+    input wire flag_fi_n,  // controls if flag is holding value or updating
+    input wire flag_clear_n,  // clears flags
     input wire clk,
-    output wire [7:0] result,
+    output wire [7:0] bus_out,
     output wire [1:0] flag_out
 );
 
   /*
- * Addition (subtract = 0): Computes result=a+bresult=a+b.
- * Subtraction (subtract = 1): Computes result=a−bresult=a−b using two's complement logic.
- * Enable Control: The result is gated by the enable signal; when enable = 0, result = 0.
-*/
+   * Addition (subtract = 0): Computes result=a+bresult=a+b.
+   * Subtraction (subtract = 1): Computes result=a−bresult=a−b using two's complement logic.
+   * Enable Control: The result is gated by the enable signal; when enable = 0, result = 0.
+  */
 
   wire internal_carryout;
   wire external_carryout;
@@ -41,24 +41,28 @@ module alu (
   );
 
   wire [3:0] intermediate_zero_data;
-  wire [1:0] flag_data;
+  wire [3:0] flag_data;
 
   // populate flag data
   assign flag_data[0] = external_carryout;
 
   // compute zero flag
   assign flag_data[1] = ~|internal_result;  // Simplifies zero flag logic
-  assign result = enable ? 8'b0 : internal_result;  // assign result dependent on enable
+  assign flag_data[2] = 1'b0; // unused
+  assign flag_data[3] = 1'b0; // unused
+  assign bus_out = bus_enable_n ? 8'b0000000Z : internal_result;  // assign result dependent on enable
 
   // handle flags
+  wire [3:0] flag_out_full;
+  assign flag_out = flag_out_full[1:0]; // only output lower two bits
   sn54173_quad_flip_flop flags_reg (
       .m(1'b0),
       .n(1'b0),
-      .g1(flag_fi),
-      .g2(flag_fi),
-      .clr(flag_clr),
+      .g1(flag_fi_n),
+      .g2(flag_fi_n),
+      .clr(flag_clear_n),
       .clk(clk),
       .data(flag_data),
-      .q(flag_out)
+      .q(flag_out_full)
   );
 endmodule

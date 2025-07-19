@@ -9,7 +9,7 @@ module common_tb;
       .set(sr_set),
       .reset(sr_reset),
       .q(sr_q),
-      .q_not(sr_not_q)
+      .q_n(sr_not_q)
   );
 
   // Declare input signals for D latch
@@ -20,7 +20,7 @@ module common_tb;
       .enable(d_enable),
       .data(d_data),
       .q(d_q),
-      .q_not(d_not_q)
+      .q_n(d_not_q)
   );
 
   // Declare input signals for D flip flop
@@ -32,7 +32,7 @@ module common_tb;
       .data (dff_data),
       .reset(dff_reset),
       .q    (dff_q),
-      .q_not(dff_not_q)
+      .q_n(dff_not_q)
   );
 
   // Declare input signals for quad flip flop
@@ -75,6 +75,30 @@ module common_tb;
       .cin(cla_cin),
       .sum(cla_sum),
       .cout(cla_cout)
+  );
+
+  reg [3:0] ram_a, ram_d;
+  reg ram_cs_n, ram_we_n;
+  wire [3:0] ram_o;
+
+  f189 ram (
+      .a (ram_a),
+      .d (ram_d),
+      .cs_n(ram_cs_n),
+      .we_n(ram_we_n),
+      .o (ram_o)
+  );
+
+  reg [3:0] mux_a, mux_b;
+  reg mux_select, mux_strobe;
+  wire [3:0] mux_y;
+
+  sn74ls157 mux (
+      .a(mux_a),
+      .b(mux_b),
+      .select(mux_select),
+      .strobe(mux_strobe),
+      .y(mux_y)
   );
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
@@ -338,6 +362,41 @@ module common_tb;
     #10;
 
 
+    /************************************************************/
+    /* Ram testbench                                            */
+    /************************************************************/
+    ram_cs_n = 1;
+    ram_we_n = 1;
+    ram_a  = 0;
+    ram_d  = 0;
+    #10;
+
+    // Write data to memory
+    ram_cs_n = 0;
+    ram_we_n = 0;
+    ram_a  = 4'b0010;
+    ram_d  = 4'b1100;
+    #10;
+    ram_we_n = 1;
+    #10;
+
+    // Read data from memory
+    ram_cs_n = 0;
+    ram_we_n = 1;
+    ram_a  = 4'b0010;
+    #10;
+
+    /************************************************************/
+    /* sn74ls157 testbench                                      */
+    /************************************************************/
+    mux_strobe = 0;  // set output always on
+    mux_select = 0;
+    mux_a = 4'b1010;
+    mux_b = 4'b0101;
+    mux_select = 0;
+    #10;
+    mux_select = 1;
+    #10;
     $finish;  // End simulation
   end
 endmodule
