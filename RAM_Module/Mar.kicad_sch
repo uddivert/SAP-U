@@ -2848,7 +2848,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "059e1d88-a417-4459-b409-975bc9691df8")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 231.14 85.9946 90)
 			(effects
 				(font
@@ -2942,7 +2942,7 @@
 		(instances
 			(project "RAM_Module"
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2958,7 +2958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30622522-b6ae-4803-bb17-3ee308b29022")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 87.63 113.03 0)
 			(effects
 				(font
@@ -3013,7 +3013,7 @@
 		(instances
 			(project ""
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3029,7 +3029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a61b448-d359-4e45-88a0-25ac061b2c58")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR04"
 			(at 105.41 85.09 0)
 			(effects
 				(font
@@ -3079,7 +3079,7 @@
 		(instances
 			(project ""
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "#PWR09")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3240,7 +3240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a5e4bae-10c1-48a2-9159-dbbcbf4431e2")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR08"
 			(at 207.01 114.3 0)
 			(effects
 				(font
@@ -3290,7 +3290,7 @@
 		(instances
 			(project ""
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "#PWR04")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3521,7 +3521,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c99968ad-696e-43e8-92c8-aa55770c47c6")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR03"
 			(at 73.66 130.81 0)
 			(effects
 				(font
@@ -3571,7 +3571,7 @@
 		(instances
 			(project "RAM_Module"
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "#PWR08")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3587,7 +3587,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb3f7317-0e20-4068-8000-268bd02ff934")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR09"
 			(at 233.68 99.06 0)
 			(effects
 				(font
@@ -3637,7 +3637,7 @@
 		(instances
 			(project "RAM_Module"
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "#PWR05")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3653,7 +3653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9319780-c974-4cc2-b375-35ca2a8e0476")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR05"
 			(at 120.65 88.9 0)
 			(effects
 				(font
@@ -3703,7 +3703,7 @@
 		(instances
 			(project "RAM_Module"
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "#PWR010")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3789,7 +3789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1a7cd1b-1aff-4752-b104-670fe468bf0b")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 168.91 85.9946 90)
 			(effects
 				(font
@@ -3814,7 +3814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS157"
+		(property "Datasheet" "https://www.jameco.com/Jameco/Products/ProdDS/301612-DS01.pdf"
 			(at 143.51 91.44 0)
 			(effects
 				(font
@@ -3883,7 +3883,7 @@
 		(instances
 			(project "RAM_Module"
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c/6c0a268e-8373-4fc4-b910-175fae74551a"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)

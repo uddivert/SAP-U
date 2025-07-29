@@ -2785,7 +2785,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15c160d4-d9a7-40e0-8fec-87e9a5649cc6")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR02"
 			(at 232.41 133.35 0)
 			(effects
 				(font
@@ -2835,7 +2835,7 @@
 		(instances
 			(project "RAM_Module"
 				(path "/03b00b70-3754-4eac-a53e-5e31c1a5687c"
-					(reference "#PWR078")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
