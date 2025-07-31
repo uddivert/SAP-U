@@ -2194,7 +2194,7 @@
 	)
 	(text "ir7"
 		(exclude_from_sim no)
-		(at 215.9 81.788 0)
+		(at 215.9 74.422 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2204,7 +2204,7 @@
 	)
 	(text "ir5"
 		(exclude_from_sim no)
-		(at 215.9 76.962 0)
+		(at 215.9 79.248 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2264,7 +2264,7 @@
 	)
 	(text "ir6"
 		(exclude_from_sim no)
-		(at 215.9 79.502 0)
+		(at 215.9 76.708 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2304,7 +2304,7 @@
 	)
 	(text "ir4"
 		(exclude_from_sim no)
-		(at 215.9 74.676 0)
+		(at 215.9 81.534 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2506,35 +2506,15 @@
 		)
 		(uuid "18e27f56-5980-4611-aa61-d973c04be9bb")
 	)
-	(label "bus6"
-		(at 218.44 69.85 180)
+	(label "bus3"
+		(at 218.44 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "21c7cf0c-f8e5-4e8f-bf5b-2178c5701225")
-	)
-	(label "bus0"
-		(at 218.44 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "24dac3ad-e38a-421c-b125-25a7dce64876")
-	)
-	(label "bus5"
-		(at 218.44 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2d093d73-383b-43e7-b527-3a6fc9e06079")
+		(uuid "2cfc97de-30ce-41e2-9e32-c714bc93c464")
 	)
 	(label "b6"
 		(at 231.14 62.23 0)
@@ -2575,6 +2555,16 @@
 			(justify right bottom)
 		)
 		(uuid "363ea898-0eb2-4a8a-90a7-2d1ba99e664b")
+	)
+	(label "bus7"
+		(at 218.44 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a2900bd-5f95-495b-8741-9c633b75030a")
 	)
 	(label "b3"
 		(at 231.14 69.85 0)
@@ -2626,6 +2616,26 @@
 		)
 		(uuid "68272e19-c93e-4f03-baf9-60fd914f4dcd")
 	)
+	(label "bus5"
+		(at 218.44 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6aece789-d90b-40eb-8d19-b9d17a58a3d2")
+	)
+	(label "bus2"
+		(at 218.44 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "70bc9877-952f-4c0e-890d-ce832f933b8f")
+	)
 	(label "~{A_OE}"
 		(at 218.44 95.25 180)
 		(effects
@@ -2676,6 +2686,16 @@
 		)
 		(uuid "a7f2aac4-feb4-4fff-8d12-1ff104989cc4")
 	)
+	(label "bus4"
+		(at 218.44 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aac91021-e6f7-497c-b281-c400553d487d")
+	)
 	(label "b4"
 		(at 231.14 67.31 0)
 		(effects
@@ -2686,35 +2706,25 @@
 		)
 		(uuid "b414ee67-9792-47ec-a1bb-312a518db026")
 	)
-	(label "bus3"
-		(at 218.44 62.23 180)
+	(label "bus6"
+		(at 218.44 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "b5de59be-ad76-4672-9926-24516fb1ba4e")
+		(uuid "b90ef3a9-0400-4f7c-92ac-d8ee15789c2e")
 	)
-	(label "bus7"
-		(at 218.44 72.39 180)
+	(label "bus1"
+		(at 218.44 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "ca5e35e9-a07e-4821-8579-6340398556d3")
-	)
-	(label "bus4"
-		(at 218.44 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cf8c0175-08bb-4c9c-be68-9e37c15006be")
+		(uuid "cf229160-ca67-47af-9397-819050cd4636")
 	)
 	(label "clearB"
 		(at 218.44 105.41 180)
@@ -2725,6 +2735,16 @@
 			(justify right bottom)
 		)
 		(uuid "d2a0fad5-da06-44af-933e-edaf8e174350")
+	)
+	(label "bus0"
+		(at 218.44 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d93e71ac-2552-4fa4-9c42-a40cb848ba76")
 	)
 	(label "b5"
 		(at 231.14 64.77 0)
@@ -2745,26 +2765,6 @@
 			(justify left bottom)
 		)
 		(uuid "f1ef72b1-9833-4650-b7a7-6d6a017ad44a")
-	)
-	(label "bus2"
-		(at 218.44 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f5b6d886-e7a5-466a-8b5d-139e612b6fc7")
-	)
-	(label "bus1"
-		(at 218.44 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fb5b8fca-7cdf-4c1c-a1ab-b08a4fa4492e")
 	)
 	(label "a6"
 		(at 218.44 123.19 180)
@@ -3177,7 +3177,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "6c0a268e-8373-4fc4-b910-175fae74551a")
-		(property "Sheetname" "Memory Address Register"
+		(property "Sheetname" "ram_i Address Register"
 			(at 31.75 50.0884 0)
 			(effects
 				(font
