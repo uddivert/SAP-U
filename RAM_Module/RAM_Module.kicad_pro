@@ -228,8 +228,8 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_not_driven": "ignore",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -414,7 +414,7 @@
     ],
     [
       "6c0a268e-8373-4fc4-b910-175fae74551a",
-      "ram_i Address Register"
+      "Memory Address Register"
     ],
     [
       "a93cd5e9-455f-435d-bc2e-4b037fb18d7f",

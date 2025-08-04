@@ -22,14 +22,16 @@ module ram (
   wire [3:0] qff_out;
   wire [3:0] reversed_address;
   wire [3:0] dipswitch_addr_reversed;
+  wire select_signal;
   assign dipswitch_addr_reversed = {
     dipswitch_addr[0], dipswitch_addr[1], dipswitch_addr[2], dipswitch_addr[3]
   };
+  assign select_signal = addr_select | prog_mode;
 
   sn74ls157 mux (
       .a(dipswitch_addr_reversed),
       .b(qff_out),
-      .select(addr_select),
+      .select(select_signal),
       .strobe(1'b0),  // output always on
       .y(reversed_address)
   );
