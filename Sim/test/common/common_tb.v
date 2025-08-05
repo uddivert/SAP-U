@@ -77,6 +77,7 @@ module common_tb;
       .cout(cla_cout)
   );
 
+  // Declare input signals for F189 Ram
   reg [3:0] ram_a, ram_d;
   reg ram_cs_n, ram_we_n;
   wire [3:0] ram_o;
@@ -89,6 +90,7 @@ module common_tb;
       .o (ram_o)
   );
 
+  // Declare input signals for sn74ls157 multiplexor
   reg [3:0] mux_a, mux_b;
   reg mux_select, mux_strobe;
   wire [3:0] mux_y;
@@ -99,6 +101,18 @@ module common_tb;
       .select(mux_select),
       .strobe(mux_strobe),
       .y(mux_y)
+  );
+
+  // Declare input signals for jk latch 
+  reg jk_j, jk_k;
+  wire jk_q, jk_q_n;
+
+  jk_flipflop jk (
+      .j(jk_j),
+      .k(jk_k),
+      .clk(clk),
+      .q(jk_q),
+      .q_n(jk_q_n)
   );
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
@@ -397,6 +411,30 @@ module common_tb;
     #10;
     mux_select = 1;
     #10;
+
+    /************************************************************/
+    /* jk flipflop testbench                                      */
+    /************************************************************/
+    jk_j = 0;
+    jk_k= 0;
+    #10;
+
+    jk_j = 1;  // Q should be on
+    jk_k= 0;
+    #10;
+
+    jk_j = 0;  // Q Not output always on
+    jk_k= 1;
+    #10;
+
+    jk_j = 1;  // Toggle
+    jk_k= 1;
+    #10;
+
+    jk_j = 1;  // Toggle
+    jk_k= 1;
+    #10;
+
     $finish;  // End simulation
   end
 endmodule
