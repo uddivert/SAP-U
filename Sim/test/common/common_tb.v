@@ -103,7 +103,7 @@ module common_tb;
       .y(mux_y)
   );
 
-  // Declare input signals for jk latch 
+  // Declare input signals for jk flip flop 
   reg jk_j, jk_k;
   wire jk_q, jk_q_n;
 
@@ -114,6 +114,21 @@ module common_tb;
       .q(jk_q),
       .q_n(jk_q_n)
   );
+
+  // Declare input signals for dm7476 jff
+  reg dm7476_pr_n, dm7476_clr_n, dm7476_j, dm7476_k;
+  wire dm7476_q, dm7476_q_n;
+
+  dm7476_jk_flip_flop dm7476_jkff(
+      .pr_n(dm7476_pr_n),
+      .clr_n(dm7476_clr_n),
+      .clk(clk),
+      .j(dm7476_j),
+      .k(dm7476_k),
+      .q(dm7476_q),
+      .q_n(dm7476_q_n)
+  );
+
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
   always begin
@@ -433,6 +448,38 @@ module common_tb;
 
     jk_j = 1;  // Toggle
     jk_k= 1;
+    #10;
+
+    /************************************************************/
+    /* dm7476 testbench                                      */
+    /************************************************************/
+    dm7476_pr_n = 1; dm7476_clr_n = 1; dm7476_j = 0; dm7476_k = 0;
+
+    // Test asynchronous preset
+    #2; dm7476_pr_n = 0; // preset active
+    #5; dm7476_pr_n = 1; // preset inactive
+
+    // Test asynchronous clear
+    #2; dm7476_clr_n = 0; // clear active
+    #5; dm7476_clr_n = 1; // clear inactive
+
+    // Test invalid 
+    #2; dm7476_pr_n = 0; dm7476_clr_n = 0;
+    #5; dm7476_pr_n = 1; dm7476_clr_n = 1;
+
+    dm7476_j = 0; dm7476_k = 0;
+    #10; 
+
+    dm7476_j = 0; dm7476_k = 1;
+    #10;
+
+    dm7476_j = 1; dm7476_k = 0;
+    #10;
+
+    dm7476_j = 1; dm7476_k = 1;
+    #20;
+
+    dm7476_j = 0; dm7476_k = 0;
     #10;
 
     $finish;  // End simulation
