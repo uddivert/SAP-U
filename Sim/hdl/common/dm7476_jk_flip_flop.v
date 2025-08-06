@@ -10,7 +10,7 @@ module dm7476_jk_flip_flop(
 );
     assign q_n = ~q;
 
-    always @(negedge clk or negedge pr_n or negedge clr_n) begin
+    always @(negedge clk or negedge pr_n or posedge clr_n) begin
         if (!pr_n && clr_n) begin
             // Asynchronous preset
             q <= 1'b1;
