@@ -19,7 +19,7 @@ module dm7476_jk_flip_flop(
             q <= 1'b0;
         end else if (!pr_n && !clr_n) begin
             // Invalid state
-            q <= 1'bx; 
+            q <= 1'bx;
         end else begin
             // Synchronous behavior on falling edge of clk
             case ({j, k})

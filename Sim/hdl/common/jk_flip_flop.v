@@ -1,6 +1,6 @@
 `default_nettype none
 // Behavioural Design
-module jk_flipflop (
+module jk_flip_flop (
     input wire j,
     input wire k,
     input wire clk,
