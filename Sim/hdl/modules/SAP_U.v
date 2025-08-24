@@ -13,7 +13,6 @@ module SAP_U (
     // Register B
     input wire       reg_b_load_n,
     input wire       reg_b_bus_enable_n,
-    input wire [7:0] reg_b_bus_in,
 
     // ALU
     input wire alu_enable_n,
@@ -30,6 +29,13 @@ module SAP_U (
     input wire ram_load_mar_reg_n,
     input wire ram_clear_mar_reg,
 
+    // Program Counter
+    input wire program_counter_clear_n,
+    input wire program_counter_enable,
+    input wire jump_n,
+    input wire program_counter_bus_enable_n,
+    output wire [3:0] instruction_pointer,
+
     // Bus
     input wire [7:0] data_bus_in
 );
@@ -38,6 +44,7 @@ module SAP_U (
     wire [7:0] reg_b_bus_out;
     wire [7:0] alu_bus_out;
     wire [7:0] ram_bus_out;
+    wire [7:0] program_counter_bus_out;
 
 Bus_Manager bus_manager(
     .data_bus_in(data_bus_in),
@@ -53,7 +60,10 @@ Bus_Manager bus_manager(
     .alu_bus_enable_n(alu_enable_n),
 
     .ram_bus_out(ram_bus_out),
-    .ram_bus_enable_n(ram_bus_enable_n)
+    .ram_bus_enable_n(ram_bus_enable_n),
+
+    .program_counter_bus_out(program_counter_bus_out),
+    .program_counter_bus_enable_n(program_counter_bus_enable_n)
 );
 
   // stored data in registers
@@ -87,8 +97,6 @@ Bus_Manager bus_manager(
       .bus_out(alu_bus_out)
   );
 
-  // TODO fix names for wires in ram. Should be suffixed with _n
-  // include write enable
   ram m_ram (
       .dipswitch_data(ram_dipswitch_data),
       .dipswitch_addr(ram_dipswitch_addr),
@@ -102,6 +110,17 @@ Bus_Manager bus_manager(
       .clear_mar_reg(ram_clear_mar_reg),
       .clk(clk),
       .bus_out(ram_bus_out)
+  );
+
+  program_counter m_program_counter (
+      .clear_n(program_counter_clear_n),
+      .clk(clk),
+      .enable(program_counter_enable),
+      .jump_n(jump_n),
+      .bus_in(data_bus_in),
+      .bus_enable_n(program_counter_bus_enable_n),
+      .instruction_pointer(instruction_pointer),
+      .bus_out(program_counter_bus_out)
   );
 
 endmodule
@@ -125,6 +144,10 @@ module Bus_Manager(
     input wire [7:0] ram_bus_out,
     input wire ram_bus_enable_n,
 
+    // Program counter
+    input wire [7:0] program_counter_bus_out,
+    input wire program_counter_bus_enable_n,
+
     output wire [7:0] data_bus_out
 );
 
@@ -132,6 +155,7 @@ assign data_bus_out = ~reg_a_bus_enable_n ? reg_a_bus_out :
                           ~reg_b_bus_enable_n ? reg_b_bus_out :
                           ~ram_bus_enable_n   ? ram_bus_out   :
                           ~alu_bus_enable_n   ? alu_bus_out   :
+                          ~program_counter_bus_enable_n ? program_counter_bus_out :
                           8'b0000000Z;
 
 endmodule

@@ -12,7 +12,6 @@ module SAP_U_tb ();
   // Register B
   reg       reg_b_load_n;
   reg       reg_b_bus_enable_n;
-  reg [7:0] reg_b_bus_in;
 
   // ALU
   reg       alu_enable_n;
@@ -28,6 +27,14 @@ module SAP_U_tb ();
   reg       ram_control_signal;
   reg       ram_load_mar_reg_n;
   reg       ram_clear_mar_reg;
+
+  // Program Counter
+  
+  reg program_counter_clear_n;
+  reg program_counter_enable;
+  reg jump_n;
+  reg program_counter_bus_enable_n;
+  wire [3:0] instruction_pointer;
 
   // Bus
   reg [7:0] data_bus_in;
@@ -61,6 +68,13 @@ module SAP_U_tb ();
       .ram_load_mar_reg_n(ram_load_mar_reg_n),
       .ram_clear_mar_reg(ram_clear_mar_reg),
 
+      // Program Counter
+      .program_counter_clear_n(program_counter_clear_n),
+      .program_counter_enable(program_counter_enable),
+      .jump_n(jump_n),
+      .program_counter_bus_enable_n(program_counter_enable),
+      .instruction_pointer(instruction_pointer),
+
       // Bus Manager
       .data_bus_in(data_bus_in)
   );
@@ -74,7 +88,11 @@ module SAP_U_tb ();
   initial begin
     $dumpfile("./simulation/testbench_master.vcd");  // VCD file for waveform generation
     $dumpvars(0, SAP_U_tb);
-    // Test ALU
+
+    // Enable Program Counter. Set jump to off
+    jump_n = 1;
+    program_counter_enable = 1;
+    program_counter_bus_enable_n= 1;
 
     // allow data to be loaded into register
     data_bus_in = 8'b0;
@@ -116,9 +134,38 @@ module SAP_U_tb ();
     #9;
 
     // write ram data from bus
+    
     ram_prog_mode = 1;
     ram_control_signal =1 ;
     #10
+    ram_bus_enable_n   = 1;  // disable output to bus
+    #10
+
+    // Test Program Counter
+    
+    // Enable bus
+    program_counter_bus_enable_n= 0;
+    #10
+
+    // Clear prgram counter
+    program_counter_clear_n= 0;
+    #10
+    program_counter_clear_n = 1;
+    #10
+
+    // Count up
+    repeat(5) @(posedge clk);
+
+    // jump
+    data_bus_in = 4'b0101;
+    jump_n = 0; #5;   // short active-low pulse
+    jump_n = 1; #20;
+    repeat(4) @(posedge clk);
+
+    // Disable bus
+    program_counter_bus_enable_n = 1;
+    #10
+
 
     $finish;
   end
