@@ -1,5 +1,5 @@
 `default_nettype none
-module (
+module program_counter(
     input wire clear_n,
     input wire clk,
     input wire enable,
@@ -12,7 +12,7 @@ module (
 
 sn54161 counter (
     .clr_n(clear_n),
-    .load_n,(jump_n),
+    .load_n(jump_n),
     .ent(enable),
     .enp(enable),
     .clk(clk),
@@ -24,7 +24,7 @@ sn54161 counter (
     .qb(instruction_pointer[1]),
     .qc(instruction_pointer[2]),
     .qd(instruction_pointer[3]),
-    .rco(1bX)
+    .rco()
 );
 
 assign bus_out = bus_enable_n ? 8'b0000000Z : instruction_pointer;  // enable bus out dependendent on enable
