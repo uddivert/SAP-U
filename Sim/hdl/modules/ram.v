@@ -18,7 +18,7 @@ module ram (
     output wire [7:0] bus_out
 );
 
-// Memory Address Register (MAR)
+  // Memory Address Register (MAR)
   wire [3:0] qff_out;
   wire [3:0] reversed_address;
   wire [3:0] dipswitch_addr_reversed;
@@ -52,10 +52,10 @@ module ram (
       .q(qff_out)
   );
 
-// Static Ram
-   wire [7:0] internal_data;
-   assign internal_data = {mem_high, mem_low};
-   memory mem (
+  // Static Ram
+  wire [7:0] internal_data;
+  assign internal_data = {mem_high, mem_low};
+  memory mem (
       .address(address),
       .data(internal_data),
       .write_enable_n(padded_memory_write_mode[1]),
@@ -67,13 +67,13 @@ module ram (
   assign padded_write_enable = {1'b0, 1'b0, write_enable_n, 1'b0};
 
   reg run_mode;
-  always @ (posedge clk) begin
-        run_mode <= control_signal;
-    end
+  always @(posedge clk) begin
+    run_mode <= control_signal;
+  end
 
   wire [3:0] padded_run_mode;
   assign padded_run_mode = {1'b0, 1'b0, run_mode, 1'b0};
-  wire [3:0] padded_memory_write_mode; // only care about [1]
+  wire [3:0] padded_memory_write_mode;  // only care about [1]
   sn74ls157 u32 (
       .a(padded_write_enable),
       .b(padded_run_mode),

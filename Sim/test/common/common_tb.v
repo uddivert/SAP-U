@@ -32,7 +32,7 @@ module common_tb;
       .data (dff_data),
       .reset(dff_reset),
       .q    (dff_q),
-      .q_n(dff_not_q)
+      .q_n  (dff_not_q)
   );
 
   // Declare input signals for quad flip flop
@@ -77,18 +77,20 @@ module common_tb;
       .cout(cla_cout)
   );
 
+  // Declare input signals for F189 Ram
   reg [3:0] ram_a, ram_d;
   reg ram_cs_n, ram_we_n;
   wire [3:0] ram_o;
 
   f189 ram (
-      .a (ram_a),
-      .d (ram_d),
+      .a(ram_a),
+      .d(ram_d),
       .cs_n(ram_cs_n),
       .we_n(ram_we_n),
-      .o (ram_o)
+      .o(ram_o)
   );
 
+  // Declare input signals for sn74ls157 multiplexor
   reg [3:0] mux_a, mux_b;
   reg mux_select, mux_strobe;
   wire [3:0] mux_y;
@@ -100,6 +102,62 @@ module common_tb;
       .strobe(mux_strobe),
       .y(mux_y)
   );
+
+  // Declare input signals for jk flip flop
+  reg jk_j, jk_k;
+  wire jk_q, jk_q_n;
+
+  jk_flip_flop jk (
+      .j  (jk_j),
+      .k  (jk_k),
+      .clk(clk),
+      .q  (jk_q),
+      .q_n(jk_q_n)
+  );
+
+  // Declare input signals for dm7476 jff
+  reg dm7476_pr_n, dm7476_clr_n, dm7476_j, dm7476_k;
+  wire dm7476_q, dm7476_q_n;
+
+  dm7476_jk_flip_flop dm7476_jkff (
+      .pr_n(dm7476_pr_n),
+      .clr_n(dm7476_clr_n),
+      .clk(clk),
+      .j(dm7476_j),
+      .k(dm7476_k),
+      .q(dm7476_q),
+      .q_n(dm7476_q_n)
+  );
+
+  // Declare input signals for counterdm7476
+  reg
+      counter_clr_n,
+      counter_load_n,
+      counter_ent,
+      counter_enp,
+      counter_a,
+      counter_b,
+      counter_c,
+      counter_d;
+  wire counter_qa, counter_qb, counter_qc, counter_qd, counter_rco;
+
+  sn54161 counter (
+      .clr_n(counter_clr_n),
+      .load_n(counter_load_n),
+      .ent(counter_ent),
+      .enp(counter_enp),
+      .clk(clk),
+      .a(counter_a),
+      .b(counter_b),
+      .c(counter_c),
+      .d(counter_d),
+      .qa(counter_qa),
+      .qb(counter_qb),
+      .qc(counter_qc),
+      .qd(counter_qd),
+      .rco(counter_rco)
+  );
+
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
   always begin
@@ -367,15 +425,15 @@ module common_tb;
     /************************************************************/
     ram_cs_n = 1;
     ram_we_n = 1;
-    ram_a  = 0;
-    ram_d  = 0;
+    ram_a = 0;
+    ram_d = 0;
     #10;
 
     // Write data to memory
     ram_cs_n = 0;
     ram_we_n = 0;
-    ram_a  = 4'b0010;
-    ram_d  = 4'b1100;
+    ram_a = 4'b0010;
+    ram_d = 4'b1100;
     #10;
     ram_we_n = 1;
     #10;
@@ -383,7 +441,7 @@ module common_tb;
     // Read data from memory
     ram_cs_n = 0;
     ram_we_n = 1;
-    ram_a  = 4'b0010;
+    ram_a = 4'b0010;
     #10;
 
     /************************************************************/
@@ -397,6 +455,125 @@ module common_tb;
     #10;
     mux_select = 1;
     #10;
+
+    /************************************************************/
+    /* jk flipflop testbench                                      */
+    /************************************************************/
+    jk_j = 0;
+    jk_k = 0;
+    #10;
+
+    jk_j = 1;  // Q should be on
+    jk_k = 0;
+    #10;
+
+    jk_j = 0;  // Q Not output always on
+    jk_k = 1;
+    #10;
+
+    jk_j = 1;  // Toggle
+    jk_k = 1;
+    #10;
+
+    jk_j = 1;  // Toggle
+    jk_k = 1;
+    #10;
+
+    /************************************************************/
+    /* dm7476 testbench                                      */
+    /************************************************************/
+    dm7476_pr_n = 1;
+    dm7476_clr_n = 1;
+    dm7476_j = 0;
+    dm7476_k = 0;
+
+    // Test asynchronous preset
+    #2;
+    dm7476_pr_n = 0;  // preset active
+    #5;
+    dm7476_pr_n = 1;  // preset inactive
+
+    // Test asynchronous clear
+    #2;
+    dm7476_clr_n = 0;  // clear active
+    #5;
+    dm7476_clr_n = 1;  // clear inactive
+
+    // Test invalid
+    #2;
+    dm7476_pr_n  = 0;
+    dm7476_clr_n = 0;
+    #5;
+    dm7476_pr_n = 1;
+    dm7476_clr_n = 1;
+
+    dm7476_j = 0;
+    dm7476_k = 0;
+    #10;
+
+    dm7476_j = 0;
+    dm7476_k = 1;
+    #10;
+
+    dm7476_j = 1;
+    dm7476_k = 0;
+    #10;
+
+    dm7476_j = 1;
+    dm7476_k = 1;
+    #20;
+
+    dm7476_j = 0;
+    dm7476_k = 0;
+    #10;
+
+    /************************************************************/
+    /* sn54161 testbench                                        */
+    /************************************************************/
+    counter_clr_n = 1;
+    counter_load_n = 1;
+    counter_ent = 0;
+    counter_enp = 0;
+    {counter_a, counter_b, counter_c, counter_d} = 4'b0000;
+
+    // Test async clear
+    counter_clr_n = 0;
+    #5;
+    counter_clr_n = 1;
+    #20;
+
+    // Test parallel load
+    {counter_a, counter_b, counter_c, counter_d} = 4'b1010;
+    counter_load_n = 0;
+    #20;  // load on next rising edge
+    counter_load_n = 1;
+    #20;
+
+    // Enable counting
+    counter_enp = 1;
+    counter_ent = 1;
+    repeat (6) #20;  // let it count 6 cycles
+
+    // Disable ENT (should stop counting, RCO low)
+    counter_ent = 0;
+    repeat (3) #20;
+
+    // Re-enable ENT to resume counting to max
+    counter_ent = 1;
+    repeat (4) #20;
+
+    // Test another load mid-count
+    {counter_a, counter_b, counter_c, counter_d} = 4'b0011;
+    counter_load_n = 0;
+    #20;
+    counter_load_n = 1;
+    #20;
+
+    // Let it count up again
+    repeat (5) #20;
+
+    $display("Test complete");
+
     $finish;  // End simulation
   end
 endmodule

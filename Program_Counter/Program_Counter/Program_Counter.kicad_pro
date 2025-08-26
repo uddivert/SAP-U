@@ -228,8 +228,8 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "ignore",
-      "pin_to_pin": "ignore",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -250,7 +250,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "RAM_Module.kicad_pro",
+    "filename": "Program_Counter.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -410,16 +410,8 @@
   },
   "sheets": [
     [
-      "03b00b70-3754-4eac-a53e-5e31c1a5687c",
+      "a712124d-3379-4766-bfe5-b5e62107db98",
       "Root"
-    ],
-    [
-      "6c0a268e-8373-4fc4-b910-175fae74551a",
-      "Memory Address Register"
-    ],
-    [
-      "a93cd5e9-455f-435d-bc2e-4b037fb18d7f",
-      "Ram"
     ]
   ],
   "text_variables": {}
