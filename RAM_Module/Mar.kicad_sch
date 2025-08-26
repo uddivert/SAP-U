@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "b0932373-0dd8-4f39-a907-fb0578dc6ac6")
 	(paper "A4")
+	(title_block
+		(title "Ram Module")
+		(date "2025-08-25")
+		(company "Arsenal Gear")
+	)
 	(lib_symbols
 		(symbol "74LS157:my_74LS157"
 			(pin_names
