@@ -41,12 +41,12 @@ module program_counter_tb;
 
     // Clear data
     clear_n = 0;
-    #10
-    clear_n = 1;
+    #10 clear_n = 1;
     #10
 
     // Count up
-    repeat(5) @(posedge clk);
+    repeat (5)
+    @(posedge clk);
 
     // Disable bus
     bus_enable_n = 1;
@@ -58,9 +58,11 @@ module program_counter_tb;
 
     // jump
     bus_in = 4'b0101;
-    jump_n = 0; #5;   // short active-low pulse
-    jump_n = 1; #20;
-    repeat(4) @(posedge clk);
+    jump_n = 0;
+    #5;  // short active-low pulse
+    jump_n = 1;
+    #20;
+    repeat (4) @(posedge clk);
 
     $finish;
 

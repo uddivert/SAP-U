@@ -7,7 +7,7 @@ module d_latch (
 );
 
   // D latch using NOR gates and AND gates
-  assign q = ~((enable & ~data) | q_n);
+  assign q   = ~((enable & ~data) | q_n);
   assign q_n = ~((enable & data) | q);
 
 endmodule

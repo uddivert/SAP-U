@@ -7,7 +7,7 @@ module sr_latch (
 );
 
   // SR latch using NOR gates
-  assign q = ~(reset | q_n);
+  assign q   = ~(reset | q_n);
   assign q_n = ~(set | q);
 
 endmodule

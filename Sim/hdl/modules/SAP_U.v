@@ -7,12 +7,12 @@ module SAP_U (
     input wire reset, // System reset
 
     // Register A
-    input wire       reg_a_load_n,
-    input wire       reg_a_bus_enable_n,
+    input wire reg_a_load_n,
+    input wire reg_a_bus_enable_n,
 
     // Register B
-    input wire       reg_b_load_n,
-    input wire       reg_b_bus_enable_n,
+    input wire reg_b_load_n,
+    input wire reg_b_bus_enable_n,
 
     // ALU
     input wire alu_enable_n,
@@ -39,32 +39,32 @@ module SAP_U (
     // Bus
     input wire [7:0] data_bus_in
 );
-    wire [7:0] data_bus_out;
-    wire [7:0] reg_a_bus_out;
-    wire [7:0] reg_b_bus_out;
-    wire [7:0] alu_bus_out;
-    wire [7:0] ram_bus_out;
-    wire [7:0] program_counter_bus_out;
+  wire [7:0] data_bus_out;
+  wire [7:0] reg_a_bus_out;
+  wire [7:0] reg_b_bus_out;
+  wire [7:0] alu_bus_out;
+  wire [7:0] ram_bus_out;
+  wire [7:0] program_counter_bus_out;
 
-Bus_Manager bus_manager(
-    .data_bus_in(data_bus_in),
-    .data_bus_out(data_bus_out),
+  Bus_Manager bus_manager (
+      .data_bus_in (data_bus_in),
+      .data_bus_out(data_bus_out),
 
-    .reg_a_bus_out(reg_a_bus_out),
-    .reg_a_bus_enable_n(reg_a_bus_enable_n),
+      .reg_a_bus_out(reg_a_bus_out),
+      .reg_a_bus_enable_n(reg_a_bus_enable_n),
 
-    .reg_b_bus_out(reg_b_bus_out),
-    .reg_b_bus_enable_n(reg_b_bus_enable_n),
+      .reg_b_bus_out(reg_b_bus_out),
+      .reg_b_bus_enable_n(reg_b_bus_enable_n),
 
-    .alu_bus_out(alu_bus_out),
-    .alu_bus_enable_n(alu_enable_n),
+      .alu_bus_out(alu_bus_out),
+      .alu_bus_enable_n(alu_enable_n),
 
-    .ram_bus_out(ram_bus_out),
-    .ram_bus_enable_n(ram_bus_enable_n),
+      .ram_bus_out(ram_bus_out),
+      .ram_bus_enable_n(ram_bus_enable_n),
 
-    .program_counter_bus_out(program_counter_bus_out),
-    .program_counter_bus_enable_n(program_counter_bus_enable_n)
-);
+      .program_counter_bus_out(program_counter_bus_out),
+      .program_counter_bus_enable_n(program_counter_bus_enable_n)
+  );
 
   // stored data in registers
   wire [7:0] reg_a_data;
@@ -85,7 +85,7 @@ Bus_Manager bus_manager(
       .bus_enable_n(reg_b_bus_enable_n),
       .load_n(reg_b_load_n),
       .bus_in(data_bus_in),
-      .bus_out(reg_a_bus_out),
+      .bus_out(reg_b_bus_out),
       .q(reg_b_data)
   );
 
@@ -117,15 +117,15 @@ Bus_Manager bus_manager(
       .clk(clk),
       .enable(program_counter_enable),
       .jump_n(jump_n),
-      .bus_in(data_bus_in),
+      .bus_in(data_bus_in[3:0]),
       .bus_enable_n(program_counter_bus_enable_n),
       .instruction_pointer(instruction_pointer),
-      .bus_out(program_counter_bus_out)
+      .bus_out(program_counter_bus_out[3:0])
   );
 
 endmodule
 
-module Bus_Manager(
+module Bus_Manager (
     input wire [7:0] data_bus_in,
 
     // Register A
@@ -151,11 +151,11 @@ module Bus_Manager(
     output wire [7:0] data_bus_out
 );
 
-assign data_bus_out = ~reg_a_bus_enable_n ? reg_a_bus_out :
+  assign data_bus_out = ~reg_a_bus_enable_n ? reg_a_bus_out :
                           ~reg_b_bus_enable_n ? reg_b_bus_out :
                           ~ram_bus_enable_n   ? ram_bus_out   :
                           ~alu_bus_enable_n   ? alu_bus_out   :
                           ~program_counter_bus_enable_n ? program_counter_bus_out :
-                          8'b0000000Z;
+                          8'bZZZZZZZZ;
 
 endmodule

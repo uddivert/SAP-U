@@ -48,13 +48,13 @@ module alu (
 
   // compute zero flag
   assign flag_data[1] = ~|internal_result;  // Simplifies zero flag logic
-  assign flag_data[2] = 1'b0; // unused
-  assign flag_data[3] = 1'b0; // unused
-  assign bus_out = bus_enable_n ? 8'b0000000Z : internal_result;  // assign result dependent on enable
+  assign flag_data[2] = 1'b0;  // unused
+  assign flag_data[3] = 1'b0;  // unused
+  assign bus_out = bus_enable_n ? 8'b00000000 : internal_result;  // assign result dependent on enable
 
   // handle flags
   wire [3:0] flag_out_full;
-  assign flag_out = flag_out_full[1:0]; // only output lower two bits
+  assign flag_out = flag_out_full[1:0];  // only output lower two bits
   sn54173_quad_flip_flop flags_reg (
       .m(1'b0),
       .n(1'b0),

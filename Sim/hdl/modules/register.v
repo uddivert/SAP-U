@@ -31,6 +31,6 @@ module register (
   );
 
   // assign bus
-  assign bus_out = bus_enable_n ? 8'b0000000Z: q;
+  assign bus_out = bus_enable_n ? 8'b00000000 : q;
 
 endmodule
