@@ -1,0 +1,19 @@
+// 4-bit hex decoder for common-anode 7-segment display
+// Bit order: [dp a b c d e f g] (1 = OFF, 0 = ON)
+
+0x81  // 0
+0xCF  // 1
+0x92  // 2
+0x86  // 3
+0xCC  // 4
+0xA4  // 5
+0xA0  // 6
+0x8F  // 7
+0x80  // 8
+0x84  // 9
+0x88  // A
+0xE0  // b
+0xB1  // C
+0xC2  // d
+0xB0  // E
+0xB8  // F
