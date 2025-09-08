@@ -1,3 +1,4 @@
+`default_nettype none
 module d_storage_register (
     input wire [3:0] data,
     input wire write,

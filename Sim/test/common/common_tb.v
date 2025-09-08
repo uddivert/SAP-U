@@ -129,7 +129,7 @@ module common_tb;
       .q_n(dm7476_q_n)
   );
 
-  // Declare input signals for counterdm7476
+  // Declare input signals for dm7476 counter
   reg
       counter_clr_n,
       counter_load_n,
@@ -139,6 +139,7 @@ module common_tb;
       counter_b,
       counter_c,
       counter_d;
+
   wire counter_qa, counter_qb, counter_qc, counter_qd, counter_rco;
 
   sn54161 counter (
@@ -158,6 +159,18 @@ module common_tb;
       .rco(counter_rco)
   );
 
+  // Declare input signals for dm74ls139 demultiplexor
+  reg [1:0] decoder_enable_n;
+  reg [1:0] decoder_select;
+  wire [3:0] decoder_y1_n;
+  wire [3:0] decoder_y2_n;
+
+  dm74ls139 decoder(
+    .enable_n(decoder_enable_n),
+    .select(decoder_select), 
+    .y1_n(decoder_y1_n),
+    .y2_n(decoder_y2_n)
+  );
 
   // Clock signal generation: 50% duty cycle with a period of 10 time units
   always begin
@@ -572,7 +585,38 @@ module common_tb;
     // Let it count up again
     repeat (5) #20;
 
-    $display("Test complete");
+    /************************************************************/
+    /* dm74ls139 testbench                                        */
+    /************************************************************/
+    // Initial values
+    decoder_enable_n = 2'b11; // both disabled
+    decoder_select   = 2'b00;
+    #10;
+
+    // Enable first decoder, sweep select
+    decoder_enable_n = 2'b10; // enable y1_n, disable y2_n
+    repeat (4) begin
+      #10 decoder_select = decoder_select + 1;
+    end
+
+    // Enable second decoder, sweep select
+    decoder_enable_n = 2'b01; // disable y1_n, enable y2_n
+    decoder_select   = 2'b00;
+    repeat (4) begin
+      #10 decoder_select = decoder_select + 1;
+    end
+
+    // Enable both decoders simultaneously
+    decoder_enable_n = 2'b00; // both enabled
+    decoder_select   = 2'b00;
+    repeat (4) begin
+      #10 decoder_select = decoder_select + 1;
+    end
+
+    // Disable both again
+    decoder_enable_n = 2'b11;
+    decoder_select   = 2'b00;
+    #10;
 
     $finish;  // End simulation
   end
