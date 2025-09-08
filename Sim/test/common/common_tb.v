@@ -172,6 +172,17 @@ module common_tb;
     .y2_n(decoder_y2_n)
   );
 
+  // Declare input signals for 7 segment display
+  reg [7:0] segment_data;
+  reg segment_common_cathode_n;
+  wire [7:0] segment_character;
+
+ seven_segment_display seven_seg(
+    .data(segment_data),
+    .common_cathode_n(segment_common_cathode_n),
+    .character(segment_character)
+  );
+
   // Clock signal generation: 50% duty cycle with a period of 10 time units
   always begin
     clk = 0;
@@ -188,23 +199,23 @@ module common_tb;
     /* SR Latch test bench                                      */
     /************************************************************/
 
-    // case 1 (latch w/o state)
+    // Case 1 (latch w/o state)
     sr_set   = 0;
     sr_reset = 0;
     #10;
-    // case 2 (reset)
+    // Case 2 (reset)
     sr_set   = 0;
     sr_reset = 1;
     #10;
-    // case 3 (set)
+    // Case 3 (set)
     sr_set   = 1;
     sr_reset = 0;
     #10;
-    // case 4 (latch with state)
+    // Case 4 (latch with state)
     sr_set   = 0;
     sr_reset = 0;
     #10;
-    // case 5 (invalid state)
+    // Case 5 (invalid state)
     sr_set   = 1;
     sr_reset = 1;
     #10;
@@ -213,23 +224,23 @@ module common_tb;
     /* D latch testbench                                        */
     /************************************************************/
 
-    // case 1 (no data)
+    // Case 1 (no data)
     d_enable = 0;
     d_data   = 0;
     #10;
-    // case 2 (data with no enable)
+    // Case 2 (data with no enable)
     d_enable = 0;
     d_data   = 1;
     #10;
-    // case 3 (data with enable)
+    // Case 3 (data with enable)
     d_enable = 1;
     d_data   = 1;
     #10;
-    // case 4 (data off with enable off)
+    // Case 4 (data off with enable off)
     d_enable = 0;
     d_data   = 0;
     #10;
-    // case 5 (enable on and data off)
+    // Case 5 (enable on and data off)
     d_enable = 1;
     d_data   = 0;
     #10;
@@ -237,24 +248,24 @@ module common_tb;
     /************************************************************/
     /* D flip flop testbench                                    */
     /************************************************************/
-    // case 1: No data
+    // Case 1: No data
     dff_data  = 0;
     dff_reset = 1;
     #10;
-    // case 2: Data high
+    // Case 2: Data high
     dff_data  = 1;
     dff_reset = 0;
     #10;
-    // case 3: Data remains high
+    // Case 3: Data remains high
     dff_data = 1;
     #10;
-    // case 4: Data goes low
+    // Case 4: Data goes low
     dff_data = 0;
     #10;
-    // case 5: Data remains low
+    // Case 5: Data remains low
     dff_data = 0;
     #10;
-    // case 7: Reset high
+    // Case 7: Reset high
     dff_data = 1;
     #5;
     dff_reset = 1;
@@ -264,11 +275,11 @@ module common_tb;
     /* Quad flip flop testbench                                 */
     /************************************************************/
     // Initialize all inputs
-    {qff_g1, qff_g2} = 0;  // enable load
-    {qff_m, qff_n} = 0;  // enable output
+    {qff_g1, qff_g2} = 0;   // Enable load
+    {qff_m, qff_n} = 0;     // Enable output
     qff_data = 4'b0000;
-    qff_clr = 1;  // Start with clear active
-    #15;  // Wait a bit to see the clr effect
+    qff_clr = 1;            // Start with clear active
+    #15;                    // Wait a bit to see the clr effect
 
     // Case 1: clr deasserted, load is high, data is set
     qff_clr  = 0;
@@ -351,31 +362,31 @@ module common_tb;
     // Test 1: Simple addition with no carry-in
     cla_a   = 4'b0000;  // a = 0
     cla_b   = 4'b0000;  // b = 0
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 2: Simple addition with carry-in
     cla_a   = 4'b0001;  // a = 1
     cla_b   = 4'b0001;  // b = 1
-    cla_cin = 1;  // carry in
+    cla_cin = 1;        // carry in
     #10;
 
     // Test 3: Addition with no carry, result with carry-out
     cla_a   = 4'b0111;  // a = 7
     cla_b   = 4'b0001;  // b = 1
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // no carry in
     #10;
 
     // Test 4: Subtracting using carry in
     cla_a   = 4'b1000;  // a = -8 (two's complement)
     cla_b   = 4'b0000;  // b = 0
-    cla_cin = 1;  // carry-in simulates subtraction
+    cla_cin = 1;        // carry-in simulates subtraction
     #10;
 
     // Test 5: Adding two large values
     cla_a   = 4'b1110;  // a = 14
     cla_b   = 4'b0111;  // b = 7
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 6: Adding two values resulting in overflow
@@ -387,37 +398,37 @@ module common_tb;
     // Test 7: Adding two numbers with carry-in
     cla_a   = 4'b1010;  // a = 10
     cla_b   = 4'b0101;  // b = 5
-    cla_cin = 1;  // carry in
+    cla_cin = 1;        // carry in
     #10;
 
     // Test 8: Addition where sum exceeds 4-bit width (overflow)
     cla_a   = 4'b1100;  // a = 12
     cla_b   = 4'b1010;  // b = 10
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 9: Adding two equal numbers (overflow)
     cla_a   = 4'b1000;  // a = 8
     cla_b   = 4'b1000;  // b = 8
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 10: Adding max value with no carry
     cla_a   = 4'b1111;  // a = 15
     cla_b   = 4'b1111;  // b = 15
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 11: Adding with different bits set
     cla_a   = 4'b0101;  // a = 5
     cla_b   = 4'b1010;  // b = 10
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 12: Adding a number to 0
     cla_a   = 4'b1111;  // a = 15
     cla_b   = 4'b0000;  // b = 0
-    cla_cin = 0;  // no carry in
+    cla_cin = 0;        // No carry in
     #10;
 
     // Test 13: Adding negative numbers (in two's complement)
@@ -429,7 +440,7 @@ module common_tb;
     // Test 14: Adding all ones (max 4-bit values)
     cla_a   = 4'b1111;  // a = 15
     cla_b   = 4'b1111;  // b = 15
-    cla_cin = 1;  // carry in
+    cla_cin = 1;        // carry in
     #10;
 
 
@@ -460,12 +471,16 @@ module common_tb;
     /************************************************************/
     /* sn74ls157 testbench                                      */
     /************************************************************/
-    mux_strobe = 0;  // set output always on
+    mux_strobe = 0;  // Set output always on
     mux_select = 0;
     mux_a = 4'b1010;
     mux_b = 4'b0101;
+
+    // Select a
     mux_select = 0;
     #10;
+
+    // Select B
     mux_select = 1;
     #10;
 
@@ -502,15 +517,15 @@ module common_tb;
 
     // Test asynchronous preset
     #2;
-    dm7476_pr_n = 0;  // preset active
+    dm7476_pr_n = 0;  // Preset active
     #5;
-    dm7476_pr_n = 1;  // preset inactive
+    dm7476_pr_n = 1;  // Preset inactive
 
     // Test asynchronous clear
     #2;
-    dm7476_clr_n = 0;  // clear active
+    dm7476_clr_n = 0;  // Clear active
     #5;
-    dm7476_clr_n = 1;  // clear inactive
+    dm7476_clr_n = 1;  // Clear inactive
 
     // Test invalid
     #2;
@@ -558,14 +573,14 @@ module common_tb;
     // Test parallel load
     {counter_a, counter_b, counter_c, counter_d} = 4'b1010;
     counter_load_n = 0;
-    #20;  // load on next rising edge
+    #20;  // Load on next rising edge
     counter_load_n = 1;
     #20;
 
     // Enable counting
     counter_enp = 1;
     counter_ent = 1;
-    repeat (6) #20;  // let it count 6 cycles
+    repeat (6) #20;  // Let it count 6 cycles
 
     // Disable ENT (should stop counting, RCO low)
     counter_ent = 0;
@@ -586,28 +601,29 @@ module common_tb;
     repeat (5) #20;
 
     /************************************************************/
-    /* dm74ls139 testbench                                        */
+    /* dm74ls139 testbench                                      */
     /************************************************************/
+
     // Initial values
-    decoder_enable_n = 2'b11; // both disabled
+    decoder_enable_n = 2'b11; // Both disabled
     decoder_select   = 2'b00;
     #10;
 
     // Enable first decoder, sweep select
-    decoder_enable_n = 2'b10; // enable y1_n, disable y2_n
+    decoder_enable_n = 2'b10; // Enable y1_n, disable y2_n
     repeat (4) begin
       #10 decoder_select = decoder_select + 1;
     end
 
     // Enable second decoder, sweep select
-    decoder_enable_n = 2'b01; // disable y1_n, enable y2_n
+    decoder_enable_n = 2'b01; // Disable y1_n, enable y2_n
     decoder_select   = 2'b00;
     repeat (4) begin
       #10 decoder_select = decoder_select + 1;
     end
 
     // Enable both decoders simultaneously
-    decoder_enable_n = 2'b00; // both enabled
+    decoder_enable_n = 2'b00; // Both enabled
     decoder_select   = 2'b00;
     repeat (4) begin
       #10 decoder_select = decoder_select + 1;
@@ -618,6 +634,33 @@ module common_tb;
     decoder_select   = 2'b00;
     #10;
 
+    /************************************************************/
+    /* 7 segment testbench                                      */
+    /************************************************************/
+
+    segment_common_cathode_n = 1'b1; // segment display on
+
+    // Sweep through the segment_data values
+    segment_data = 8'h81; #10;
+    segment_data = 8'hcf; #10;
+    segment_data = 8'h92; #10;
+    segment_data = 8'h86; #10;
+    segment_data = 8'hcc; #10;
+    segment_data = 8'ha4; #10;
+    segment_data = 8'ha0; #10;
+    segment_data = 8'h8f; #10;
+    segment_data = 8'h80; #10;
+    segment_data = 8'h84; #10;
+    segment_data = 8'h88; #10;
+    segment_data = 8'he0; #10;
+    segment_data = 8'hb1; #10;
+    segment_data = 8'hc2; #10;
+    segment_data = 8'hb0; #10;
+    segment_data = 8'hb8; #10;
+
+    // Test with common cathode disabled
+    segment_common_cathode_n = 1'b0;
+    segment_data = 8'h81; #10;
     $finish;  // End simulation
   end
 endmodule
