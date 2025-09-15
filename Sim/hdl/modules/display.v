@@ -1,9 +1,24 @@
 `default_nettype none
 module display(
-  input wire [7:0] address,
+  input wire [7:0] bus_in,
+  input wire display_enable,
+  input wire clock,
+  input wire clear_n,
   output wire [7:0] data,
-  output wire [7:0] characters[0:2]
+  output wire [7:0] character1,
+  output wire [7:0] character2,
+  output wire [7:0] character3,
+  output wire [7:0] character4
 );
+
+// Handle Bus
+reg [7:0] address;
+always @(posedge clock or negedge clear_n) begin
+  if (!clear_n)
+    address <= 8'b00000000;
+  else if (display_enable)
+    address <= bus_in;
+end
 
 // 2K x 8 ROM (28C16 style)
 reg [7:0] rom [0:2047];  // 2048 entries, each 8-bit wide
@@ -15,28 +30,37 @@ end
 // Bit order: [dp a b c d e f g] (1 = OFF, 0 = ON)
 assign data = rom[address];
 
-wire [3:0] common_cathode_n,
+wire [3:0] common_cathode_n;
 
-  // Use `generate` to instantiate the 7 segment displays
-  genvar i;
-  generate
-    for (i = 0; i <= 2; i = i + 1) begin : g_seg_display  // label for generate function
+seven_segment_display seg_display0 (
+  .data(data),
+  .common_cathode_n(common_cathode_n[3]),
+  .character(character1)
+);
 
-      seven_segment_display seg_display (
-        .data(data),
-        .common_cathode_n(common_cathode_n),
-        .character(characters(i))
-      );
+seven_segment_display seg_display1 (
+  .data(data),
+  .common_cathode_n(common_cathode_n[2]),
+  .character(character2)
+);
 
-    end
-  endgenerate
+seven_segment_display seg_display2 (
+  .data(data),
+  .common_cathode_n(common_cathode_n[1]),
+  .character(character3)
+);
 
+seven_segment_display seg_display3 (
+  .data(data),
+  .common_cathode_n(common_cathode_n[0]),
+  .character(character4)
+);
 
 dm74ls139 decoder(
-  .enable_n,
-  .select, 
-  .y1_n({common_cathode_n[0],common_cathode_n[1], common_cathode_n[2], common_cathode_n[3] }),
-  .y2_n // unused? 
+  .enable_n(),
+  .select(), 
+  .y1_n(common_cathode_n),
+  .y2_n() // unused? 
 );
 
 endmodule
