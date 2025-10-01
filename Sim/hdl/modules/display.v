@@ -20,15 +20,11 @@ always @(posedge clock or negedge clear_n) begin
     address <= bus_in;
 end
 
-// 2K x 8 ROM (28C16 style)
-reg [7:0] rom [0:2047];  // 2048 entries, each 8-bit wide
-
-initial begin
-  $readmemh("./simulation/output_rom.hex", rom);
-end
-
 // Bit order: [dp a b c d e f g] (1 = OFF, 0 = ON)
-assign data = rom[address];
+rom_28C16 rom_instance (
+  .addr(address),
+  .data(data)
+);
 
 wire [3:0] common_cathode_n;
 
