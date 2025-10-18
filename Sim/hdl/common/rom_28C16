@@ -1,5 +1,5 @@
 module rom_28C16 (
-    input wire [10:0] addr, // 11-bit address input (A0 to A10)
+    input wire [10:0] addr, // 11-bit address input (A10 to A0)
     output reg [7:0] data   // 8-bit data output
 );
     reg [7:0] rom [0:2047];  // 2048 entries, each 8-bit wide

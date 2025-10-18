@@ -119,7 +119,7 @@ module common_tb;
   reg dm7476_pr_n, dm7476_clr_n, dm7476_j, dm7476_k;
   wire dm7476_q, dm7476_q_n;
 
-  dm7476_jk_flip_flop dm7476_jkff (
+  dm74ls76_jk_flip_flop dm7476_jkff (
       .pr_n(dm7476_pr_n),
       .clr_n(dm7476_clr_n),
       .clk(clk),
