@@ -116,8 +116,8 @@ module common_tb;
   );
 
   // Declare input signals for dm7476 jff
-  reg dm7476_pr_n, dm7476_clr_n, dm7476_j, dm7476_k;
-  wire dm7476_q, dm7476_q_n;
+  reg [1:0] dm7476_pr_n, dm7476_clr_n, dm7476_j, dm7476_k;
+  wire [1:0] dm7476_q, dm7476_q_n;
 
   dm74ls76_jk_flip_flop dm7476_jkff (
       .pr_n(dm7476_pr_n),
